@@ -15,6 +15,14 @@
         <itemizedlist>
             <listitem><para><link linkend="_class_point">Point</link> <link linkend="_point_8cpp_1a5a9ca25b6c80fa53e90c02e432f9725d">operator-</link> (const <link linkend="_class_point">Point</link> &amp;left, const <link linkend="_class_point">Point</link> &amp;right)</para>
 </listitem>
+            <listitem><para><link linkend="_class_point">Point</link> <link linkend="_point_8cpp_1a3146e677d3f21bd8e07cfba9ae2e5fc5">operator*</link> (const <link linkend="_class_point">Point</link> &amp;left, const <link linkend="_class_point">Point</link> &amp;right)</para>
+</listitem>
+            <listitem><para><link linkend="_class_point">Point</link> <link linkend="_point_8cpp_1a7fcb5863811c98ede8fca32b8ff1d455">operator*</link> (const <link linkend="_class_point">Point</link> &amp;left, const double right)</para>
+</listitem>
+            <listitem><para><link linkend="_class_point">Point</link> <link linkend="_point_8cpp_1af5305ddbdee0cee9a68cade605063dda">operator/</link> (const <link linkend="_class_point">Point</link> &amp;left, const <link linkend="_class_point">Point</link> &amp;right)</para>
+</listitem>
+            <listitem><para><link linkend="_class_point">Point</link> <link linkend="_point_8cpp_1aaec54e631988089518dad635a59d543d">operator/</link> (const <link linkend="_class_point">Point</link> &amp;left, const double right)</para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <section>
@@ -24,14 +32,181 @@
 </section>
 <section>
 <title>Function Documentation</title>
-<anchor xml:id="_point_8cpp_1a5a9ca25b6c80fa53e90c02e432f9725d"/>    <section>
+<anchor xml:id="_point_8cpp_1a7fcb5863811c98ede8fca32b8ff1d455"/>    <section>
+    <title>operator*()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator*</primary><secondary>point.cpp</secondary></indexterm>
+<indexterm><primary>point.cpp</primary><secondary>operator*</secondary></indexterm>
+<para><computeroutput><link linkend="_class_point">Point</link> operator* (const <link linkend="_class_point">Point</link> &amp; left, const double right)</computeroutput></para>
+<para>The operator calculates the multiplication point by double. 
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>left</entry>
+                                <entry>
+<para>left operand (<link linkend="_class_point">Point</link>). </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>right</entry>
+                                <entry>
+<para>right operand (double).</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line 84 of file point.cpp.</para>
+    </section><anchor xml:id="_point_8cpp_1a3146e677d3f21bd8e07cfba9ae2e5fc5"/>    <section>
+    <title>operator*()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator*</primary><secondary>point.cpp</secondary></indexterm>
+<indexterm><primary>point.cpp</primary><secondary>operator*</secondary></indexterm>
+<para><computeroutput><link linkend="_class_point">Point</link> operator* (const <link linkend="_class_point">Point</link> &amp; left, const <link linkend="_class_point">Point</link> &amp; right)</computeroutput></para>
+<para>The operator calculates the multiplication two points. 
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>left</entry>
+                                <entry>
+<para>left operand (<link linkend="_class_point">Point</link>). </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>right</entry>
+                                <entry>
+<para>right operand (<link linkend="_class_point">Point</link>).</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line 73 of file point.cpp.</para>
+    </section><anchor xml:id="_point_8cpp_1a5a9ca25b6c80fa53e90c02e432f9725d"/>    <section>
     <title>operator-()</title>
 <indexterm><primary>operator-</primary><secondary>point.cpp</secondary></indexterm>
 <indexterm><primary>point.cpp</primary><secondary>operator-</secondary></indexterm>
 <para><computeroutput><link linkend="_class_point">Point</link> operator- (const <link linkend="_class_point">Point</link> &amp; left, const <link linkend="_class_point">Point</link> &amp; right)</computeroutput></para>
-<para>The operator calculates a point that is the difference between all coordinates of the other two points.</para>
+<para>The operator calculates a point that is the difference between all coordinates of the other two points. 
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>left</entry>
+                                <entry>
+<para>left operand. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>right</entry>
+                                <entry>
+<para>right operand.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
 <para>
-Definition at line 49 of file point.cpp.</para>
+Definition at line 63 of file point.cpp.</para>
+    </section><anchor xml:id="_point_8cpp_1aaec54e631988089518dad635a59d543d"/>    <section>
+    <title>operator/()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator/</primary><secondary>point.cpp</secondary></indexterm>
+<indexterm><primary>point.cpp</primary><secondary>operator/</secondary></indexterm>
+<para><computeroutput><link linkend="_class_point">Point</link> operator/ (const <link linkend="_class_point">Point</link> &amp; left, const double right)</computeroutput></para>
+<para>The operator сalculates left per double number 
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>left</entry>
+                                <entry>
+<para>left operand (<link linkend="_class_point">Point</link>). </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>right</entry>
+                                <entry>
+<para>right operand (double).</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line 104 of file point.cpp.</para>
+    </section><anchor xml:id="_point_8cpp_1af5305ddbdee0cee9a68cade605063dda"/>    <section>
+    <title>operator/()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator/</primary><secondary>point.cpp</secondary></indexterm>
+<indexterm><primary>point.cpp</primary><secondary>operator/</secondary></indexterm>
+<para><computeroutput><link linkend="_class_point">Point</link> operator/ (const <link linkend="_class_point">Point</link> &amp; left, const <link linkend="_class_point">Point</link> &amp; right)</computeroutput></para>
+<para>The operator сalculates the division of the coordinates of points 
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>left</entry>
+                                <entry>
+<para>left operand (<link linkend="_class_point">Point</link>). </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>right</entry>
+                                <entry>
+<para>right operand (<link linkend="_class_point">Point</link>).</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line 93 of file point.cpp.</para>
 </section>
 </section>
 </section>

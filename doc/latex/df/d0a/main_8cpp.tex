@@ -8,26 +8,27 @@
 {\ttfamily \#include $<$cmath$>$}\newline
 {\ttfamily \#include $<$stdexcept$>$}\newline
 {\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$float.\+h$>$}\newline
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
 \#define \mbox{\hyperlink{main_8cpp_a73e57ad61fa2688e196ab777c212e2af}{ACCUR}}~1e-\/7
-\item 
-\#define \mbox{\hyperlink{main_8cpp_af3cc0f5da7d98bdd1705f294607323a0}{COS}}(top,  bottom)~top / bottom
-\item 
-\#define \mbox{\hyperlink{main_8cpp_a46178a9cc0c10a15d23be46db42d1c7d}{DIST}}(X,  Y,  Z)~sqrt(X $\ast$ X + Y $\ast$ Y + Z $\ast$ Z)
-\item 
-\#define \mbox{\hyperlink{main_8cpp_a5b5140b889f20fec8dda9d70e2295ec2}{DIST\+\_\+\+BETWEEN}}(x1,  x2,  y1,  y2,  z1,  z2)~sqrt((x1 -\/ x2) $\ast$ (x1 -\/ x2) + (y1 -\/ y2) $\ast$ (y1 -\/ y2) + (z1 -\/ z2) $\ast$ (z1 -\/z2))
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Distance measurement accuracy. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{main_8cpp_a8a5d9aee9c53fa0528075bd91406a223}{DIST}}(x,  y,  z)~sqrt(x $\ast$ x + y $\ast$ y + z $\ast$ z)
+\begin{DoxyCompactList}\small\item\em Calculates the sum of the squares of the coordinates of a point. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{main_8cpp_a5b5140b889f20fec8dda9d70e2295ec2}{DIST\+\_\+\+BETWEEN}}(x1,  x2,  y1,  y2,  z1,  z2)~sqrt((x1 -\/ x2) $\ast$ (x1 -\/ x2) + (y1 -\/ y2) $\ast$ (y1 -\/ y2) + (z1 -\/ z2) $\ast$ (z1 -\/ z2))
+\begin{DoxyCompactList}\small\item\em Computes the distance between two input points. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{main_8cpp_a1084fbc622c7b2dd999d4401b0258a84}{read\+\_\+line}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&points, string namefile)
-\begin{DoxyCompactList}\small\item\em This function read file. Structure of file\+: x0 y0 z0 x1 y1 z1 ... xn yn zn. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{main_8cpp_ae439ce746bbcfb388efa97dd12db3ac6}{calculate\+\_\+dims}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&points, \mbox{\hyperlink{class_point}{Point}} \&input\+\_\+point)
+\item 
+void \mbox{\hyperlink{main_8cpp_a431913d566799b0953f5371201e27fd4}{calculate\+\_\+projections}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&points, \mbox{\hyperlink{class_point}{Point}} \&input\+\_\+point)
+\item 
+void \mbox{\hyperlink{main_8cpp_a8c52dd0be20e174330f04c4b38bc1aee}{projection\+\_\+print}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&all\+\_\+projections, vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&points, vector$<$ unsigned int $>$ \&segments)
 \item 
 int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
-\begin{DoxyCompactList}\small\item\em This main. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Macro Definition Documentation}
@@ -39,50 +40,75 @@ int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int ar
 
 
 
-Definition at line 34 of file main.\+cpp.
-
-\mbox{\Hypertarget{main_8cpp_af3cc0f5da7d98bdd1705f294607323a0}\label{main_8cpp_af3cc0f5da7d98bdd1705f294607323a0}} 
-\index{main.cpp@{main.cpp}!COS@{COS}}
-\index{COS@{COS}!main.cpp@{main.cpp}}
-\doxysubsubsection{\texorpdfstring{COS}{COS}}
-{\footnotesize\ttfamily \#define COS(\begin{DoxyParamCaption}\item[{}]{top,  }\item[{}]{bottom }\end{DoxyParamCaption})~top / bottom}
+Distance measurement accuracy. 
 
 
 
-Definition at line 35 of file main.\+cpp.
+Definition at line 38 of file main.\+cpp.
 
-\mbox{\Hypertarget{main_8cpp_a46178a9cc0c10a15d23be46db42d1c7d}\label{main_8cpp_a46178a9cc0c10a15d23be46db42d1c7d}} 
+\mbox{\Hypertarget{main_8cpp_a8a5d9aee9c53fa0528075bd91406a223}\label{main_8cpp_a8a5d9aee9c53fa0528075bd91406a223}} 
 \index{main.cpp@{main.cpp}!DIST@{DIST}}
 \index{DIST@{DIST}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{DIST}{DIST}}
-{\footnotesize\ttfamily \#define DIST(\begin{DoxyParamCaption}\item[{}]{X,  }\item[{}]{Y,  }\item[{}]{Z }\end{DoxyParamCaption})~sqrt(X $\ast$ X + Y $\ast$ Y + Z $\ast$ Z)}
+{\footnotesize\ttfamily \#define DIST(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y,  }\item[{}]{z }\end{DoxyParamCaption})~sqrt(x $\ast$ x + y $\ast$ y + z $\ast$ z)}
 
 
 
-Definition at line 36 of file main.\+cpp.
+Calculates the sum of the squares of the coordinates of a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y,z} & -- \mbox{\hyperlink{class_point}{Point}} coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the sum of the squares of the coordinates of a point 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file main.\+cpp.
 
 \mbox{\Hypertarget{main_8cpp_a5b5140b889f20fec8dda9d70e2295ec2}\label{main_8cpp_a5b5140b889f20fec8dda9d70e2295ec2}} 
 \index{main.cpp@{main.cpp}!DIST\_BETWEEN@{DIST\_BETWEEN}}
 \index{DIST\_BETWEEN@{DIST\_BETWEEN}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{DIST\_BETWEEN}{DIST\_BETWEEN}}
-{\footnotesize\ttfamily \#define DIST\+\_\+\+BETWEEN(\begin{DoxyParamCaption}\item[{}]{x1,  }\item[{}]{x2,  }\item[{}]{y1,  }\item[{}]{y2,  }\item[{}]{z1,  }\item[{}]{z2 }\end{DoxyParamCaption})~sqrt((x1 -\/ x2) $\ast$ (x1 -\/ x2) + (y1 -\/ y2) $\ast$ (y1 -\/ y2) + (z1 -\/ z2) $\ast$ (z1 -\/z2))}
+{\footnotesize\ttfamily \#define DIST\+\_\+\+BETWEEN(\begin{DoxyParamCaption}\item[{}]{x1,  }\item[{}]{x2,  }\item[{}]{y1,  }\item[{}]{y2,  }\item[{}]{z1,  }\item[{}]{z2 }\end{DoxyParamCaption})~sqrt((x1 -\/ x2) $\ast$ (x1 -\/ x2) + (y1 -\/ y2) $\ast$ (y1 -\/ y2) + (z1 -\/ z2) $\ast$ (z1 -\/ z2))}
 
 
 
-Definition at line 37 of file main.\+cpp.
+Computes the distance between two input points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em (x1,x2,y1,y2,z1,z2)} & two input points. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+distance between two input point. 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file main.\+cpp.
 
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{main_8cpp_ae439ce746bbcfb388efa97dd12db3ac6}\label{main_8cpp_ae439ce746bbcfb388efa97dd12db3ac6}} 
-\index{main.cpp@{main.cpp}!calculate\_dims@{calculate\_dims}}
-\index{calculate\_dims@{calculate\_dims}!main.cpp@{main.cpp}}
-\doxysubsubsection{\texorpdfstring{calculate\_dims()}{calculate\_dims()}}
-{\footnotesize\ttfamily void calculate\+\_\+dims (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&}]{points,  }\item[{\mbox{\hyperlink{class_point}{Point}} \&}]{input\+\_\+point }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{main_8cpp_a431913d566799b0953f5371201e27fd4}\label{main_8cpp_a431913d566799b0953f5371201e27fd4}} 
+\index{main.cpp@{main.cpp}!calculate\_projections@{calculate\_projections}}
+\index{calculate\_projections@{calculate\_projections}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{calculate\_projections()}{calculate\_projections()}}
+{\footnotesize\ttfamily void calculate\+\_\+projections (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&}]{points,  }\item[{\mbox{\hyperlink{class_point}{Point}} \&}]{input\+\_\+point }\end{DoxyParamCaption})}
+
+Computes all projections. 
+\begin{DoxyParams}{Parameters}
+{\em points} & a line. \\
+\hline
+{\em input\+\_\+point} & an input point.\\
+\hline
+\end{DoxyParams}
 
 
-
-Definition at line 70 of file main.\+cpp.
+Definition at line 135 of file main.\+cpp.
 
 \mbox{\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
 \index{main.cpp@{main.cpp}!main@{main}}
@@ -92,11 +118,26 @@ Definition at line 70 of file main.\+cpp.
 
 
 
-This main. 
+Definition at line 59 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a8c52dd0be20e174330f04c4b38bc1aee}\label{main_8cpp_a8c52dd0be20e174330f04c4b38bc1aee}} 
+\index{main.cpp@{main.cpp}!projection\_print@{projection\_print}}
+\index{projection\_print@{projection\_print}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{projection\_print()}{projection\_print()}}
+{\footnotesize\ttfamily void projection\+\_\+print (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&}]{all\+\_\+projections,  }\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&}]{points,  }\item[{vector$<$ unsigned int $>$ \&}]{segments }\end{DoxyParamCaption})}
+
+Prinnts all projections, parameters and segments. 
+\begin{DoxyParams}{Parameters}
+{\em all\+\_\+projections} & all found projections. \\
+\hline
+{\em points} & a line. \\
+\hline
+{\em segments} & all found projections.\\
+\hline
+\end{DoxyParams}
 
 
-
-Definition at line 142 of file main.\+cpp.
+Definition at line 111 of file main.\+cpp.
 
 \mbox{\Hypertarget{main_8cpp_a1084fbc622c7b2dd999d4401b0258a84}\label{main_8cpp_a1084fbc622c7b2dd999d4401b0258a84}} 
 \index{main.cpp@{main.cpp}!read\_line@{read\_line}}
@@ -104,11 +145,14 @@ Definition at line 142 of file main.\+cpp.
 \doxysubsubsection{\texorpdfstring{read\_line()}{read\_line()}}
 {\footnotesize\ttfamily void read\+\_\+line (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&}]{points,  }\item[{string}]{namefile }\end{DoxyParamCaption})}
 
+Read a line from a file 
+\begin{DoxyParams}{Parameters}
+{\em points} & the vector of dots. The data from the file is written to this vector. \\
+\hline
+{\em namefile} & the name input file.\\
+\hline
+\end{DoxyParams}
 
 
-This function read file. Structure of file\+: x0 y0 z0 x1 y1 z1 ... xn yn zn. 
-
-
-
-Definition at line 49 of file main.\+cpp.
+Definition at line 84 of file main.\+cpp.
 

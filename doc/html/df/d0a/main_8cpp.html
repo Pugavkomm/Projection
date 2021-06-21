@@ -83,29 +83,31 @@ $(function() {
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;float.h&gt;</code><br />
 </div>
 <p><a href="../../df/d0a/main_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a73e57ad61fa2688e196ab777c212e2af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a73e57ad61fa2688e196ab777c212e2af">ACCUR</a>&#160;&#160;&#160;1e-7</td></tr>
+<tr class="memdesc:a73e57ad61fa2688e196ab777c212e2af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distance measurement accuracy.  <a href="../../df/d0a/main_8cpp.html#a73e57ad61fa2688e196ab777c212e2af">More...</a><br /></td></tr>
 <tr class="separator:a73e57ad61fa2688e196ab777c212e2af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3cc0f5da7d98bdd1705f294607323a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#af3cc0f5da7d98bdd1705f294607323a0">COS</a>(top,  bottom)&#160;&#160;&#160;top / bottom</td></tr>
-<tr class="separator:af3cc0f5da7d98bdd1705f294607323a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46178a9cc0c10a15d23be46db42d1c7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a46178a9cc0c10a15d23be46db42d1c7d">DIST</a>(X,  Y,  Z)&#160;&#160;&#160;sqrt(X * X + Y * Y + Z * Z)</td></tr>
-<tr class="separator:a46178a9cc0c10a15d23be46db42d1c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b5140b889f20fec8dda9d70e2295ec2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a5b5140b889f20fec8dda9d70e2295ec2">DIST_BETWEEN</a>(x1,  x2,  y1,  y2,  z1,  z2)&#160;&#160;&#160;sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2) + (z1 - z2) * (z1 -z2))</td></tr>
+<tr class="memitem:a8a5d9aee9c53fa0528075bd91406a223"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a8a5d9aee9c53fa0528075bd91406a223">DIST</a>(x,  y,  z)&#160;&#160;&#160;sqrt(x * x + y * y + z * z)</td></tr>
+<tr class="memdesc:a8a5d9aee9c53fa0528075bd91406a223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the sum of the squares of the coordinates of a point.  <a href="../../df/d0a/main_8cpp.html#a8a5d9aee9c53fa0528075bd91406a223">More...</a><br /></td></tr>
+<tr class="separator:a8a5d9aee9c53fa0528075bd91406a223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b5140b889f20fec8dda9d70e2295ec2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a5b5140b889f20fec8dda9d70e2295ec2">DIST_BETWEEN</a>(x1,  x2,  y1,  y2,  z1,  z2)&#160;&#160;&#160;sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2) + (z1 - z2) * (z1 - z2))</td></tr>
+<tr class="memdesc:a5b5140b889f20fec8dda9d70e2295ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the distance between two input points.  <a href="../../df/d0a/main_8cpp.html#a5b5140b889f20fec8dda9d70e2295ec2">More...</a><br /></td></tr>
 <tr class="separator:a5b5140b889f20fec8dda9d70e2295ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a1084fbc622c7b2dd999d4401b0258a84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a1084fbc622c7b2dd999d4401b0258a84">read_line</a> (vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;points, string namefile)</td></tr>
-<tr class="memdesc:a1084fbc622c7b2dd999d4401b0258a84"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function read file. Structure of file: x0 y0 z0 x1 y1 z1 ... xn yn zn.  <a href="../../df/d0a/main_8cpp.html#a1084fbc622c7b2dd999d4401b0258a84">More...</a><br /></td></tr>
 <tr class="separator:a1084fbc622c7b2dd999d4401b0258a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae439ce746bbcfb388efa97dd12db3ac6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#ae439ce746bbcfb388efa97dd12db3ac6">calculate_dims</a> (vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;points, <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;input_point)</td></tr>
-<tr class="separator:ae439ce746bbcfb388efa97dd12db3ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a431913d566799b0953f5371201e27fd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a431913d566799b0953f5371201e27fd4">calculate_projections</a> (vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;points, <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;input_point)</td></tr>
+<tr class="separator:a431913d566799b0953f5371201e27fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c52dd0be20e174330f04c4b38bc1aee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a8c52dd0be20e174330f04c4b38bc1aee">projection_print</a> (vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;all_projections, vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;points, vector&lt; unsigned int &gt; &amp;segments)</td></tr>
+<tr class="separator:a8c52dd0be20e174330f04c4b38bc1aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
-<tr class="memdesc:a0ddf1224851353fc92bfbff6f499fa97"><td class="mdescLeft">&#160;</td><td class="mdescRight">This main.  <a href="../../df/d0a/main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">More...</a><br /></td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -121,42 +123,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<p>Distance measurement accuracy. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
-<a id="af3cc0f5da7d98bdd1705f294607323a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3cc0f5da7d98bdd1705f294607323a0">&#9670;&nbsp;</a></span>COS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define COS</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">top, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">bottom&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;top / bottom</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a46178a9cc0c10a15d23be46db42d1c7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46178a9cc0c10a15d23be46db42d1c7d">&#9670;&nbsp;</a></span>DIST</h2>
+<a id="a8a5d9aee9c53fa0528075bd91406a223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a5d9aee9c53fa0528075bd91406a223">&#9670;&nbsp;</a></span>DIST</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,29 +139,38 @@ Functions</h2></td></tr>
           <td class="memname">#define DIST</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">X, </td>
+          <td class="paramname">x, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">Y, </td>
+          <td class="paramname">y, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">Z&#160;</td>
+          <td class="paramname">z&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;sqrt(X * X + Y * Y + Z * Z)</td>
+          <td></td><td>&#160;&#160;&#160;sqrt(x * x + y * y + z * z)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<p>Calculates the sum of the squares of the coordinates of a point. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x,y,z</td><td>&ndash; <a class="el" href="../../d0/d69/class_point.html">Point</a> coordinates </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the sum of the squares of the coordinates of a point </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
@@ -236,24 +219,33 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2) + (z1 - z2) * (z1 -z2))</td>
+          <td></td><td>&#160;&#160;&#160;sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2) + (z1 - z2) * (z1 - z2))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<p>Computes the distance between two input points. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(x1,x2,y1,y2,z1,z2)</td><td>two input points. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>distance between two input point. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ae439ce746bbcfb388efa97dd12db3ac6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae439ce746bbcfb388efa97dd12db3ac6">&#9670;&nbsp;</a></span>calculate_dims()</h2>
+<a id="a431913d566799b0953f5371201e27fd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a431913d566799b0953f5371201e27fd4">&#9670;&nbsp;</a></span>calculate_projections()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void calculate_dims </td>
+          <td class="memname">void calculate_projections </td>
           <td>(</td>
           <td class="paramtype">vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>points</em>, </td>
@@ -271,8 +263,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes all projections. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>a line. </td></tr>
+    <tr><td class="paramname">input_point</td><td>an input point.</td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00135">135</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
@@ -302,9 +301,51 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This main. </p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00142">142</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+</div>
+</div>
+<a id="a8c52dd0be20e174330f04c4b38bc1aee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c52dd0be20e174330f04c4b38bc1aee">&#9670;&nbsp;</a></span>projection_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void projection_print </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>all_projections</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>segments</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Prinnts all projections, parameters and segments. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">all_projections</td><td>all found projections. </td></tr>
+    <tr><td class="paramname">points</td><td>a line. </td></tr>
+    <tr><td class="paramname">segments</td><td>all found projections.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00111">111</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
@@ -333,10 +374,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Read a line from a file </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>the vector of dots. The data from the file is written to this vector. </td></tr>
+    <tr><td class="paramname">namefile</td><td>the name input file.</td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>This function read file. Structure of file: x0 y0 z0 x1 y1 z1 ... xn yn zn. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00084">84</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>

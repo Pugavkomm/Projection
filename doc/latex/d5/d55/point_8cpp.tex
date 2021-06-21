@@ -12,6 +12,14 @@ Implementing the \mbox{\hyperlink{class_point}{Point}} interface.
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{point_8cpp_a5a9ca25b6c80fa53e90c02e432f9725d}{operator-\/}} (const \mbox{\hyperlink{class_point}{Point}} \&left, const \mbox{\hyperlink{class_point}{Point}} \&right)
+\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{point_8cpp_a3146e677d3f21bd8e07cfba9ae2e5fc5}{operator$\ast$}} (const \mbox{\hyperlink{class_point}{Point}} \&left, const \mbox{\hyperlink{class_point}{Point}} \&right)
+\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{point_8cpp_a7fcb5863811c98ede8fca32b8ff1d455}{operator$\ast$}} (const \mbox{\hyperlink{class_point}{Point}} \&left, const double right)
+\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{point_8cpp_af5305ddbdee0cee9a68cade605063dda}{operator/}} (const \mbox{\hyperlink{class_point}{Point}} \&left, const \mbox{\hyperlink{class_point}{Point}} \&right)
+\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{point_8cpp_aaec54e631988089518dad635a59d543d}{operator/}} (const \mbox{\hyperlink{class_point}{Point}} \&left, const double right)
 \end{DoxyCompactItemize}
 
 
@@ -21,13 +29,88 @@ Implementing the \mbox{\hyperlink{class_point}{Point}} interface.
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{point_8cpp_a7fcb5863811c98ede8fca32b8ff1d455}\label{point_8cpp_a7fcb5863811c98ede8fca32b8ff1d455}} 
+\index{point.cpp@{point.cpp}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!point.cpp@{point.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{left,  }\item[{const double}]{right }\end{DoxyParamCaption})}
+
+The operator calculates the multiplication point by double. 
+\begin{DoxyParams}{Parameters}
+{\em left} & left operand (\mbox{\hyperlink{class_point}{Point}}). \\
+\hline
+{\em right} & right operand (double).\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 84 of file point.\+cpp.
+
+\mbox{\Hypertarget{point_8cpp_a3146e677d3f21bd8e07cfba9ae2e5fc5}\label{point_8cpp_a3146e677d3f21bd8e07cfba9ae2e5fc5}} 
+\index{point.cpp@{point.cpp}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!point.cpp@{point.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{left,  }\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{right }\end{DoxyParamCaption})}
+
+The operator calculates the multiplication two points. 
+\begin{DoxyParams}{Parameters}
+{\em left} & left operand (\mbox{\hyperlink{class_point}{Point}}). \\
+\hline
+{\em right} & right operand (\mbox{\hyperlink{class_point}{Point}}).\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 73 of file point.\+cpp.
+
 \mbox{\Hypertarget{point_8cpp_a5a9ca25b6c80fa53e90c02e432f9725d}\label{point_8cpp_a5a9ca25b6c80fa53e90c02e432f9725d}} 
 \index{point.cpp@{point.cpp}!operator-\/@{operator-\/}}
 \index{operator-\/@{operator-\/}!point.cpp@{point.cpp}}
 \doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{left,  }\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{right }\end{DoxyParamCaption})}
 
-The operator calculates a point that is the difference between all coordinates of the other two points.
+The operator calculates a point that is the difference between all coordinates of the other two points. 
+\begin{DoxyParams}{Parameters}
+{\em left} & left operand. \\
+\hline
+{\em right} & right operand.\\
+\hline
+\end{DoxyParams}
 
-Definition at line 49 of file point.\+cpp.
+
+Definition at line 63 of file point.\+cpp.
+
+\mbox{\Hypertarget{point_8cpp_aaec54e631988089518dad635a59d543d}\label{point_8cpp_aaec54e631988089518dad635a59d543d}} 
+\index{point.cpp@{point.cpp}!operator/@{operator/}}
+\index{operator/@{operator/}!point.cpp@{point.cpp}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{left,  }\item[{const double}]{right }\end{DoxyParamCaption})}
+
+The operator сalculates left per double number 
+\begin{DoxyParams}{Parameters}
+{\em left} & left operand (\mbox{\hyperlink{class_point}{Point}}). \\
+\hline
+{\em right} & right operand (double).\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 104 of file point.\+cpp.
+
+\mbox{\Hypertarget{point_8cpp_af5305ddbdee0cee9a68cade605063dda}\label{point_8cpp_af5305ddbdee0cee9a68cade605063dda}} 
+\index{point.cpp@{point.cpp}!operator/@{operator/}}
+\index{operator/@{operator/}!point.cpp@{point.cpp}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{left,  }\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{right }\end{DoxyParamCaption})}
+
+The operator сalculates the division of the coordinates of points 
+\begin{DoxyParams}{Parameters}
+{\em left} & left operand (\mbox{\hyperlink{class_point}{Point}}). \\
+\hline
+{\em right} & right operand (\mbox{\hyperlink{class_point}{Point}}).\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 93 of file point.\+cpp.
 

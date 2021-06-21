@@ -1,0 +1,796 @@
+AutoGen Definitions dummy;
+class = {
+  cp-id     = 'd0/d69/class_point';
+  cp-name   = 'Point';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd0/d69/class_point_1ad92f2337b839a94ce97dcdb439b4325a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Point';
+      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-line = '10';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd0/d69/class_point_1a4d43f5247afe8c85c6da1aa39dbcc738';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Point';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'y';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'z';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-line = '11';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd0/d69/class_point_1a5c87e531b784754068eba91f8e8cfd53';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setPoint';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'y';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'z';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-line = '12';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd0/d69/class_point_1a07ebcfc85e0e4d5b6479ab93f39708b0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'printPoint';
+      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-line = '13';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd0/d69/class_point_1a3013241afa6ea8971e71dec792827953';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'sum_coordinates';
+      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-line = '14';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd0/d69/class_point_1a24cf65e8db0962db5fdab50b9e9ce1fa';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator[]';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'index';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-line = '22';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd0/d69/class_point_1a3e1511850eaa47ab3633126a1f98e787';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'point';
+      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-line = '24';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'signal';
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'd0/d69/class_point_1adc0ae410968ebfcac79ebcf9d4eb3f5b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend Point
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator-';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Point &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'left';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Point &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-line = '15';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'd0/d69/class_point_1aa7b897e4845243eef3fe77f356300372';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend Point
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator*';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Point &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'left';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Point &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'd0/d69/class_point_1a872420e38dbac7c2cef2dd2ecbdbffdf';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend Point
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator*';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Point &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'left';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const double
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-line = '17';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'd0/d69/class_point_1a55df2e214e10f9f854e48a4570eceff6';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend Point
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator/';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Point &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'left';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Point &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'd0/d69/class_point_1a7079c73de603914524a40929cb99e5db';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend Point
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator/';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Point &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'left';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const double
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-line = '19';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'd0/d69/class_point_1a7079c73de603914524a40929cb99e5db';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend Point
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator/';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Point &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'left';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const double
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-line = '21';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/mech/projects/projection/include/point.h';
+  cp-fileline  = '8';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+file = {
+  file-id   = 'd2/d91/point_8h';
+  file-name = 'point.h';
+    define = {
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'd2/d91/point_8h_1ac25189db92959bff3c6c2adf4c34b50a';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'DIM';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+3
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      define-mem-desc-line = '7';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    };
+  file-full-name  = '/home/mech/projects/projection/include/point.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Point class interface.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'df/d0a/main_8cpp';
+  file-name = 'main.cpp';
+    define = {
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'df/d0a/main_8cpp_1a73e57ad61fa2688e196ab777c212e2af';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'ACCUR';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+1e-7
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
+      define-mem-desc-line = '38';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Distance measurement accuracy.
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'df/d0a/main_8cpp_1a8a5d9aee9c53fa0528075bd91406a223';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'DIST';
+      define-mem-param  = {
+        define-mem-def-name = 'x';
+      }; /*        define-mem-def--param */
+      define-mem-param  = {
+        define-mem-def-name = 'y';
+      }; /*        define-mem-def--param */
+      define-mem-param  = {
+        define-mem-def-name = 'z';
+      }; /*        define-mem-def--param */
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+sqrt(x * x + y * y + z * z)
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
+      define-mem-desc-line = '44';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Calculates the sum of the squares of the coordinates of a point.
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x ,  y, z &ndash; Point coordinates
+@returns the sum of the squares of the coordinates of a point
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'df/d0a/main_8cpp_1a5b5140b889f20fec8dda9d70e2295ec2';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'DIST_BETWEEN';
+      define-mem-param  = {
+        define-mem-def-name = 'x1';
+      }; /*        define-mem-def--param */
+      define-mem-param  = {
+        define-mem-def-name = 'x2';
+      }; /*        define-mem-def--param */
+      define-mem-param  = {
+        define-mem-def-name = 'y1';
+      }; /*        define-mem-def--param */
+      define-mem-param  = {
+        define-mem-def-name = 'y2';
+      }; /*        define-mem-def--param */
+      define-mem-param  = {
+        define-mem-def-name = 'z1';
+      }; /*        define-mem-def--param */
+      define-mem-param  = {
+        define-mem-def-name = 'z2';
+      }; /*        define-mem-def--param */
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2) + (z1 - z2) * (z1 - z2))
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
+      define-mem-desc-line = '50';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Computes the distance between two input points.
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param (x1, x2, y1, y2, z1, z2) two input points.
+@returns distance between two input point.
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    };
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'df/d0a/main_8cpp_1a1084fbc622c7b2dd999d4401b0258a84';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'read_line';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+vector< Point > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'points';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'namefile';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
+      func-mem-desc-line = '84';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'df/d0a/main_8cpp_1a431913d566799b0953f5371201e27fd4';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'calculate_projections';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+vector< Point > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'points';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Point &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'input_point';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
+      func-mem-desc-line = '135';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'df/d0a/main_8cpp_1a8c52dd0be20e174330f04c4b38bc1aee';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'projection_print';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+vector< Point > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'all_projections';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+vector< Point > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'points';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+vector< unsigned int > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'segments';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
+      func-mem-desc-line = '111';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'df/d0a/main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'main';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'argc';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'argv';
+        func-mem-param-array = '[]';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
+      func-mem-desc-line = '59';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = '/home/mech/projects/projection/src/main.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd5/d55/point_8cpp';
+  file-name = 'point.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'd5/d55/point_8cpp_1a5a9ca25b6c80fa53e90c02e432f9725d';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+Point
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator-';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Point &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'left';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Point &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'right';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/mech/projects/projection/src/point.cpp';
+      func-mem-desc-line = '63';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'd5/d55/point_8cpp_1a3146e677d3f21bd8e07cfba9ae2e5fc5';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+Point
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator*';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Point &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'left';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Point &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'right';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/mech/projects/projection/src/point.cpp';
+      func-mem-desc-line = '73';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'd5/d55/point_8cpp_1a7fcb5863811c98ede8fca32b8ff1d455';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+Point
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator*';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Point &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'left';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const double
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'right';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/mech/projects/projection/src/point.cpp';
+      func-mem-desc-line = '84';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'd5/d55/point_8cpp_1af5305ddbdee0cee9a68cade605063dda';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+Point
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator/';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Point &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'left';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Point &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'right';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/mech/projects/projection/src/point.cpp';
+      func-mem-desc-line = '93';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'd5/d55/point_8cpp_1aaec54e631988089518dad635a59d543d';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+Point
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator/';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Point &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'left';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const double
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'right';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/mech/projects/projection/src/point.cpp';
+      func-mem-desc-line = '104';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = '/home/mech/projects/projection/src/point.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Implementing the Point interface.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */

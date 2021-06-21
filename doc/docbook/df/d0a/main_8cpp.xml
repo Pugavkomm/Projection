@@ -10,16 +10,21 @@
 #include &lt;cmath&gt;
 #include &lt;stdexcept&gt;
 #include &lt;sstream&gt;
+#include &lt;float.h&gt;
 </programlisting><simplesect>
     <title>Macros    </title>
         <itemizedlist>
             <listitem><para>#define <link linkend="_main_8cpp_1a73e57ad61fa2688e196ab777c212e2af">ACCUR</link>   1e-7</para>
+
+<para>Distance measurement accuracy. </para>
 </listitem>
-            <listitem><para>#define <link linkend="_main_8cpp_1af3cc0f5da7d98bdd1705f294607323a0">COS</link>(top,  bottom)   top / bottom</para>
+            <listitem><para>#define <link linkend="_main_8cpp_1a8a5d9aee9c53fa0528075bd91406a223">DIST</link>(x,  y,  z)   sqrt(x * x + y * y + z * z)</para>
+
+<para>Calculates the sum of the squares of the coordinates of a point. </para>
 </listitem>
-            <listitem><para>#define <link linkend="_main_8cpp_1a46178a9cc0c10a15d23be46db42d1c7d">DIST</link>(X,  Y,  Z)   sqrt(X * X + Y * Y + Z * Z)</para>
-</listitem>
-            <listitem><para>#define <link linkend="_main_8cpp_1a5b5140b889f20fec8dda9d70e2295ec2">DIST_BETWEEN</link>(x1,  x2,  y1,  y2,  z1,  z2)   sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2) + (z1 - z2) * (z1 -z2))</para>
+            <listitem><para>#define <link linkend="_main_8cpp_1a5b5140b889f20fec8dda9d70e2295ec2">DIST_BETWEEN</link>(x1,  x2,  y1,  y2,  z1,  z2)   sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2) + (z1 - z2) * (z1 - z2))</para>
+
+<para>Computes the distance between two input points. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -27,14 +32,12 @@
     <title>Functions    </title>
         <itemizedlist>
             <listitem><para>void <link linkend="_main_8cpp_1a1084fbc622c7b2dd999d4401b0258a84">read_line</link> (vector&lt; <link linkend="_class_point">Point</link> &gt; &amp;points, string namefile)</para>
-
-<para>This function read file. Structure of file: x0 y0 z0 x1 y1 z1 ... xn yn zn. </para>
 </listitem>
-            <listitem><para>void <link linkend="_main_8cpp_1ae439ce746bbcfb388efa97dd12db3ac6">calculate_dims</link> (vector&lt; <link linkend="_class_point">Point</link> &gt; &amp;points, <link linkend="_class_point">Point</link> &amp;input_point)</para>
+            <listitem><para>void <link linkend="_main_8cpp_1a431913d566799b0953f5371201e27fd4">calculate_projections</link> (vector&lt; <link linkend="_class_point">Point</link> &gt; &amp;points, <link linkend="_class_point">Point</link> &amp;input_point)</para>
+</listitem>
+            <listitem><para>void <link linkend="_main_8cpp_1a8c52dd0be20e174330f04c4b38bc1aee">projection_print</link> (vector&lt; <link linkend="_class_point">Point</link> &gt; &amp;all_projections, vector&lt; <link linkend="_class_point">Point</link> &gt; &amp;points, vector&lt; unsigned int &gt; &amp;segments)</para>
 </listitem>
             <listitem><para>int <link linkend="_main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97">main</link> (int argc, char *argv[])</para>
-
-<para>This main. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -45,55 +48,206 @@
 <indexterm><primary>ACCUR</primary><secondary>main.cpp</secondary></indexterm>
 <indexterm><primary>main.cpp</primary><secondary>ACCUR</secondary></indexterm>
 <para><computeroutput>#define ACCUR   1e-7</computeroutput></para><para>
-Definition at line 34 of file main.cpp.</para>
-    </section><anchor xml:id="_main_8cpp_1af3cc0f5da7d98bdd1705f294607323a0"/>    <section>
-    <title>COS</title>
-<indexterm><primary>COS</primary><secondary>main.cpp</secondary></indexterm>
-<indexterm><primary>main.cpp</primary><secondary>COS</secondary></indexterm>
-<para><computeroutput>#define COS( top,  bottom)   top / bottom</computeroutput></para><para>
-Definition at line 35 of file main.cpp.</para>
-    </section><anchor xml:id="_main_8cpp_1a46178a9cc0c10a15d23be46db42d1c7d"/>    <section>
+
+<para>Distance measurement accuracy. </para>
+</para>
+<para>
+Definition at line 38 of file main.cpp.</para>
+    </section><anchor xml:id="_main_8cpp_1a8a5d9aee9c53fa0528075bd91406a223"/>    <section>
     <title>DIST</title>
 <indexterm><primary>DIST</primary><secondary>main.cpp</secondary></indexterm>
 <indexterm><primary>main.cpp</primary><secondary>DIST</secondary></indexterm>
-<para><computeroutput>#define DIST( X,  Y,  Z)   sqrt(X * X + Y * Y + Z * Z)</computeroutput></para><para>
-Definition at line 36 of file main.cpp.</para>
+<para><computeroutput>#define DIST( x,  y,  z)   sqrt(x * x + y * y + z * z)</computeroutput></para><para>
+
+<para>Calculates the sum of the squares of the coordinates of a point. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x, y, z</entry>
+                                <entry>
+<para>&#8211; <link linkend="_class_point">Point</link> coordinates </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>the sum of the squares of the coordinates of a point </para>
+</formalpara>
+</para>
+<para>
+Definition at line 44 of file main.cpp.</para>
     </section><anchor xml:id="_main_8cpp_1a5b5140b889f20fec8dda9d70e2295ec2"/>    <section>
     <title>DIST_BETWEEN</title>
 <indexterm><primary>DIST_BETWEEN</primary><secondary>main.cpp</secondary></indexterm>
 <indexterm><primary>main.cpp</primary><secondary>DIST_BETWEEN</secondary></indexterm>
-<para><computeroutput>#define DIST_BETWEEN( x1,  x2,  y1,  y2,  z1,  z2)   sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2) + (z1 - z2) * (z1 -z2))</computeroutput></para><para>
-Definition at line 37 of file main.cpp.</para>
+<para><computeroutput>#define DIST_BETWEEN( x1,  x2,  y1,  y2,  z1,  z2)   sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2) + (z1 - z2) * (z1 - z2))</computeroutput></para><para>
+
+<para>Computes the distance between two input points. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>(x1, x2, y1, y2, z1, z2)</entry>
+                                <entry>
+<para>two input points. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>distance between two input point. </para>
+</formalpara>
+</para>
+<para>
+Definition at line 50 of file main.cpp.</para>
 </section>
 </section>
 <section>
 <title>Function Documentation</title>
-<anchor xml:id="_main_8cpp_1ae439ce746bbcfb388efa97dd12db3ac6"/>    <section>
-    <title>calculate_dims()</title>
-<indexterm><primary>calculate_dims</primary><secondary>main.cpp</secondary></indexterm>
-<indexterm><primary>main.cpp</primary><secondary>calculate_dims</secondary></indexterm>
-<para><computeroutput>void calculate_dims (vector&lt; <link linkend="_class_point">Point</link> &gt; &amp; points, <link linkend="_class_point">Point</link> &amp; input_point)</computeroutput></para><para>
-Definition at line 70 of file main.cpp.</para>
+<anchor xml:id="_main_8cpp_1a431913d566799b0953f5371201e27fd4"/>    <section>
+    <title>calculate_projections()</title>
+<indexterm><primary>calculate_projections</primary><secondary>main.cpp</secondary></indexterm>
+<indexterm><primary>main.cpp</primary><secondary>calculate_projections</secondary></indexterm>
+<para><computeroutput>void calculate_projections (vector&lt; <link linkend="_class_point">Point</link> &gt; &amp; points, <link linkend="_class_point">Point</link> &amp; input_point)</computeroutput></para>
+<para>Computes all projections. 
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>points</entry>
+                                <entry>
+<para>a line. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>input_point</entry>
+                                <entry>
+<para>an input point.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line 135 of file main.cpp.</para>
     </section><anchor xml:id="_main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97"/>    <section>
     <title>main()</title>
 <indexterm><primary>main</primary><secondary>main.cpp</secondary></indexterm>
 <indexterm><primary>main.cpp</primary><secondary>main</secondary></indexterm>
 <para><computeroutput>int main (int argc, char * argv[])</computeroutput></para><para>
-
-<para>This main. </para>
-</para>
+Definition at line 59 of file main.cpp.</para>
+    </section><anchor xml:id="_main_8cpp_1a8c52dd0be20e174330f04c4b38bc1aee"/>    <section>
+    <title>projection_print()</title>
+<indexterm><primary>projection_print</primary><secondary>main.cpp</secondary></indexterm>
+<indexterm><primary>main.cpp</primary><secondary>projection_print</secondary></indexterm>
+<para><computeroutput>void projection_print (vector&lt; <link linkend="_class_point">Point</link> &gt; &amp; all_projections, vector&lt; <link linkend="_class_point">Point</link> &gt; &amp; points, vector&lt; unsigned int &gt; &amp; segments)</computeroutput></para>
+<para>Prinnts all projections, parameters and segments. 
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>all_projections</entry>
+                                <entry>
+<para>all found projections. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>points</entry>
+                                <entry>
+<para>a line. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>segments</entry>
+                                <entry>
+<para>all found projections.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
 <para>
-Definition at line 142 of file main.cpp.</para>
+Definition at line 111 of file main.cpp.</para>
     </section><anchor xml:id="_main_8cpp_1a1084fbc622c7b2dd999d4401b0258a84"/>    <section>
     <title>read_line()</title>
 <indexterm><primary>read_line</primary><secondary>main.cpp</secondary></indexterm>
 <indexterm><primary>main.cpp</primary><secondary>read_line</secondary></indexterm>
-<para><computeroutput>void read_line (vector&lt; <link linkend="_class_point">Point</link> &gt; &amp; points, string namefile)</computeroutput></para><para>
-
-<para>This function read file. Structure of file: x0 y0 z0 x1 y1 z1 ... xn yn zn. </para>
-</para>
+<para><computeroutput>void read_line (vector&lt; <link linkend="_class_point">Point</link> &gt; &amp; points, string namefile)</computeroutput></para>
+<para>Read a line from a file 
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>points</entry>
+                                <entry>
+<para>the vector of dots. The data from the file is written to this vector. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>namefile</entry>
+                                <entry>
+<para>the name input file.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
 <para>
-Definition at line 49 of file main.cpp.</para>
+Definition at line 84 of file main.cpp.</para>
 </section>
 </section>
 </section>
