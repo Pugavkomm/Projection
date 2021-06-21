@@ -9,6 +9,7 @@
     segment n parameter s point x y z
     n is number of segment of line
     s is a parameter that shows the part of the segment that the projection falls on. This parameter ranges from 0 to 1.
+    The minimum distance to the line is defined as a perpendicular. If the perpendicular does not fall on the segment, then the nearest edge of the segment is selected
     Example: 
     
         ./main data.dat 1 1 1 
@@ -17,6 +18,7 @@
 
         Segment 2 parameter 0.75 point 1.75 0.75 0
         Segment 3 parameter 0.25 point 2.25 1 0.25
+    
  * @brief main file
  * @version 1.1
  * @date 2021-06-21
@@ -166,7 +168,7 @@ void calculate_projections(vector<Point> &points, Point &input_point){ // TODO a
         P /= vector_length; 
         cos = direction_vector / vector_length; 
         temp_projection = points[i] - cos * P;
-
+        // Offset by segment, if necessary
         for (int j = 0; j < DIM; ++j){
             if (points[i][j] <  points[i + 1][j]){
                 if (temp_projection[j] < points[i][j])

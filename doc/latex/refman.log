@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.7)  22 JUN 2021 02:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.7)  22 JUN 2021 02:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -869,15 +869,22 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 22.39185pt on input line 174.
 (./index.tex
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 1.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 1.
 
-Underfull \hbox (badness 10000) detected at line 1
+ (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 8.99994pt on input line 6.
+
+Underfull \hbox (badness 10000) detected at line 6
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 4
+Underfull \hbox (badness 10000) detected at line 9
 [][][]
  []
 
@@ -919,28 +926,21 @@ LaTeX Warning: Reference `point_8cpp' on page 5 undefined on input line 5.
 ]
 Chapter 4.
 (./d0/d69/class_point.tex
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 5.
-
- (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.79993pt on input line 7.
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
 0.
-
-(/usr/share/texmf-dist/tex/latex/psnfss/ts1phv.fd
+ (/usr/share/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 10.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 7.19995pt on input line 50.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 51.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 61.
- [7]
+
+[7]
 
 Package longtable Warning: Column widths have changed
 (longtable)                in table 4.1 on input line 67.
@@ -1161,7 +1161,7 @@ Here is how much of TeX's memory you used:
  33415 multiletter control sequences out of 15000+600000
  462997 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 112i,14n,117p,485b,638s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 112i,14n,117p,550b,638s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
@@ -1172,7 +1172,7 @@ ucrro8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sh
 are/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texmf-dist/font
 s/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic
 /uhvro8a.pfb>
-Output written on refman.pdf (22 pages, 126087 bytes).
+Output written on refman.pdf (22 pages, 126622 bytes).
 PDF statistics:
  421 PDF objects out of 1000 (max. 8388607)
  354 compressed objects within 4 object streams
