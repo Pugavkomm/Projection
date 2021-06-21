@@ -9,9 +9,8 @@
     segment n parameter s point x y z
     n is number of segment of line
     s is a parameter that shows the part of the segment that the projection falls on. This parameter ranges from 0 to 1
-    
-    
 */
+
 #include "point.h"
 #include <iostream>
 #include <vector> 
@@ -114,9 +113,10 @@ void calculate_dims(vector<Point> &points, Point &input_point){ // TODO add cons
             all_projections.push_back(temp_projection); 
             old_from_proj_to_point = from_proj_to_point;
         }
-        else if (abs(from_proj_to_point - old_from_proj_to_point) < ACCUR)
+        else if (abs(from_proj_to_point - old_from_proj_to_point) < ACCUR){
             all_projections.push_back(temp_projection); 
             segments.push_back(i + 1); 
+        }
 
             
     }
