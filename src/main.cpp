@@ -19,7 +19,6 @@
         Segment 2 parameter 0.75 point 1.75 0.75 0
         Segment 3 parameter 0.25 point 2.25 1 0.25
     
- * @brief main file
  * @version 1.1
  * @date 2021-06-21
  */
