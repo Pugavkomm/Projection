@@ -9,8 +9,8 @@
     segment n parameter s point x y z
     n is number of segment of line
     s is a parameter that shows the part of the segment that the projection falls on. This parameter ranges from 0 to 1.
-    The minimum distance to the line is defined as a perpendicular. If the perpendicular does not fall on the segment, then the nearest edge of the segment is selected
-    
+    The minimum distance to the line is defined as a perpendicular. If the perpendicular does not fall on the segment, then the nearest edge of the segment is selected.
+
     Example: 
     
         ./main data.dat 1 1 1 
