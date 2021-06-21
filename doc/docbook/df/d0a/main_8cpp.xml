@@ -52,7 +52,7 @@
 <para>Distance measurement accuracy. </para>
 </para>
 <para>
-Definition at line 38 of file main.cpp.</para>
+Definition at line 46 of file main.cpp.</para>
     </section><anchor xml:id="_main_8cpp_1a8a5d9aee9c53fa0528075bd91406a223"/>    <section>
     <title>DIST</title>
 <indexterm><primary>DIST</primary><secondary>main.cpp</secondary></indexterm>
@@ -89,7 +89,7 @@ Parameters                    </title>
 </formalpara>
 </para>
 <para>
-Definition at line 44 of file main.cpp.</para>
+Definition at line 52 of file main.cpp.</para>
     </section><anchor xml:id="_main_8cpp_1a5b5140b889f20fec8dda9d70e2295ec2"/>    <section>
     <title>DIST_BETWEEN</title>
 <indexterm><primary>DIST_BETWEEN</primary><secondary>main.cpp</secondary></indexterm>
@@ -126,7 +126,7 @@ Parameters                    </title>
 </formalpara>
 </para>
 <para>
-Definition at line 50 of file main.cpp.</para>
+Definition at line 58 of file main.cpp.</para>
 </section>
 </section>
 <section>
@@ -165,13 +165,13 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 135 of file main.cpp.</para>
+Definition at line 143 of file main.cpp.</para>
     </section><anchor xml:id="_main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97"/>    <section>
     <title>main()</title>
 <indexterm><primary>main</primary><secondary>main.cpp</secondary></indexterm>
 <indexterm><primary>main.cpp</primary><secondary>main</secondary></indexterm>
 <para><computeroutput>int main (int argc, char * argv[])</computeroutput></para><para>
-Definition at line 59 of file main.cpp.</para>
+Definition at line 67 of file main.cpp.</para>
     </section><anchor xml:id="_main_8cpp_1a8c52dd0be20e174330f04c4b38bc1aee"/>    <section>
     <title>projection_print()</title>
 <indexterm><primary>projection_print</primary><secondary>main.cpp</secondary></indexterm>
@@ -212,7 +212,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 111 of file main.cpp.</para>
+Definition at line 119 of file main.cpp.</para>
     </section><anchor xml:id="_main_8cpp_1a1084fbc622c7b2dd999d4401b0258a84"/>    <section>
     <title>read_line()</title>
 <indexterm><primary>read_line</primary><secondary>main.cpp</secondary></indexterm>
@@ -247,7 +247,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 84 of file main.cpp.</para>
+Definition at line 92 of file main.cpp.</para>
 </section>
 </section>
 </section>

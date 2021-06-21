@@ -8,9 +8,17 @@
     The program prints output of the following form
     segment n parameter s point x y z
     n is number of segment of line
-    s is a parameter that shows the part of the segment that the projection falls on. This parameter ranges from 0 to 1
+    s is a parameter that shows the part of the segment that the projection falls on. This parameter ranges from 0 to 1.
+    Example: 
+    
+        ./main data.dat 1 1 1 
+    
+    Output: 
+
+        Segment 2 parameter 0.75 point 1.75 0.75 0
+        Segment 3 parameter 0.25 point 2.25 1 0.25
  * @brief main file
- * @version 1
+ * @version 1.1
  * @date 2021-06-21
  */
 #include "point.h"
@@ -187,8 +195,7 @@ void calculate_projections(vector<Point> &points, Point &input_point){ // TODO a
         else if (abs(from_proj_to_point - old_from_proj_to_point) <= ACCUR){
             all_projections.push_back(temp_projection); 
             segments.push_back(i + 1); 
-        }
-            
+        } 
     }
     projection_print(all_projections, points, segments); 
 }

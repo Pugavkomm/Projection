@@ -416,7 +416,7 @@ file = {
 1e-7
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      define-mem-desc-line = '38';
+      define-mem-desc-line = '46';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Distance measurement accuracy.
 _EnD_oF_dEf_TeXt_;
@@ -443,7 +443,7 @@ _EnD_oF_dEf_TeXt_;
 sqrt(x * x + y * y + z * z)
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      define-mem-desc-line = '44';
+      define-mem-desc-line = '52';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Calculates the sum of the squares of the coordinates of a point.
 _EnD_oF_dEf_TeXt_;
@@ -480,7 +480,7 @@ _EnD_oF_dEf_TeXt_;
 sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2) + (z1 - z2) * (z1 - z2))
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      define-mem-desc-line = '50';
+      define-mem-desc-line = '58';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Computes the distance between two input points.
 _EnD_oF_dEf_TeXt_;
@@ -513,7 +513,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'namefile';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      func-mem-desc-line = '84';
+      func-mem-desc-line = '92';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -543,7 +543,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'input_point';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      func-mem-desc-line = '135';
+      func-mem-desc-line = '143';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -579,7 +579,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'segments';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      func-mem-desc-line = '111';
+      func-mem-desc-line = '119';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -610,7 +610,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-array = '[]';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      func-mem-desc-line = '59';
+      func-mem-desc-line = '67';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;

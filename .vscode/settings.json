@@ -1,7 +1,8 @@
 {
     "files.associations": {
         "stdexcept": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "iosfwd": "cpp"
     },
     "cSpell.enabled": false
 }
