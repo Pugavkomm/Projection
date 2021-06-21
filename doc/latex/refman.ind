@@ -1,0 +1,74 @@
+\begin{theindex}
+
+  \item {ACCUR}
+    \subitem {main.cpp}, \hyperpage{10}
+
+  \indexspace
+
+  \item {calculate\_dims}
+    \subitem {main.cpp}, \hyperpage{11}
+  \item {COS}
+    \subitem {main.cpp}, \hyperpage{10}
+
+  \indexspace
+
+  \item {DIM}
+    \subitem {point.h}, \hyperpage{9}
+  \item {DIST}
+    \subitem {main.cpp}, \hyperpage{10}
+  \item {DIST\_BETWEEN}
+    \subitem {main.cpp}, \hyperpage{10}
+
+  \indexspace
+
+  \item {include/point.h}, \hyperpage{9}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{11}
+  \item {main.cpp}
+    \subitem {ACCUR}, \hyperpage{10}
+    \subitem {calculate\_dims}, \hyperpage{11}
+    \subitem {COS}, \hyperpage{10}
+    \subitem {DIST}, \hyperpage{10}
+    \subitem {DIST\_BETWEEN}, \hyperpage{10}
+    \subitem {main}, \hyperpage{11}
+    \subitem {read\_line}, \hyperpage{11}
+
+  \indexspace
+
+  \item {operator-\/}
+    \subitem {Point}, \hyperpage{8}
+    \subitem {point.cpp}, \hyperpage{12}
+  \item {operator[]}
+    \subitem {Point}, \hyperpage{8}
+
+  \indexspace
+
+  \item {Point}, \hyperpage{7}
+    \subitem {operator-\/}, \hyperpage{8}
+    \subitem {operator[]}, \hyperpage{8}
+    \subitem {Point}, \hyperpage{7}
+    \subitem {printPoint}, \hyperpage{8}
+    \subitem {setPoint}, \hyperpage{8}
+  \item {point.cpp}
+    \subitem {operator-\/}, \hyperpage{12}
+  \item {point.h}
+    \subitem {DIM}, \hyperpage{9}
+  \item {printPoint}
+    \subitem {Point}, \hyperpage{8}
+
+  \indexspace
+
+  \item {read\_line}
+    \subitem {main.cpp}, \hyperpage{11}
+
+  \indexspace
+
+  \item {setPoint}
+    \subitem {Point}, \hyperpage{8}
+  \item {src/main.cpp}, \hyperpage{9}
+  \item {src/point.cpp}, \hyperpage{12}
+
+\end{theindex}

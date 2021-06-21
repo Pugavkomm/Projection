@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_point_8cpp" xml:lang="en-US">
+<title>src/point.cpp File Reference</title>
+<indexterm><primary>src/point.cpp</primary></indexterm>
+<programlisting>#include &quot;point.h&quot;
+#include &lt;iostream&gt;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_point">Point</link> <link linkend="_point_8cpp_1a5a9ca25b6c80fa53e90c02e432f9725d">operator-</link> (const <link linkend="_class_point">Point</link> &amp;left, const <link linkend="_class_point">Point</link> &amp;right)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_point_8cpp_1a5a9ca25b6c80fa53e90c02e432f9725d"/>    <section>
+    <title>operator-()</title>
+<indexterm><primary>operator-</primary><secondary>point.cpp</secondary></indexterm>
+<indexterm><primary>point.cpp</primary><secondary>operator-</secondary></indexterm>
+<para><computeroutput><link linkend="_class_point">Point</link> operator- (const <link linkend="_class_point">Point</link> &amp; left, const <link linkend="_class_point">Point</link> &amp; right)</computeroutput></para><para>
+Definition at line 27 of file point.cpp.</para>
+</section>
+</section>
+</section>

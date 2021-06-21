@@ -1,0 +1,114 @@
+\hypertarget{main_8cpp}{}\doxysection{src/main.cpp File Reference}
+\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+{\ttfamily \#include \char`\"{}point.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8cpp_a73e57ad61fa2688e196ab777c212e2af}{ACCUR}}~1e-\/7
+\item 
+\#define \mbox{\hyperlink{main_8cpp_af3cc0f5da7d98bdd1705f294607323a0}{COS}}(top,  bottom)~top / bottom
+\item 
+\#define \mbox{\hyperlink{main_8cpp_a46178a9cc0c10a15d23be46db42d1c7d}{DIST}}(X,  Y,  Z)~sqrt(X $\ast$ X + Y $\ast$ Y + Z $\ast$ Z)
+\item 
+\#define \mbox{\hyperlink{main_8cpp_a5b5140b889f20fec8dda9d70e2295ec2}{DIST\+\_\+\+BETWEEN}}(x1,  x2,  y1,  y2,  z1,  z2)~sqrt((x1 -\/ x2) $\ast$ (x1 -\/ x2) + (y1 -\/ y2) $\ast$ (y1 -\/ y2) + (z1 -\/ z2) $\ast$ (z1 -\/z2))
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a1084fbc622c7b2dd999d4401b0258a84}{read\+\_\+line}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&points, string namefile)
+\begin{DoxyCompactList}\small\item\em This function read file. Structure of file\+: x0 y0 z0 x1 y1 z1 ... xn yn zn. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_ae439ce746bbcfb388efa97dd12db3ac6}{calculate\+\_\+dims}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&points, \mbox{\hyperlink{class_point}{Point}} \&input\+\_\+point)
+\item 
+int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em This main. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{main_8cpp_a73e57ad61fa2688e196ab777c212e2af}\label{main_8cpp_a73e57ad61fa2688e196ab777c212e2af}} 
+\index{main.cpp@{main.cpp}!ACCUR@{ACCUR}}
+\index{ACCUR@{ACCUR}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{ACCUR}{ACCUR}}
+{\footnotesize\ttfamily \#define ACCUR~1e-\/7}
+
+
+
+Definition at line 33 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_af3cc0f5da7d98bdd1705f294607323a0}\label{main_8cpp_af3cc0f5da7d98bdd1705f294607323a0}} 
+\index{main.cpp@{main.cpp}!COS@{COS}}
+\index{COS@{COS}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{COS}{COS}}
+{\footnotesize\ttfamily \#define COS(\begin{DoxyParamCaption}\item[{}]{top,  }\item[{}]{bottom }\end{DoxyParamCaption})~top / bottom}
+
+
+
+Definition at line 34 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a46178a9cc0c10a15d23be46db42d1c7d}\label{main_8cpp_a46178a9cc0c10a15d23be46db42d1c7d}} 
+\index{main.cpp@{main.cpp}!DIST@{DIST}}
+\index{DIST@{DIST}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{DIST}{DIST}}
+{\footnotesize\ttfamily \#define DIST(\begin{DoxyParamCaption}\item[{}]{X,  }\item[{}]{Y,  }\item[{}]{Z }\end{DoxyParamCaption})~sqrt(X $\ast$ X + Y $\ast$ Y + Z $\ast$ Z)}
+
+
+
+Definition at line 35 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a5b5140b889f20fec8dda9d70e2295ec2}\label{main_8cpp_a5b5140b889f20fec8dda9d70e2295ec2}} 
+\index{main.cpp@{main.cpp}!DIST\_BETWEEN@{DIST\_BETWEEN}}
+\index{DIST\_BETWEEN@{DIST\_BETWEEN}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{DIST\_BETWEEN}{DIST\_BETWEEN}}
+{\footnotesize\ttfamily \#define DIST\+\_\+\+BETWEEN(\begin{DoxyParamCaption}\item[{}]{x1,  }\item[{}]{x2,  }\item[{}]{y1,  }\item[{}]{y2,  }\item[{}]{z1,  }\item[{}]{z2 }\end{DoxyParamCaption})~sqrt((x1 -\/ x2) $\ast$ (x1 -\/ x2) + (y1 -\/ y2) $\ast$ (y1 -\/ y2) + (z1 -\/ z2) $\ast$ (z1 -\/z2))}
+
+
+
+Definition at line 36 of file main.\+cpp.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_ae439ce746bbcfb388efa97dd12db3ac6}\label{main_8cpp_ae439ce746bbcfb388efa97dd12db3ac6}} 
+\index{main.cpp@{main.cpp}!calculate\_dims@{calculate\_dims}}
+\index{calculate\_dims@{calculate\_dims}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{calculate\_dims()}{calculate\_dims()}}
+{\footnotesize\ttfamily void calculate\+\_\+dims (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&}]{points,  }\item[{\mbox{\hyperlink{class_point}{Point}} \&}]{input\+\_\+point }\end{DoxyParamCaption})}
+
+
+
+Definition at line 69 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+This main. 
+
+
+
+Definition at line 140 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a1084fbc622c7b2dd999d4401b0258a84}\label{main_8cpp_a1084fbc622c7b2dd999d4401b0258a84}} 
+\index{main.cpp@{main.cpp}!read\_line@{read\_line}}
+\index{read\_line@{read\_line}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{read\_line()}{read\_line()}}
+{\footnotesize\ttfamily void read\+\_\+line (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&}]{points,  }\item[{string}]{namefile }\end{DoxyParamCaption})}
+
+
+
+This function read file. Structure of file\+: x0 y0 z0 x1 y1 z1 ... xn yn zn. 
+
+
+
+Definition at line 48 of file main.\+cpp.
+

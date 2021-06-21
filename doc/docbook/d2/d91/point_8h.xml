@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_point_8h" xml:lang="en-US">
+<title>include/point.h File Reference</title>
+<indexterm><primary>include/point.h</primary></indexterm>
+<simplesect>
+    <title>Data Structures    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_point">Point</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_point_8h_1ac25189db92959bff3c6c2adf4c34b50a">DIM</link>   3</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_point_8h_1ac25189db92959bff3c6c2adf4c34b50a"/>    <section>
+    <title>DIM</title>
+<indexterm><primary>DIM</primary><secondary>point.h</secondary></indexterm>
+<indexterm><primary>point.h</primary><secondary>DIM</secondary></indexterm>
+<para><computeroutput>#define DIM   3</computeroutput></para><para>
+Definition at line 3 of file point.h.</para>
+</section>
+</section>
+</section>
