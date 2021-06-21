@@ -38,7 +38,7 @@ PROJECT_NAME           = Projections
 # could be handy for archiving the generated documentation or if some version
 # control system is used.
 
-PROJECT_NUMBER         = 1.0
+PROJECT_NUMBER         = 1.1
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description
 # for a project that appears at the top of each page and should give viewer a
@@ -2130,7 +2130,7 @@ DOCBOOK_PROGRAMLISTING = NO
 # is still experimental and incomplete at the moment.
 # The default value is: NO.
 
-GENERATE_AUTOGEN_DEF   = NO
+GENERATE_AUTOGEN_DEF   = YES
 
 #---------------------------------------------------------------------------
 # Configuration options related to Sqlite3 output
