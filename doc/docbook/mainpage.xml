@@ -1,9 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_mainpage" xml:lang="en-US">
 
-<para><formalpara><title>Author</title>
+<para>main file The program takes three arguments: name_file x y z name_file is file with line x, y and z are coordinates of the point The program prints output of the following form segment n parameter s point x y z n is number of segment of line s is a parameter that shows the part of the segment that the projection falls on. This parameter ranges from 0 to 1 <formalpara><title>Version</title>
 
-<para>M.M. Pugavko</para>
+<para>1 </para>
 </formalpara>
-The program takes three arguments: name_file x y z name_file is file with line x, y and z are coordinates of the point The program prints output of the following form segment n parameter s point x y z n is number of segment of line s is a parameter that shows the part of the segment that the projection falls on. This parameter ranges from 0 to 1 </para>
+<formalpara><title>Date</title>
+
+<para>2021-06-21 </para>
+</formalpara>
+</para>
 </chapter>

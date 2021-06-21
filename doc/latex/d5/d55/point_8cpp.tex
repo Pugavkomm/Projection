@@ -1,12 +1,23 @@
 \hypertarget{point_8cpp}{}\doxysection{src/point.cpp File Reference}
 \label{point_8cpp}\index{src/point.cpp@{src/point.cpp}}
+
+
+Implementing the \mbox{\hyperlink{class_point}{Point}} interface.  
+
+
 {\ttfamily \#include \char`\"{}point.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{point_8cpp_a5a9ca25b6c80fa53e90c02e432f9725d}{operator-\/}} (const \mbox{\hyperlink{class_point}{Point}} \&left, const \mbox{\hyperlink{class_point}{Point}} \&right)
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementing the \mbox{\hyperlink{class_point}{Point}} interface. 
+
 
 
 \doxysubsection{Function Documentation}
@@ -16,7 +27,7 @@
 \doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{left,  }\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{right }\end{DoxyParamCaption})}
 
+The operator calculates a point that is the difference between all coordinates of the other two points.
 
-
-Definition at line 27 of file point.\+cpp.
+Definition at line 49 of file point.\+cpp.
 

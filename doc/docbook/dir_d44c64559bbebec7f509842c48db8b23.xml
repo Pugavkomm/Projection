@@ -6,6 +6,8 @@
     <title>Files    </title>
         <itemizedlist>
             <listitem><para>file <link linkend="_point_8h">point.h</link></para>
+
+<para><link linkend="_class_point">Point</link> class interface. </para>
 </listitem>
         </itemizedlist>
 </simplesect>

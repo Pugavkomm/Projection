@@ -27,7 +27,7 @@ double \& \mbox{\hyperlink{class_point_a24cf65e8db0962db5fdab50b9e9ce1fa}{operat
 \doxysubsection{Detailed Description}
 
 
-Definition at line 4 of file point.\+h.
+Definition at line 8 of file point.\+h.
 
 
 
@@ -38,9 +38,9 @@ Definition at line 4 of file point.\+h.
 \doxysubsubsection{\texorpdfstring{Point()}{Point()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Point\+::\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Default constructor that defines a point at the origin.
 
-
-Definition at line 6 of file point.\+cpp.
+Definition at line 14 of file point.\+cpp.
 
 \mbox{\Hypertarget{class_point_a4d43f5247afe8c85c6da1aa39dbcc738}\label{class_point_a4d43f5247afe8c85c6da1aa39dbcc738}} 
 \index{Point@{Point}!Point@{Point}}
@@ -48,9 +48,14 @@ Definition at line 6 of file point.\+cpp.
 \doxysubsubsection{\texorpdfstring{Point()}{Point()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily Point\+::\+Point (\begin{DoxyParamCaption}\item[{double}]{x = {\ttfamily 0},  }\item[{double}]{y = {\ttfamily 0},  }\item[{double}]{z = {\ttfamily 0} }\end{DoxyParamCaption})}
 
+The constructor defines point. 
+\begin{DoxyParams}{Parameters}
+{\em x,y,z} & are coordinates of input point.\\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 11 of file point.\+cpp.
+Definition at line 22 of file point.\+cpp.
 
 
 
@@ -61,9 +66,14 @@ Definition at line 11 of file point.\+cpp.
 \doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
 {\footnotesize\ttfamily double \& Point\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const int}]{index }\end{DoxyParamCaption})}
 
+Indexing operator. It returns the x, y, z coordinate depending on the index from the range \mbox{[}0, 2\mbox{]}. 
+\begin{DoxyParams}{Parameters}
+{\em index} & 0 -- x, 1 -- y, 2 -- z.\\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 32 of file point.\+cpp.
+Definition at line 57 of file point.\+cpp.
 
 \mbox{\Hypertarget{class_point_a07ebcfc85e0e4d5b6479ab93f39708b0}\label{class_point_a07ebcfc85e0e4d5b6479ab93f39708b0}} 
 \index{Point@{Point}!printPoint@{printPoint}}
@@ -71,9 +81,9 @@ Definition at line 32 of file point.\+cpp.
 \doxysubsubsection{\texorpdfstring{printPoint()}{printPoint()}}
 {\footnotesize\ttfamily void Point\+::print\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+The method prints point.
 
-
-Definition at line 23 of file point.\+cpp.
+Definition at line 42 of file point.\+cpp.
 
 \mbox{\Hypertarget{class_point_a5c87e531b784754068eba91f8e8cfd53}\label{class_point_a5c87e531b784754068eba91f8e8cfd53}} 
 \index{Point@{Point}!setPoint@{setPoint}}
@@ -81,9 +91,14 @@ Definition at line 23 of file point.\+cpp.
 \doxysubsubsection{\texorpdfstring{setPoint()}{setPoint()}}
 {\footnotesize\ttfamily void Point\+::set\+Point (\begin{DoxyParamCaption}\item[{double}]{x = {\ttfamily 0},  }\item[{double}]{y = {\ttfamily 0},  }\item[{double}]{z = {\ttfamily 0} }\end{DoxyParamCaption})}
 
+The method sets the coordinates of the point. 
+\begin{DoxyParams}{Parameters}
+{\em x,y,z} & are coordinates of input.\\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 17 of file point.\+cpp.
+Definition at line 32 of file point.\+cpp.
 
 
 
@@ -94,9 +109,9 @@ Definition at line 17 of file point.\+cpp.
 \doxysubsubsection{\texorpdfstring{operator-\/}{operator-}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{left,  }\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
 
+The operator calculates a point that is the difference between all coordinates of the other two points.
 
-
-Definition at line 27 of file point.\+cpp.
+Definition at line 49 of file point.\+cpp.
 
 
 

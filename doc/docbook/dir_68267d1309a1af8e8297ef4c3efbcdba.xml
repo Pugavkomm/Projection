@@ -8,6 +8,8 @@
             <listitem><para>file <link linkend="_main_8cpp">main.cpp</link></para>
 </listitem>
             <listitem><para>file <link linkend="_point_8cpp">point.cpp</link></para>
+
+<para>Implementing the <link linkend="_class_point">Point</link> interface. </para>
 </listitem>
         </itemizedlist>
 </simplesect>

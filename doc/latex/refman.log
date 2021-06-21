@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.7)  21 JUN 2021 22:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.7)  21 JUN 2021 23:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -889,6 +889,11 @@ Underfull \hbox (badness 10000) detected at line 1
 [][][]
  []
 
+
+Underfull \hbox (badness 10000) detected at line 4
+[][][]
+ []
+
 ) [1
 
 ] [2
@@ -921,18 +926,18 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 49.
 
-[7]) [8]
+[7] [8] [9]) [10]
 Chapter 5.
 (./d2/d91/point_8h.tex) (./df/d0a/main_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--11
 
  []
 
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 26.
-[9
+[11
 
 ]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 26.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
@@ -941,30 +946,30 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 6.29996pt on input line 26.
- [10]
+ [12]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 81.
-) (./d5/d55/point_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--5
+) (./d5/d55/point_8cpp.tex [13]
+Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
-[11]) [12] (./refman.ind [13
+) [14] (./refman.ind [15
 
 
 
 ]) (./refman.aux)
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 61F617505FE87516E53334AF33D5DB0A;6458.
+(rerunfilecheck)             Checksum: 97F76E350E408590B78E1A734AB4539C;6854.
  ) 
 Here is how much of TeX's memory you used:
- 16332 strings out of 478994
- 240657 string characters out of 5864752
- 575526 words of memory out of 5000000
- 33404 multiletter control sequences out of 15000+600000
- 459981 words of font info for 96 fonts, out of 8000000 for 9000
+ 16358 strings out of 478994
+ 240918 string characters out of 5864752
+ 575622 words of memory out of 5000000
+ 33422 multiletter control sequences out of 15000+600000
+ 462997 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 112i,11n,117p,434b,504s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 112i,12n,117p,485b,635s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
@@ -975,10 +980,10 @@ ucrro8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sh
 are/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texmf-dist/font
 s/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic
 /uhvro8a.pfb>
-Output written on refman.pdf (17 pages, 115834 bytes).
+Output written on refman.pdf (19 pages, 118770 bytes).
 PDF statistics:
- 419 PDF objects out of 1000 (max. 8388607)
- 385 compressed objects within 4 object streams
- 77 named destinations out of 1000 (max. 500000)
- 281 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 449 PDF objects out of 1000 (max. 8388607)
+ 412 compressed objects within 5 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 297 words of extra memory for PDF output out of 10000 (max. 10000000)
 

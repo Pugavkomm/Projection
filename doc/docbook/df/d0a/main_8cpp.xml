@@ -45,25 +45,25 @@
 <indexterm><primary>ACCUR</primary><secondary>main.cpp</secondary></indexterm>
 <indexterm><primary>main.cpp</primary><secondary>ACCUR</secondary></indexterm>
 <para><computeroutput>#define ACCUR   1e-7</computeroutput></para><para>
-Definition at line 33 of file main.cpp.</para>
+Definition at line 34 of file main.cpp.</para>
     </section><anchor xml:id="_main_8cpp_1af3cc0f5da7d98bdd1705f294607323a0"/>    <section>
     <title>COS</title>
 <indexterm><primary>COS</primary><secondary>main.cpp</secondary></indexterm>
 <indexterm><primary>main.cpp</primary><secondary>COS</secondary></indexterm>
 <para><computeroutput>#define COS( top,  bottom)   top / bottom</computeroutput></para><para>
-Definition at line 34 of file main.cpp.</para>
+Definition at line 35 of file main.cpp.</para>
     </section><anchor xml:id="_main_8cpp_1a46178a9cc0c10a15d23be46db42d1c7d"/>    <section>
     <title>DIST</title>
 <indexterm><primary>DIST</primary><secondary>main.cpp</secondary></indexterm>
 <indexterm><primary>main.cpp</primary><secondary>DIST</secondary></indexterm>
 <para><computeroutput>#define DIST( X,  Y,  Z)   sqrt(X * X + Y * Y + Z * Z)</computeroutput></para><para>
-Definition at line 35 of file main.cpp.</para>
+Definition at line 36 of file main.cpp.</para>
     </section><anchor xml:id="_main_8cpp_1a5b5140b889f20fec8dda9d70e2295ec2"/>    <section>
     <title>DIST_BETWEEN</title>
 <indexterm><primary>DIST_BETWEEN</primary><secondary>main.cpp</secondary></indexterm>
 <indexterm><primary>main.cpp</primary><secondary>DIST_BETWEEN</secondary></indexterm>
 <para><computeroutput>#define DIST_BETWEEN( x1,  x2,  y1,  y2,  z1,  z2)   sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2) + (z1 - z2) * (z1 -z2))</computeroutput></para><para>
-Definition at line 36 of file main.cpp.</para>
+Definition at line 37 of file main.cpp.</para>
 </section>
 </section>
 <section>
@@ -73,7 +73,7 @@ Definition at line 36 of file main.cpp.</para>
 <indexterm><primary>calculate_dims</primary><secondary>main.cpp</secondary></indexterm>
 <indexterm><primary>main.cpp</primary><secondary>calculate_dims</secondary></indexterm>
 <para><computeroutput>void calculate_dims (vector&lt; <link linkend="_class_point">Point</link> &gt; &amp; points, <link linkend="_class_point">Point</link> &amp; input_point)</computeroutput></para><para>
-Definition at line 69 of file main.cpp.</para>
+Definition at line 70 of file main.cpp.</para>
     </section><anchor xml:id="_main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97"/>    <section>
     <title>main()</title>
 <indexterm><primary>main</primary><secondary>main.cpp</secondary></indexterm>
@@ -83,7 +83,7 @@ Definition at line 69 of file main.cpp.</para>
 <para>This main. </para>
 </para>
 <para>
-Definition at line 140 of file main.cpp.</para>
+Definition at line 142 of file main.cpp.</para>
     </section><anchor xml:id="_main_8cpp_1a1084fbc622c7b2dd999d4401b0258a84"/>    <section>
     <title>read_line()</title>
 <indexterm><primary>read_line</primary><secondary>main.cpp</secondary></indexterm>
@@ -93,7 +93,7 @@ Definition at line 140 of file main.cpp.</para>
 <para>This function read file. Structure of file: x0 y0 z0 x1 y1 z1 ... xn yn zn. </para>
 </para>
 <para>
-Definition at line 48 of file main.cpp.</para>
+Definition at line 49 of file main.cpp.</para>
 </section>
 </section>
 </section>
