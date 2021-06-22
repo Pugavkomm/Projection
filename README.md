@@ -25,7 +25,7 @@ of line s is a parameter that shows the part of the segment that the projection 
 <img src="https://render.githubusercontent.com/render/math?math=O(x_0, y_0, z_0)"> -- Start point of piece of line. 
 
 ## Сompiling
-A gcc compiler is required to compile.
+gcc compiler is required to compile.
 
 ## Run
 Example:
