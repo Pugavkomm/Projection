@@ -53,8 +53,4 @@ Example:
 ├── bin
 │   ├── main # уxecutable file
 │   └── data.dat # example data
-
-
-
-
-
+```
