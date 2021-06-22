@@ -94,7 +94,7 @@ int main(int argc, char* argv[]){
 void read_line(vector<Point>& points, string namefile){
     /**
      * @brief Read a line from a file
-     * @param points the vector of dots. The data from the file is written to this vector.
+     * @param points the vector of points. The data from the file is written to this vector.
      * @param namefile the name input file. 
      */
     Point temp; 

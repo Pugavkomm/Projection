@@ -231,7 +231,7 @@ Parameters                    </title>
                             <row>
                                 <entry>points</entry>
                                 <entry>
-<para>the vector of dots. The data from the file is written to this vector. </para>
+<para>the vector of points. The data from the file is written to this vector. </para>
 </entry>
                             </row>
                             <row>
