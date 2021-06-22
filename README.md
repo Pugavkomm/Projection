@@ -50,5 +50,11 @@ Example:
 │   └── docbook
 ├── logo                 
 │   ├── logo.png # logo for documentation            
+├── bin
+│   ├── main # уxecutable file
+│   └── data.dat # example data
+
+
+
 
 
