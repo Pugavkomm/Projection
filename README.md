@@ -29,4 +29,26 @@ Example:
 
 ```./main namefile x y z ```
 
+## Structure
+```
+.
+├── Makefile
+├── LICENSE
+├── README.md
+├── doxygen_config
+├── include
+│   ├── point.h
+├── src
+│   ├── main.cpp
+│   └── point.cpp
+├── lib
+  ├── 
+├── doc                 
+│   ├── def             
+│   ├── html             
+│   ├── latex            
+│   └── docbook
+├── logo                 
+│   ├── logo.png # logo for documentation            
+
 
