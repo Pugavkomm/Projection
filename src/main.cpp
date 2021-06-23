@@ -43,7 +43,7 @@ using std::ofstream;
 using std::ifstream; 
 using std::stringstream; 
 /**
- * @brief Calculates the sum of the squares of the coordinates of a point
+ * @brief Calculates the sum of the squares of the coordinates of a point (Vector length) 
  * @param x, y, z -- Point coordinates
  * @returns the sum of the squares of the coordinates of a point
  */ 
