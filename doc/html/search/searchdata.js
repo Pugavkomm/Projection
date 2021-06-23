@@ -3,11 +3,10 @@ var indexSectionsWithContent =
   0: "acdmoprs",
   1: "p",
   2: "mp",
-  3: "cmoprs",
-  4: "a",
+  3: "cdmoprs",
+  4: "ad",
   5: "o",
-  6: "d",
-  7: "p"
+  6: "p"
 };
 
 var indexSectionNames =
@@ -18,8 +17,7 @@ var indexSectionNames =
   3: "functions",
   4: "variables",
   5: "related",
-  6: "defines",
-  7: "pages"
+  6: "pages"
 };
 
 var indexSectionLabels =
@@ -30,7 +28,6 @@ var indexSectionLabels =
   3: "Functions",
   4: "Variables",
   5: "Friends",
-  6: "Macros",
-  7: "Pages"
+  6: "Pages"
 };
 

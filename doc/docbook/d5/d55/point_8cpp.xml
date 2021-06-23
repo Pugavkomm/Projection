@@ -10,12 +10,13 @@
 <programlisting>#include &quot;point.h&quot;
 #include &lt;stdexcept&gt;
 #include &lt;iostream&gt;
+#include &lt;cmath&gt;
 </programlisting><simplesect>
     <title>Functions    </title>
         <itemizedlist>
             <listitem><para><link linkend="_class_point">Point</link> <link linkend="_point_8cpp_1a5a9ca25b6c80fa53e90c02e432f9725d">operator-</link> (const <link linkend="_class_point">Point</link> &amp;left, const <link linkend="_class_point">Point</link> &amp;right)</para>
 </listitem>
-            <listitem><para><link linkend="_class_point">Point</link> <link linkend="_point_8cpp_1a3146e677d3f21bd8e07cfba9ae2e5fc5">operator*</link> (const <link linkend="_class_point">Point</link> &amp;left, const <link linkend="_class_point">Point</link> &amp;right)</para>
+            <listitem><para>double <link linkend="_point_8cpp_1ac11bff72e39c1d5c37ad60ad71317e0c">operator*</link> (const <link linkend="_class_point">Point</link> &amp;left, const <link linkend="_class_point">Point</link> &amp;right)</para>
 </listitem>
             <listitem><para><link linkend="_class_point">Point</link> <link linkend="_point_8cpp_1a7fcb5863811c98ede8fca32b8ff1d455">operator*</link> (const <link linkend="_class_point">Point</link> &amp;left, const double right)</para>
 </listitem>
@@ -66,12 +67,12 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 53 of file point.cpp.</para>
-    </section><anchor xml:id="_point_8cpp_1a3146e677d3f21bd8e07cfba9ae2e5fc5"/>    <section>
+Definition at line 67 of file point.cpp.</para>
+    </section><anchor xml:id="_point_8cpp_1ac11bff72e39c1d5c37ad60ad71317e0c"/>    <section>
     <title>operator*()<computeroutput>[2/2]</computeroutput></title>
 <indexterm><primary>operator*</primary><secondary>point.cpp</secondary></indexterm>
 <indexterm><primary>point.cpp</primary><secondary>operator*</secondary></indexterm>
-<para><computeroutput><link linkend="_class_point">Point</link> operator* (const <link linkend="_class_point">Point</link> &amp; left, const <link linkend="_class_point">Point</link> &amp; right)</computeroutput></para>
+<para><computeroutput>double operator* (const <link linkend="_class_point">Point</link> &amp; left, const <link linkend="_class_point">Point</link> &amp; right)</computeroutput></para>
 <para>
                 <formalpara>
                     <title>
@@ -99,9 +100,13 @@ Parameters                    </title>
                     </table>
                     </para>
                 </formalpara>
-                </para>
+                <formalpara><title>Returns</title>
+
+<para>dot product. </para>
+</formalpara>
+</para>
 <para>
-Definition at line 47 of file point.cpp.</para>
+Definition at line 61 of file point.cpp.</para>
     </section><anchor xml:id="_point_8cpp_1a5a9ca25b6c80fa53e90c02e432f9725d"/>    <section>
     <title>operator-()</title>
 <indexterm><primary>operator-</primary><secondary>point.cpp</secondary></indexterm>
@@ -136,7 +141,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 42 of file point.cpp.</para>
+Definition at line 56 of file point.cpp.</para>
     </section><anchor xml:id="_point_8cpp_1aaec54e631988089518dad635a59d543d"/>    <section>
     <title>operator/()<computeroutput>[1/2]</computeroutput></title>
 <indexterm><primary>operator/</primary><secondary>point.cpp</secondary></indexterm>
@@ -171,7 +176,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 63 of file point.cpp.</para>
+Definition at line 77 of file point.cpp.</para>
     </section><anchor xml:id="_point_8cpp_1af5305ddbdee0cee9a68cade605063dda"/>    <section>
     <title>operator/()<computeroutput>[2/2]</computeroutput></title>
 <indexterm><primary>operator/</primary><secondary>point.cpp</secondary></indexterm>
@@ -206,7 +211,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 57 of file point.cpp.</para>
+Definition at line 71 of file point.cpp.</para>
 </section>
 </section>
 </section>

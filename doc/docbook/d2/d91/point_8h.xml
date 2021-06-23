@@ -15,9 +15,9 @@
         </itemizedlist>
 </simplesect>
 <simplesect>
-    <title>Macros    </title>
+    <title>Variables    </title>
         <itemizedlist>
-            <listitem><para>#define <link linkend="_point_8h_1ac25189db92959bff3c6c2adf4c34b50a">DIM</link>   3</para>
+            <listitem><para>constexpr int <link linkend="_point_8h_1a5c04aa1c27b748c112473234c95721c8">DIM</link> = 3</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -27,12 +27,12 @@
 <para><link linkend="_class_point">Point</link> class interface. </para>
 </section>
 <section>
-<title>Macro Definition Documentation</title>
-<anchor xml:id="_point_8h_1ac25189db92959bff3c6c2adf4c34b50a"/>    <section>
+<title>Variable Documentation</title>
+<anchor xml:id="_point_8h_1a5c04aa1c27b748c112473234c95721c8"/>    <section>
     <title>DIM</title>
 <indexterm><primary>DIM</primary><secondary>point.h</secondary></indexterm>
 <indexterm><primary>point.h</primary><secondary>DIM</secondary></indexterm>
-<para><computeroutput>#define DIM   3</computeroutput></para><para>
+<para><computeroutput>constexpr int DIM = 3<computeroutput>[constexpr]</computeroutput></computeroutput></para><para>
 Definition at line 7 of file point.h.</para>
 </section>
 </section>

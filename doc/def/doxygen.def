@@ -86,7 +86,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'z';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
-      sec-mem-desc-line = '24';
+      sec-mem-desc-line = '25';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The method sets the coordinates of the point.
 _EnD_oF_dEf_TeXt_;
@@ -104,13 +104,56 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'printPoint';
       sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
-      sec-mem-desc-line = '30';
+      sec-mem-desc-line = '32';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The method prints point.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 @param left left operand.
 @param right right operand.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd0/d69/class_point_1ade14b9abfa555da35f24b1c1612c4ef1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dist_between';
+      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-line = '38';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Calculates the sum of the squares of the coordinates of a point.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@returns the sum of the squares of the coordinates of a point
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd0/d69/class_point_1a842cdbdf8d2d80322c0ee34995498169';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dist_between';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Point &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-line = '45';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Computes the distance between two input points.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param right second point
+@returns distance between this point and the second point
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -123,7 +166,7 @@ double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'sum_coordinates';
       sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
-      sec-mem-desc-line = '36';
+      sec-mem-desc-line = '52';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Computes sum of coordinates point.
 _EnD_oF_dEf_TeXt_;
@@ -147,7 +190,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'index';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
-      sec-mem-desc-line = '71';
+      sec-mem-desc-line = '94';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Indexing operator. It returns the x, y, z coordinate depending on the index from the range [0, 2].
 _EnD_oF_dEf_TeXt_;
@@ -168,9 +211,9 @@ double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'point';
       sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
-      sec-mem-desc-line = '73';
+      sec-mem-desc-line = '101';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+point(x, y, z)
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
@@ -201,7 +244,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'right';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
-      sec-mem-desc-line = '42';
+      sec-mem-desc-line = '59';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The operator calculates a point that is the difference between all coordinates of the other two points.
 _EnD_oF_dEf_TeXt_;
@@ -212,11 +255,11 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'friend';
-      sec-mem-id   = 'd0/d69/class_point_1aa7b897e4845243eef3fe77f356300372';
+      sec-mem-id   = 'd0/d69/class_point_1a3ad987a0921dfb738bbbb245e6eb518d';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
-friend Point
+friend double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'operator*';
       sec-mem-param = {
@@ -232,13 +275,14 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'right';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
-      sec-mem-desc-line = '48';
+      sec-mem-desc-line = '67';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-The operator calculates the multiplication two points.
+The operator calculates the dot product.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 @param left left operand (Point).
 @param right right operand (Point).
+@returns dot product.
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -263,7 +307,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'right';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
-      sec-mem-desc-line = '54';
+      sec-mem-desc-line = '74';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The operator calculates the multiplication point by double.
 _EnD_oF_dEf_TeXt_;
@@ -294,7 +338,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'right';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
-      sec-mem-desc-line = '60';
+      sec-mem-desc-line = '81';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The operator сalculates the division of the coordinates of points.
 _EnD_oF_dEf_TeXt_;
@@ -325,7 +369,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'right';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
-      sec-mem-desc-line = '66';
+      sec-mem-desc-line = '88';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The operator сalculates left per double number.
 _EnD_oF_dEf_TeXt_;
@@ -347,25 +391,28 @@ _EnD_oF_dEf_TeXt_;
 file = {
   file-id   = 'd2/d91/point_8h';
   file-name = 'point.h';
-    define = {
-    define-member = {
-      define-mem-kind = 'define';
-      define-mem-id   = 'd2/d91/point_8h_1ac25189db92959bff3c6c2adf4c34b50a';
-      define-mem-virt = normal;
-      define-mem-prot = public;
-      define-mem-name = 'DIM';
-      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
-3
+    var = {
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'd2/d91/point_8h_1a5c04aa1c27b748c112473234c95721c8';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+constexpr int
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/mech/projects/projection/include/point.h';
-      define-mem-desc-line = '7';
-      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+      var-mem-name = 'DIM';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 3
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      var-mem-desc-line = '7';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
-      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
-    }; /* define-member */
+    }; /* var-member */
     };
   file-full-name  = '/home/mech/projects/projection/include/point.h';
   file-first-line = '1';
@@ -381,73 +428,6 @@ _EnD_oF_dEf_TeXt_;
 file = {
   file-id   = 'df/d0a/main_8cpp';
   file-name = 'main.cpp';
-    define = {
-    define-member = {
-      define-mem-kind = 'define';
-      define-mem-id   = 'df/d0a/main_8cpp_1a8a5d9aee9c53fa0528075bd91406a223';
-      define-mem-virt = normal;
-      define-mem-prot = public;
-      define-mem-name = 'DIST';
-      define-mem-param  = {
-        define-mem-def-name = 'x';
-      }; /*        define-mem-def--param */
-      define-mem-param  = {
-        define-mem-def-name = 'y';
-      }; /*        define-mem-def--param */
-      define-mem-param  = {
-        define-mem-def-name = 'z';
-      }; /*        define-mem-def--param */
-      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
-sqrt(x * x + y * y + z * z)
-_EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      define-mem-desc-line = '50';
-      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-Calculates the sum of the squares of the coordinates of a point.
-_EnD_oF_dEf_TeXt_;
-      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
-@param x ,  y, z &ndash; Point coordinates
-@returns the sum of the squares of the coordinates of a point
-_EnD_oF_dEf_TeXt_;
-    }; /* define-member */
-    define-member = {
-      define-mem-kind = 'define';
-      define-mem-id   = 'df/d0a/main_8cpp_1a5b5140b889f20fec8dda9d70e2295ec2';
-      define-mem-virt = normal;
-      define-mem-prot = public;
-      define-mem-name = 'DIST_BETWEEN';
-      define-mem-param  = {
-        define-mem-def-name = 'x1';
-      }; /*        define-mem-def--param */
-      define-mem-param  = {
-        define-mem-def-name = 'x2';
-      }; /*        define-mem-def--param */
-      define-mem-param  = {
-        define-mem-def-name = 'y1';
-      }; /*        define-mem-def--param */
-      define-mem-param  = {
-        define-mem-def-name = 'y2';
-      }; /*        define-mem-def--param */
-      define-mem-param  = {
-        define-mem-def-name = 'z1';
-      }; /*        define-mem-def--param */
-      define-mem-param  = {
-        define-mem-def-name = 'z2';
-      }; /*        define-mem-def--param */
-      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
-sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2) + (z1 - z2) * (z1 - z2))
-_EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      define-mem-desc-line = '56';
-      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-Computes the distance between two input points.
-_EnD_oF_dEf_TeXt_;
-      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
-@param (x1, x2, y1, y2, z1, z2) two input points.
-@returns distance between two input point.
-_EnD_oF_dEf_TeXt_;
-    }; /* define-member */
-    };
     func = {
     func-member = {
       func-mem-kind = 'function';
@@ -471,7 +451,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'namefile';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      func-mem-desc-line = '93';
+      func-mem-desc-line = '81';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -501,7 +481,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'input_point';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      func-mem-desc-line = '144';
+      func-mem-desc-line = '131';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -537,7 +517,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'segments';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      func-mem-desc-line = '120';
+      func-mem-desc-line = '108';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -568,7 +548,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-array = '[]';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      func-mem-desc-line = '68';
+      func-mem-desc-line = '56';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -591,7 +571,7 @@ _EnD_oF_dEf_TeXt_;
 = 1e-7
 _EnD_oF_dEf_TeXt_;
       var-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      var-mem-desc-line = '60';
+      var-mem-desc-line = '48';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Distance measurement accuracy.
 _EnD_oF_dEf_TeXt_;
@@ -635,7 +615,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'right';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/mech/projects/projection/src/point.cpp';
-      func-mem-desc-line = '42';
+      func-mem-desc-line = '56';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -646,11 +626,11 @@ _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
       func-mem-kind = 'function';
-      func-mem-id   = 'd5/d55/point_8cpp_1a3146e677d3f21bd8e07cfba9ae2e5fc5';
+      func-mem-id   = 'd5/d55/point_8cpp_1ac11bff72e39c1d5c37ad60ad71317e0c';
       func-mem-virt = normal;
       func-mem-prot = public;
       func-mem-type = <<_EnD_oF_dEf_TeXt_
-Point
+double
 _EnD_oF_dEf_TeXt_;
       func-mem-name = 'operator*';
       func-mem-param = {
@@ -666,13 +646,14 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'right';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/mech/projects/projection/src/point.cpp';
-      func-mem-desc-line = '47';
+      func-mem-desc-line = '61';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
 @param left left operand (Point).
 @param right right operand (Point).
+@returns dot product.
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
@@ -697,7 +678,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'right';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/mech/projects/projection/src/point.cpp';
-      func-mem-desc-line = '53';
+      func-mem-desc-line = '67';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -728,7 +709,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'right';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/mech/projects/projection/src/point.cpp';
-      func-mem-desc-line = '57';
+      func-mem-desc-line = '71';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -759,7 +740,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'right';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/mech/projects/projection/src/point.cpp';
-      func-mem-desc-line = '63';
+      func-mem-desc-line = '77';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;

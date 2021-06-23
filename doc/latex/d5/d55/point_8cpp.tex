@@ -8,12 +8,13 @@ Implementing the \mbox{\hyperlink{class_point}{Point}} interface.
 {\ttfamily \#include \char`\"{}point.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$stdexcept$>$}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{point_8cpp_a5a9ca25b6c80fa53e90c02e432f9725d}{operator-\/}} (const \mbox{\hyperlink{class_point}{Point}} \&left, const \mbox{\hyperlink{class_point}{Point}} \&right)
 \item 
-\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{point_8cpp_a3146e677d3f21bd8e07cfba9ae2e5fc5}{operator$\ast$}} (const \mbox{\hyperlink{class_point}{Point}} \&left, const \mbox{\hyperlink{class_point}{Point}} \&right)
+double \mbox{\hyperlink{point_8cpp_ac11bff72e39c1d5c37ad60ad71317e0c}{operator$\ast$}} (const \mbox{\hyperlink{class_point}{Point}} \&left, const \mbox{\hyperlink{class_point}{Point}} \&right)
 \item 
 \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{point_8cpp_a7fcb5863811c98ede8fca32b8ff1d455}{operator$\ast$}} (const \mbox{\hyperlink{class_point}{Point}} \&left, const double right)
 \item 
@@ -44,13 +45,13 @@ Implementing the \mbox{\hyperlink{class_point}{Point}} interface.
 \end{DoxyParams}
 
 
-Definition at line 53 of file point.\+cpp.
+Definition at line 67 of file point.\+cpp.
 
-\mbox{\Hypertarget{point_8cpp_a3146e677d3f21bd8e07cfba9ae2e5fc5}\label{point_8cpp_a3146e677d3f21bd8e07cfba9ae2e5fc5}} 
+\mbox{\Hypertarget{point_8cpp_ac11bff72e39c1d5c37ad60ad71317e0c}\label{point_8cpp_ac11bff72e39c1d5c37ad60ad71317e0c}} 
 \index{point.cpp@{point.cpp}!operator$\ast$@{operator$\ast$}}
 \index{operator$\ast$@{operator$\ast$}!point.cpp@{point.cpp}}
 \doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{left,  }\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{right }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily double operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{left,  }\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{right }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -59,9 +60,12 @@ Definition at line 53 of file point.\+cpp.
 {\em right} & right operand (\mbox{\hyperlink{class_point}{Point}}). \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+dot product. 
+\end{DoxyReturn}
 
 
-Definition at line 47 of file point.\+cpp.
+Definition at line 61 of file point.\+cpp.
 
 \mbox{\Hypertarget{point_8cpp_a5a9ca25b6c80fa53e90c02e432f9725d}\label{point_8cpp_a5a9ca25b6c80fa53e90c02e432f9725d}} 
 \index{point.cpp@{point.cpp}!operator-\/@{operator-\/}}
@@ -78,7 +82,7 @@ Definition at line 47 of file point.\+cpp.
 \end{DoxyParams}
 
 
-Definition at line 42 of file point.\+cpp.
+Definition at line 56 of file point.\+cpp.
 
 \mbox{\Hypertarget{point_8cpp_aaec54e631988089518dad635a59d543d}\label{point_8cpp_aaec54e631988089518dad635a59d543d}} 
 \index{point.cpp@{point.cpp}!operator/@{operator/}}
@@ -95,7 +99,7 @@ Definition at line 42 of file point.\+cpp.
 \end{DoxyParams}
 
 
-Definition at line 63 of file point.\+cpp.
+Definition at line 77 of file point.\+cpp.
 
 \mbox{\Hypertarget{point_8cpp_af5305ddbdee0cee9a68cade605063dda}\label{point_8cpp_af5305ddbdee0cee9a68cade605063dda}} 
 \index{point.cpp@{point.cpp}!operator/@{operator/}}
@@ -112,5 +116,5 @@ Definition at line 63 of file point.\+cpp.
 \end{DoxyParams}
 
 
-Definition at line 57 of file point.\+cpp.
+Definition at line 71 of file point.\+cpp.
 

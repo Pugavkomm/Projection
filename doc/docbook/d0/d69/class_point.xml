@@ -24,6 +24,14 @@
 
 <para>The method prints point. </para>
 </listitem>
+            <listitem><para>double <link linkend="_class_point_1ade14b9abfa555da35f24b1c1612c4ef1">dist_between</link> ()</para>
+
+<para>Calculates the sum of the squares of the coordinates of a point. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_point_1a842cdbdf8d2d80322c0ee34995498169">dist_between</link> (<link linkend="_class_point">Point</link> &amp;right)</para>
+
+<para>Computes the distance between two input points. </para>
+</listitem>
             <listitem><para>double <link linkend="_class_point_1a3013241afa6ea8971e71dec792827953">sum_coordinates</link> () const</para>
 
 <para>Computes sum of coordinates point. </para>
@@ -41,9 +49,9 @@
 
 <para>The operator calculates a point that is the difference between all coordinates of the other two points. </para>
 </listitem>
-            <listitem><para><link linkend="_class_point">Point</link> <link linkend="_class_point_1aa7b897e4845243eef3fe77f356300372">operator*</link> (const <link linkend="_class_point">Point</link> &amp;, const <link linkend="_class_point">Point</link> &amp;)</para>
+            <listitem><para>double <link linkend="_class_point_1a3ad987a0921dfb738bbbb245e6eb518d">operator*</link> (const <link linkend="_class_point">Point</link> &amp;, const <link linkend="_class_point">Point</link> &amp;)</para>
 
-<para>The operator calculates the multiplication two points. </para>
+<para>The operator calculates the dot product. </para>
 </listitem>
             <listitem><para><link linkend="_class_point">Point</link> <link linkend="_class_point_1a872420e38dbac7c2cef2dd2ecbdbffdf">operator*</link> (const <link linkend="_class_point">Point</link> &amp;, const double)</para>
 
@@ -75,7 +83,7 @@ Definition at line 8 of file point.h.</para>
 <para>Default constructor that defines a point at the origin. </para>
 </para>
 <para>
-Definition at line 14 of file point.cpp.</para>
+Definition at line 17 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a4d43f5247afe8c85c6da1aa39dbcc738"/>    <section>
     <title>Point()<computeroutput>[2/2]</computeroutput></title>
 <indexterm><primary>Point</primary><secondary>Point</secondary></indexterm>
@@ -111,12 +119,65 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 19 of file point.cpp.</para>
+Definition at line 23 of file point.cpp.</para>
 </section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_class_point_1a24cf65e8db0962db5fdab50b9e9ce1fa"/>    <section>
+<anchor xml:id="_class_point_1ade14b9abfa555da35f24b1c1612c4ef1"/>    <section>
+    <title>dist_between()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>dist_between</primary><secondary>Point</secondary></indexterm>
+<indexterm><primary>Point</primary><secondary>dist_between</secondary></indexterm>
+<para><computeroutput>double Point::dist_between ( )</computeroutput></para><para>
+
+<para>Calculates the sum of the squares of the coordinates of a point. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>the sum of the squares of the coordinates of a point </para>
+</formalpara>
+</para>
+<para>
+Definition at line 39 of file point.cpp.</para>
+    </section><anchor xml:id="_class_point_1a842cdbdf8d2d80322c0ee34995498169"/>    <section>
+    <title>dist_between()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>dist_between</primary><secondary>Point</secondary></indexterm>
+<indexterm><primary>Point</primary><secondary>dist_between</secondary></indexterm>
+<para><computeroutput>double Point::dist_between (<link linkend="_class_point">Point</link> &amp; right)</computeroutput></para><para>
+
+<para>Computes the distance between two input points. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>right</entry>
+                                <entry>
+<para>second point </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>distance between this point and the second point </para>
+</formalpara>
+</para>
+<para>
+Definition at line 43 of file point.cpp.</para>
+    </section><anchor xml:id="_class_point_1a24cf65e8db0962db5fdab50b9e9ce1fa"/>    <section>
     <title>operator[]()</title>
 <indexterm><primary>operator[]</primary><secondary>Point</secondary></indexterm>
 <indexterm><primary>Point</primary><secondary>operator[]</secondary></indexterm>
@@ -148,7 +209,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 68 of file point.cpp.</para>
+Definition at line 82 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a07ebcfc85e0e4d5b6479ab93f39708b0"/>    <section>
     <title>printPoint()</title>
 <indexterm><primary>printPoint</primary><secondary>Point</secondary></indexterm>
@@ -187,7 +248,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 31 of file point.cpp.</para>
+Definition at line 35 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a5c87e531b784754068eba91f8e8cfd53"/>    <section>
     <title>setPoint()</title>
 <indexterm><primary>setPoint</primary><secondary>Point</secondary></indexterm>
@@ -223,7 +284,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 25 of file point.cpp.</para>
+Definition at line 29 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a3013241afa6ea8971e71dec792827953"/>    <section>
     <title>sum_coordinates()</title>
 <indexterm><primary>sum_coordinates</primary><secondary>Point</secondary></indexterm>
@@ -239,7 +300,7 @@ Definition at line 25 of file point.cpp.</para>
 </formalpara>
 </para>
 <para>
-Definition at line 35 of file point.cpp.</para>
+Definition at line 49 of file point.cpp.</para>
 </section>
 </section>
 <section>
@@ -282,14 +343,14 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 53 of file point.cpp.</para>
-    </section><anchor xml:id="_class_point_1aa7b897e4845243eef3fe77f356300372"/>    <section>
+Definition at line 67 of file point.cpp.</para>
+    </section><anchor xml:id="_class_point_1a3ad987a0921dfb738bbbb245e6eb518d"/>    <section>
     <title>operator*<computeroutput>[2/2]</computeroutput></title>
 <indexterm><primary>operator*</primary><secondary>Point</secondary></indexterm>
 <indexterm><primary>Point</primary><secondary>operator*</secondary></indexterm>
-<para><computeroutput><link linkend="_class_point">Point</link> operator* (const <link linkend="_class_point">Point</link> &amp; left, const <link linkend="_class_point">Point</link> &amp; right)<computeroutput>[friend]</computeroutput></computeroutput></para><para>
+<para><computeroutput>double operator* (const <link linkend="_class_point">Point</link> &amp; left, const <link linkend="_class_point">Point</link> &amp; right)<computeroutput>[friend]</computeroutput></computeroutput></para><para>
 
-<para>The operator calculates the multiplication two points. </para>
+<para>The operator calculates the dot product. </para>
 </para>
 
 <para>
@@ -319,9 +380,13 @@ Parameters                    </title>
                     </table>
                     </para>
                 </formalpara>
-                </para>
+                <formalpara><title>Returns</title>
+
+<para>dot product. </para>
+</formalpara>
+</para>
 <para>
-Definition at line 47 of file point.cpp.</para>
+Definition at line 61 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1adc0ae410968ebfcac79ebcf9d4eb3f5b"/>    <section>
     <title>operator-</title>
 <indexterm><primary>operator-</primary><secondary>Point</secondary></indexterm>
@@ -360,7 +425,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 42 of file point.cpp.</para>
+Definition at line 56 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a7079c73de603914524a40929cb99e5db"/>    <section>
     <title>operator/<computeroutput>[1/2]</computeroutput></title>
 <indexterm><primary>operator/</primary><secondary>Point</secondary></indexterm>
@@ -399,7 +464,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 63 of file point.cpp.</para>
+Definition at line 77 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a55df2e214e10f9f854e48a4570eceff6"/>    <section>
     <title>operator/<computeroutput>[2/2]</computeroutput></title>
 <indexterm><primary>operator/</primary><secondary>Point</secondary></indexterm>
@@ -438,7 +503,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 57 of file point.cpp.</para>
+Definition at line 71 of file point.cpp.</para>
 </section>
 <para>
 The documentation for this class was generated from the following files:</para>

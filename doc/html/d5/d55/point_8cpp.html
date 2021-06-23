@@ -80,6 +80,7 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d2/d91/point_8h_source.html">point.h</a>&quot;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 </div>
 <p><a href="../../d5/d55/point_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -87,8 +88,8 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:a5a9ca25b6c80fa53e90c02e432f9725d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d69/class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d55/point_8cpp.html#a5a9ca25b6c80fa53e90c02e432f9725d">operator-</a> (const <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;left, const <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;right)</td></tr>
 <tr class="separator:a5a9ca25b6c80fa53e90c02e432f9725d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3146e677d3f21bd8e07cfba9ae2e5fc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d69/class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d55/point_8cpp.html#a3146e677d3f21bd8e07cfba9ae2e5fc5">operator*</a> (const <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;left, const <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;right)</td></tr>
-<tr class="separator:a3146e677d3f21bd8e07cfba9ae2e5fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac11bff72e39c1d5c37ad60ad71317e0c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d55/point_8cpp.html#ac11bff72e39c1d5c37ad60ad71317e0c">operator*</a> (const <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;left, const <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;right)</td></tr>
+<tr class="separator:ac11bff72e39c1d5c37ad60ad71317e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fcb5863811c98ede8fca32b8ff1d455"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d69/class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d55/point_8cpp.html#a7fcb5863811c98ede8fca32b8ff1d455">operator*</a> (const <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;left, const double right)</td></tr>
 <tr class="separator:a7fcb5863811c98ede8fca32b8ff1d455"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5305ddbdee0cee9a68cade605063dda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d69/class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d55/point_8cpp.html#af5305ddbdee0cee9a68cade605063dda">operator/</a> (const <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;left, const <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;right)</td></tr>
@@ -134,18 +135,18 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d55/point_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../d5/d55/point_8cpp_source.html">point.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d55/point_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d5/d55/point_8cpp_source.html">point.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a3146e677d3f21bd8e07cfba9ae2e5fc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3146e677d3f21bd8e07cfba9ae2e5fc5">&#9670;&nbsp;</a></span>operator*() <span class="overload">[2/2]</span></h2>
+<a id="ac11bff72e39c1d5c37ad60ad71317e0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac11bff72e39c1d5c37ad60ad71317e0c">&#9670;&nbsp;</a></span>operator*() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d0/d69/class_point.html">Point</a> operator* </td>
+          <td class="memname">double operator* </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;&#160;</td>
           <td class="paramname"><em>left</em>, </td>
@@ -170,8 +171,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>dot product. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d55/point_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../d5/d55/point_8cpp_source.html">point.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d55/point_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d5/d55/point_8cpp_source.html">point.cpp</a>.</p>
 
 </div>
 </div>
@@ -208,7 +210,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d55/point_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d5/d55/point_8cpp_source.html">point.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d55/point_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../d5/d55/point_8cpp_source.html">point.cpp</a>.</p>
 
 </div>
 </div>
@@ -245,7 +247,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d55/point_8cpp_source.html#l00063">63</a> of file <a class="el" href="../../d5/d55/point_8cpp_source.html">point.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d55/point_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d5/d55/point_8cpp_source.html">point.cpp</a>.</p>
 
 </div>
 </div>
@@ -282,7 +284,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d55/point_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d5/d55/point_8cpp_source.html">point.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d55/point_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../d5/d55/point_8cpp_source.html">point.cpp</a>.</p>
 
 </div>
 </div>

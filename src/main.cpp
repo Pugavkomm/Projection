@@ -42,16 +42,15 @@ using std::string;
 using std::ofstream; 
 using std::ifstream; 
 using std::stringstream; 
-
 /**
  * @brief Distance measurement accuracy
  */
 constexpr double ACCUR = 1e-7;
+//TODO: replace to class. 
 void read_line(vector<Point>& points, string namefile);
 void calculate_projections(vector<Point> &points, Point &input_point);
 void projection_print(vector<Point>& all_projections, vector <Point>& points, 
                                                         vector<unsigned int>& segments);
-
 
 
 int main(int argc, char* argv[]){

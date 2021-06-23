@@ -15,6 +15,10 @@ void \mbox{\hyperlink{class_point_a5c87e531b784754068eba91f8e8cfd53}{set\+Point}
 \begin{DoxyCompactList}\small\item\em The method sets the coordinates of the point. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_point_a07ebcfc85e0e4d5b6479ab93f39708b0}{print\+Point}} () const
 \begin{DoxyCompactList}\small\item\em The method prints point. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_point_ade14b9abfa555da35f24b1c1612c4ef1}{dist\+\_\+between}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the sum of the squares of the coordinates of a point. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_point_a842cdbdf8d2d80322c0ee34995498169}{dist\+\_\+between}} (\mbox{\hyperlink{class_point}{Point}} \&right)
+\begin{DoxyCompactList}\small\item\em Computes the distance between two input points. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{class_point_a3013241afa6ea8971e71dec792827953}{sum\+\_\+coordinates}} () const
 \begin{DoxyCompactList}\small\item\em Computes sum of coordinates point. \end{DoxyCompactList}\item 
 double \& \mbox{\hyperlink{class_point_a24cf65e8db0962db5fdab50b9e9ce1fa}{operator\mbox{[}$\,$\mbox{]}}} (const int)
@@ -24,8 +28,8 @@ double \& \mbox{\hyperlink{class_point_a24cf65e8db0962db5fdab50b9e9ce1fa}{operat
 \item 
 \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_point_adc0ae410968ebfcac79ebcf9d4eb3f5b}{operator-\/}} (const \mbox{\hyperlink{class_point}{Point}} \&, const \mbox{\hyperlink{class_point}{Point}} \&)
 \begin{DoxyCompactList}\small\item\em The operator calculates a point that is the difference between all coordinates of the other two points. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_point_aa7b897e4845243eef3fe77f356300372}{operator$\ast$}} (const \mbox{\hyperlink{class_point}{Point}} \&, const \mbox{\hyperlink{class_point}{Point}} \&)
-\begin{DoxyCompactList}\small\item\em The operator calculates the multiplication two points. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_point_a3ad987a0921dfb738bbbb245e6eb518d}{operator$\ast$}} (const \mbox{\hyperlink{class_point}{Point}} \&, const \mbox{\hyperlink{class_point}{Point}} \&)
+\begin{DoxyCompactList}\small\item\em The operator calculates the dot product. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_point_a872420e38dbac7c2cef2dd2ecbdbffdf}{operator$\ast$}} (const \mbox{\hyperlink{class_point}{Point}} \&, const double)
 \begin{DoxyCompactList}\small\item\em The operator calculates the multiplication point by double. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_point_a55df2e214e10f9f854e48a4570eceff6}{operator/}} (const \mbox{\hyperlink{class_point}{Point}} \&, const \mbox{\hyperlink{class_point}{Point}} \&)
@@ -54,7 +58,7 @@ Default constructor that defines a point at the origin.
 
 
 
-Definition at line 14 of file point.\+cpp.
+Definition at line 17 of file point.\+cpp.
 
 \mbox{\Hypertarget{class_point_a4d43f5247afe8c85c6da1aa39dbcc738}\label{class_point_a4d43f5247afe8c85c6da1aa39dbcc738}} 
 \index{Point@{Point}!Point@{Point}}
@@ -73,11 +77,50 @@ The constructor defines point.
 \end{DoxyParams}
 
 
-Definition at line 19 of file point.\+cpp.
+Definition at line 23 of file point.\+cpp.
 
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_point_ade14b9abfa555da35f24b1c1612c4ef1}\label{class_point_ade14b9abfa555da35f24b1c1612c4ef1}} 
+\index{Point@{Point}!dist\_between@{dist\_between}}
+\index{dist\_between@{dist\_between}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{dist\_between()}{dist\_between()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Point\+::dist\+\_\+between (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculates the sum of the squares of the coordinates of a point. 
+
+\begin{DoxyReturn}{Returns}
+the sum of the squares of the coordinates of a point 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file point.\+cpp.
+
+\mbox{\Hypertarget{class_point_a842cdbdf8d2d80322c0ee34995498169}\label{class_point_a842cdbdf8d2d80322c0ee34995498169}} 
+\index{Point@{Point}!dist\_between@{dist\_between}}
+\index{dist\_between@{dist\_between}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{dist\_between()}{dist\_between()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Point\+::dist\+\_\+between (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}} \&}]{right }\end{DoxyParamCaption})}
+
+
+
+Computes the distance between two input points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & second point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+distance between this point and the second point 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file point.\+cpp.
+
 \mbox{\Hypertarget{class_point_a24cf65e8db0962db5fdab50b9e9ce1fa}\label{class_point_a24cf65e8db0962db5fdab50b9e9ce1fa}} 
 \index{Point@{Point}!operator\mbox{[}\mbox{]}@{operator[]}}
 \index{operator\mbox{[}\mbox{]}@{operator[]}!Point@{Point}}
@@ -95,7 +138,7 @@ Indexing operator. It returns the x, y, z coordinate depending on the index from
 \end{DoxyParams}
 
 
-Definition at line 68 of file point.\+cpp.
+Definition at line 82 of file point.\+cpp.
 
 \mbox{\Hypertarget{class_point_a07ebcfc85e0e4d5b6479ab93f39708b0}\label{class_point_a07ebcfc85e0e4d5b6479ab93f39708b0}} 
 \index{Point@{Point}!printPoint@{printPoint}}
@@ -116,7 +159,7 @@ The method prints point.
 \end{DoxyParams}
 
 
-Definition at line 31 of file point.\+cpp.
+Definition at line 35 of file point.\+cpp.
 
 \mbox{\Hypertarget{class_point_a5c87e531b784754068eba91f8e8cfd53}\label{class_point_a5c87e531b784754068eba91f8e8cfd53}} 
 \index{Point@{Point}!setPoint@{setPoint}}
@@ -135,7 +178,7 @@ The method sets the coordinates of the point.
 \end{DoxyParams}
 
 
-Definition at line 25 of file point.\+cpp.
+Definition at line 29 of file point.\+cpp.
 
 \mbox{\Hypertarget{class_point_a3013241afa6ea8971e71dec792827953}\label{class_point_a3013241afa6ea8971e71dec792827953}} 
 \index{Point@{Point}!sum\_coordinates@{sum\_coordinates}}
@@ -152,7 +195,7 @@ sum of coordinates point.
 \end{DoxyReturn}
 
 
-Definition at line 35 of file point.\+cpp.
+Definition at line 49 of file point.\+cpp.
 
 
 
@@ -176,17 +219,17 @@ The operator calculates the multiplication point by double.
 \end{DoxyParams}
 
 
-Definition at line 53 of file point.\+cpp.
+Definition at line 67 of file point.\+cpp.
 
-\mbox{\Hypertarget{class_point_aa7b897e4845243eef3fe77f356300372}\label{class_point_aa7b897e4845243eef3fe77f356300372}} 
+\mbox{\Hypertarget{class_point_a3ad987a0921dfb738bbbb245e6eb518d}\label{class_point_a3ad987a0921dfb738bbbb245e6eb518d}} 
 \index{Point@{Point}!operator$\ast$@{operator$\ast$}}
 \index{operator$\ast$@{operator$\ast$}!Point@{Point}}
 \doxysubsubsection{\texorpdfstring{operator$\ast$}{operator*}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{left,  }\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+{\footnotesize\ttfamily double operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{left,  }\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
 
 
 
-The operator calculates the multiplication two points. 
+The operator calculates the dot product. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -195,9 +238,12 @@ The operator calculates the multiplication two points.
 {\em right} & right operand (\mbox{\hyperlink{class_point}{Point}}). \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+dot product. 
+\end{DoxyReturn}
 
 
-Definition at line 47 of file point.\+cpp.
+Definition at line 61 of file point.\+cpp.
 
 \mbox{\Hypertarget{class_point_adc0ae410968ebfcac79ebcf9d4eb3f5b}\label{class_point_adc0ae410968ebfcac79ebcf9d4eb3f5b}} 
 \index{Point@{Point}!operator-\/@{operator-\/}}
@@ -218,7 +264,7 @@ The operator calculates a point that is the difference between all coordinates o
 \end{DoxyParams}
 
 
-Definition at line 42 of file point.\+cpp.
+Definition at line 56 of file point.\+cpp.
 
 \mbox{\Hypertarget{class_point_a7079c73de603914524a40929cb99e5db}\label{class_point_a7079c73de603914524a40929cb99e5db}} 
 \index{Point@{Point}!operator/@{operator/}}
@@ -239,7 +285,7 @@ The operator сalculates left per double number.
 \end{DoxyParams}
 
 
-Definition at line 63 of file point.\+cpp.
+Definition at line 77 of file point.\+cpp.
 
 \mbox{\Hypertarget{class_point_a55df2e214e10f9f854e48a4570eceff6}\label{class_point_a55df2e214e10f9f854e48a4570eceff6}} 
 \index{Point@{Point}!operator/@{operator/}}
@@ -260,7 +306,7 @@ The operator сalculates the division of the coordinates of points.
 \end{DoxyParams}
 
 
-Definition at line 57 of file point.\+cpp.
+Definition at line 71 of file point.\+cpp.
 
 
 
