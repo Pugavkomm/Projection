@@ -59,11 +59,12 @@ class Point{
         friend Point operator- (const Point&, const Point&); 
         
         /**
-         * @brief The operator calculates the multiplication two points.
+         * @brief The operator calculates the dot product.
          * @param left left operand (Point).
          * @param right right operand (Point).
+         * @returns dot product.
          */
-        friend Point operator* (const Point&, const Point&);
+        friend double operator* (const Point&, const Point&);
         
         /**
          * @brief The operator calculates the multiplication point by double.

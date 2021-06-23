@@ -58,9 +58,9 @@ Point operator- (const Point& left, const Point &right){
         right.point[1], left.point[2] - right.point[2]); 
 }
 
-Point operator* (const Point& left, const Point &right){
-    return Point(left.point[0] * right.point[0], left.point[1] * 
-        right.point[1], left.point[2] * right.point[2]); 
+double operator* (const Point& left, const Point &right){
+    return left.point[0] * right.point[0] + left.point[1] * 
+        right.point[1] + left.point[2] * right.point[2]; 
     
 }
 

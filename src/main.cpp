@@ -150,8 +150,8 @@ void calculate_projections(vector<Point> &points, Point &input_point){ // TODO a
     for (size_t i = 0; i < quant_points - 1; ++i){
         direction_vector = points[i + 1] - points[i]; 
         vector_length = direction_vector.dist_between();
-        P = 0; 
-        P = (direction_vector * (points[i] - input_point)).sum_coordinates(); //TODO: replace scalar...
+        //P = 0; 
+        P = direction_vector * (points[i] - input_point);
         P /= vector_length; 
         cos = direction_vector / vector_length; 
         temp_projection = points[i] - cos * P;
