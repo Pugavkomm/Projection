@@ -161,9 +161,9 @@ void calculate_projections(vector<Point> &points, Point &input_point){ // TODO a
     vector<double> distances; 
     for (size_t i = 0; i < quant_points - 1; ++i){
         direction_vector = points[i + 1] - points[i]; 
-        vector_length = DIST(direction_vector[0], direction_vector[1], direction_vector[2]); 
+        vector_length = direction_vector.dist_between();
         P = 0; 
-        P = (direction_vector * (points[i] - input_point)).sum_coordinates();
+        P = (direction_vector * (points[i] - input_point)).sum_coordinates(); //TODO: replace scalar...
         P /= vector_length; 
         cos = direction_vector / vector_length; 
         temp_projection = points[i] - cos * P;
@@ -182,9 +182,7 @@ void calculate_projections(vector<Point> &points, Point &input_point){ // TODO a
                     temp_projection[j] = points[i + 1][j];
             }
         }
-        from_proj_to_point = DIST_BETWEEN(input_point[0], temp_projection[0], 
-                                          input_point[1], temp_projection[1],
-                                          input_point[2], temp_projection[2]);
+        from_proj_to_point = input_point.dist_between(temp_projection);
         if (from_proj_to_point < old_from_proj_to_point){
             all_projections.clear(); 
             segments.clear(); 
