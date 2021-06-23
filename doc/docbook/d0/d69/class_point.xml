@@ -9,16 +9,28 @@
     <title>Public Member Functions    </title>
         <itemizedlist>
             <listitem><para><link linkend="_class_point_1ad92f2337b839a94ce97dcdb439b4325a">Point</link> ()</para>
+
+<para>Default constructor that defines a point at the origin. </para>
 </listitem>
             <listitem><para><link linkend="_class_point_1a4d43f5247afe8c85c6da1aa39dbcc738">Point</link> (double x, double y, double z)</para>
+
+<para>The constructor defines point. </para>
 </listitem>
             <listitem><para>void <link linkend="_class_point_1a5c87e531b784754068eba91f8e8cfd53">setPoint</link> (double x, double y, double z)</para>
+
+<para>The method sets the coordinates of the point. </para>
 </listitem>
             <listitem><para>void <link linkend="_class_point_1a07ebcfc85e0e4d5b6479ab93f39708b0">printPoint</link> () const</para>
+
+<para>The method prints point. </para>
 </listitem>
             <listitem><para>double <link linkend="_class_point_1a3013241afa6ea8971e71dec792827953">sum_coordinates</link> () const</para>
+
+<para>Computes sum of coordinates point. </para>
 </listitem>
             <listitem><para>double &amp; <link linkend="_class_point_1a24cf65e8db0962db5fdab50b9e9ce1fa">operator[]</link> (const int)</para>
+
+<para>Indexing operator. It returns the x, y, z coordinate depending on the index from the range [0, 2]. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -26,16 +38,24 @@
     <title>Friends    </title>
         <itemizedlist>
             <listitem><para><link linkend="_class_point">Point</link> <link linkend="_class_point_1adc0ae410968ebfcac79ebcf9d4eb3f5b">operator-</link> (const <link linkend="_class_point">Point</link> &amp;, const <link linkend="_class_point">Point</link> &amp;)</para>
+
+<para>The operator calculates a point that is the difference between all coordinates of the other two points. </para>
 </listitem>
             <listitem><para><link linkend="_class_point">Point</link> <link linkend="_class_point_1aa7b897e4845243eef3fe77f356300372">operator*</link> (const <link linkend="_class_point">Point</link> &amp;, const <link linkend="_class_point">Point</link> &amp;)</para>
+
+<para>The operator calculates the multiplication two points. </para>
 </listitem>
             <listitem><para><link linkend="_class_point">Point</link> <link linkend="_class_point_1a872420e38dbac7c2cef2dd2ecbdbffdf">operator*</link> (const <link linkend="_class_point">Point</link> &amp;, const double)</para>
+
+<para>The operator calculates the multiplication point by double. </para>
 </listitem>
             <listitem><para><link linkend="_class_point">Point</link> <link linkend="_class_point_1a55df2e214e10f9f854e48a4570eceff6">operator/</link> (const <link linkend="_class_point">Point</link> &amp;, const <link linkend="_class_point">Point</link> &amp;)</para>
+
+<para>The operator сalculates the division of the coordinates of points. </para>
 </listitem>
             <listitem><para><link linkend="_class_point">Point</link> <link linkend="_class_point_1a7079c73de603914524a40929cb99e5db">operator/</link> (const <link linkend="_class_point">Point</link> &amp;, const double)</para>
-</listitem>
-            <listitem><para><link linkend="_class_point">Point</link> <link linkend="_class_point_1a7079c73de603914524a40929cb99e5db">operator/</link> (const <link linkend="_class_point">Point</link> &amp;, const double)</para>
+
+<para>The operator сalculates left per double number. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -50,8 +70,10 @@ Definition at line 8 of file point.h.</para>
     <title>Point()<computeroutput>[1/2]</computeroutput></title>
 <indexterm><primary>Point</primary><secondary>Point</secondary></indexterm>
 <indexterm><primary>Point</primary><secondary>Point</secondary></indexterm>
-<para><computeroutput>Point::Point ( )</computeroutput></para>
-<para>Default constructor that defines a point at the origin.</para>
+<para><computeroutput>Point::Point ( )</computeroutput></para><para>
+
+<para>Default constructor that defines a point at the origin. </para>
+</para>
 <para>
 Definition at line 14 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a4d43f5247afe8c85c6da1aa39dbcc738"/>    <section>
@@ -61,8 +83,12 @@ Definition at line 14 of file point.cpp.</para>
 <para><computeroutput>Point::Point (double x = <computeroutput>0</computeroutput>
 , double y = <computeroutput>0</computeroutput>
 , double z = <computeroutput>0</computeroutput>
-)</computeroutput></para>
-<para>The constructor defines point. 
+)</computeroutput></para><para>
+
+<para>The constructor defines point. </para>
+</para>
+
+<para>
                 <formalpara>
                     <title>
 Parameters                    </title>
@@ -75,7 +101,7 @@ Parameters                    </title>
                             <row>
                                 <entry>x, y, z</entry>
                                 <entry>
-<para>are coordinates of input point.</para>
+<para>are coordinates of input point. </para>
 </entry>
                             </row>
                         </tbody>
@@ -85,7 +111,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 22 of file point.cpp.</para>
+Definition at line 19 of file point.cpp.</para>
 </section>
 </section>
 <section>
@@ -94,8 +120,12 @@ Definition at line 22 of file point.cpp.</para>
     <title>operator[]()</title>
 <indexterm><primary>operator[]</primary><secondary>Point</secondary></indexterm>
 <indexterm><primary>Point</primary><secondary>operator[]</secondary></indexterm>
-<para><computeroutput>double &amp; Point::operator[] (const int index)</computeroutput></para>
-<para>Indexing operator. It returns the x, y, z coordinate depending on the index from the range [0, 2]. 
+<para><computeroutput>double &amp; Point::operator[] (const int index)</computeroutput></para><para>
+
+<para>Indexing operator. It returns the x, y, z coordinate depending on the index from the range [0, 2]. </para>
+</para>
+
+<para>
                 <formalpara>
                     <title>
 Parameters                    </title>
@@ -108,7 +138,7 @@ Parameters                    </title>
                             <row>
                                 <entry>index</entry>
                                 <entry>
-<para>0 &#8211; x, 1 &#8211; y, 2 &#8211; z.</para>
+<para>0 &#8211; x, 1 &#8211; y, 2 &#8211; z. </para>
 </entry>
                             </row>
                         </tbody>
@@ -118,13 +148,17 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 115 of file point.cpp.</para>
+Definition at line 68 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a07ebcfc85e0e4d5b6479ab93f39708b0"/>    <section>
     <title>printPoint()</title>
 <indexterm><primary>printPoint</primary><secondary>Point</secondary></indexterm>
 <indexterm><primary>Point</primary><secondary>printPoint</secondary></indexterm>
-<para><computeroutput>void Point::printPoint ( ) const</computeroutput></para>
-<para>The method prints point. 
+<para><computeroutput>void Point::printPoint ( ) const</computeroutput></para><para>
+
+<para>The method prints point. </para>
+</para>
+
+<para>
                 <formalpara>
                     <title>
 Parameters                    </title>
@@ -143,7 +177,7 @@ Parameters                    </title>
                             <row>
                                 <entry>right</entry>
                                 <entry>
-<para>right operand.</para>
+<para>right operand. </para>
 </entry>
                             </row>
                         </tbody>
@@ -153,7 +187,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 42 of file point.cpp.</para>
+Definition at line 31 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a5c87e531b784754068eba91f8e8cfd53"/>    <section>
     <title>setPoint()</title>
 <indexterm><primary>setPoint</primary><secondary>Point</secondary></indexterm>
@@ -161,8 +195,12 @@ Definition at line 42 of file point.cpp.</para>
 <para><computeroutput>void Point::setPoint (double x = <computeroutput>0</computeroutput>
 , double y = <computeroutput>0</computeroutput>
 , double z = <computeroutput>0</computeroutput>
-)</computeroutput></para>
-<para>The method sets the coordinates of the point. 
+)</computeroutput></para><para>
+
+<para>The method sets the coordinates of the point. </para>
+</para>
+
+<para>
                 <formalpara>
                     <title>
 Parameters                    </title>
@@ -175,7 +213,7 @@ Parameters                    </title>
                             <row>
                                 <entry>x, y, z</entry>
                                 <entry>
-<para>are coordinates of input.</para>
+<para>are coordinates of input. </para>
 </entry>
                             </row>
                         </tbody>
@@ -185,19 +223,23 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 32 of file point.cpp.</para>
+Definition at line 25 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a3013241afa6ea8971e71dec792827953"/>    <section>
     <title>sum_coordinates()</title>
 <indexterm><primary>sum_coordinates</primary><secondary>Point</secondary></indexterm>
 <indexterm><primary>Point</primary><secondary>sum_coordinates</secondary></indexterm>
-<para><computeroutput>double Point::sum_coordinates ( ) const</computeroutput></para>
-<para>Computes sum of coordinates point. <formalpara><title>Returns</title>
+<para><computeroutput>double Point::sum_coordinates ( ) const</computeroutput></para><para>
 
-<para>sum of coordinates point.</para>
+<para>Computes sum of coordinates point. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>sum of coordinates point. </para>
 </formalpara>
 </para>
 <para>
-Definition at line 51 of file point.cpp.</para>
+Definition at line 35 of file point.cpp.</para>
 </section>
 </section>
 <section>
@@ -206,8 +248,12 @@ Definition at line 51 of file point.cpp.</para>
     <title>operator*<computeroutput>[1/2]</computeroutput></title>
 <indexterm><primary>operator*</primary><secondary>Point</secondary></indexterm>
 <indexterm><primary>Point</primary><secondary>operator*</secondary></indexterm>
-<para><computeroutput><link linkend="_class_point">Point</link> operator* (const <link linkend="_class_point">Point</link> &amp; left, const double right)<computeroutput>[friend]</computeroutput></computeroutput></para>
-<para>The operator calculates the multiplication point by double. 
+<para><computeroutput><link linkend="_class_point">Point</link> operator* (const <link linkend="_class_point">Point</link> &amp; left, const double right)<computeroutput>[friend]</computeroutput></computeroutput></para><para>
+
+<para>The operator calculates the multiplication point by double. </para>
+</para>
+
+<para>
                 <formalpara>
                     <title>
 Parameters                    </title>
@@ -226,7 +272,7 @@ Parameters                    </title>
                             <row>
                                 <entry>right</entry>
                                 <entry>
-<para>right operand (double).</para>
+<para>right operand (double). </para>
 </entry>
                             </row>
                         </tbody>
@@ -236,13 +282,17 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 84 of file point.cpp.</para>
+Definition at line 53 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1aa7b897e4845243eef3fe77f356300372"/>    <section>
     <title>operator*<computeroutput>[2/2]</computeroutput></title>
 <indexterm><primary>operator*</primary><secondary>Point</secondary></indexterm>
 <indexterm><primary>Point</primary><secondary>operator*</secondary></indexterm>
-<para><computeroutput><link linkend="_class_point">Point</link> operator* (const <link linkend="_class_point">Point</link> &amp; left, const <link linkend="_class_point">Point</link> &amp; right)<computeroutput>[friend]</computeroutput></computeroutput></para>
-<para>The operator calculates the multiplication two points. 
+<para><computeroutput><link linkend="_class_point">Point</link> operator* (const <link linkend="_class_point">Point</link> &amp; left, const <link linkend="_class_point">Point</link> &amp; right)<computeroutput>[friend]</computeroutput></computeroutput></para><para>
+
+<para>The operator calculates the multiplication two points. </para>
+</para>
+
+<para>
                 <formalpara>
                     <title>
 Parameters                    </title>
@@ -261,7 +311,7 @@ Parameters                    </title>
                             <row>
                                 <entry>right</entry>
                                 <entry>
-<para>right operand (<link linkend="_class_point">Point</link>).</para>
+<para>right operand (<link linkend="_class_point">Point</link>). </para>
 </entry>
                             </row>
                         </tbody>
@@ -271,13 +321,17 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 73 of file point.cpp.</para>
+Definition at line 47 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1adc0ae410968ebfcac79ebcf9d4eb3f5b"/>    <section>
     <title>operator-</title>
 <indexterm><primary>operator-</primary><secondary>Point</secondary></indexterm>
 <indexterm><primary>Point</primary><secondary>operator-</secondary></indexterm>
-<para><computeroutput><link linkend="_class_point">Point</link> operator- (const <link linkend="_class_point">Point</link> &amp; left, const <link linkend="_class_point">Point</link> &amp; right)<computeroutput>[friend]</computeroutput></computeroutput></para>
-<para>The operator calculates a point that is the difference between all coordinates of the other two points. 
+<para><computeroutput><link linkend="_class_point">Point</link> operator- (const <link linkend="_class_point">Point</link> &amp; left, const <link linkend="_class_point">Point</link> &amp; right)<computeroutput>[friend]</computeroutput></computeroutput></para><para>
+
+<para>The operator calculates a point that is the difference between all coordinates of the other two points. </para>
+</para>
+
+<para>
                 <formalpara>
                     <title>
 Parameters                    </title>
@@ -296,7 +350,46 @@ Parameters                    </title>
                             <row>
                                 <entry>right</entry>
                                 <entry>
-<para>right operand.</para>
+<para>right operand. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line 42 of file point.cpp.</para>
+    </section><anchor xml:id="_class_point_1a7079c73de603914524a40929cb99e5db"/>    <section>
+    <title>operator/<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator/</primary><secondary>Point</secondary></indexterm>
+<indexterm><primary>Point</primary><secondary>operator/</secondary></indexterm>
+<para><computeroutput><link linkend="_class_point">Point</link> operator/ (const <link linkend="_class_point">Point</link> &amp; left, const double right)<computeroutput>[friend]</computeroutput></computeroutput></para><para>
+
+<para>The operator сalculates left per double number. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>left</entry>
+                                <entry>
+<para>left operand (<link linkend="_class_point">Point</link>). </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>right</entry>
+                                <entry>
+<para>right operand (double). </para>
 </entry>
                             </row>
                         </tbody>
@@ -307,82 +400,16 @@ Parameters                    </title>
                 </para>
 <para>
 Definition at line 63 of file point.cpp.</para>
-    </section><anchor xml:id="_class_point_1a7079c73de603914524a40929cb99e5db"/>    <section>
-    <title>operator/<computeroutput>[1/3]</computeroutput></title>
-<indexterm><primary>operator/</primary><secondary>Point</secondary></indexterm>
-<indexterm><primary>Point</primary><secondary>operator/</secondary></indexterm>
-<para><computeroutput><link linkend="_class_point">Point</link> operator/ (const <link linkend="_class_point">Point</link> &amp; left, const double right)<computeroutput>[friend]</computeroutput></computeroutput></para>
-<para>The operator сalculates left per double number 
-                <formalpara>
-                    <title>
-Parameters                    </title>
-                    <para>
-                    <table frame="all">
-                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
-                        <colspec colwidth="1*"/>
-                        <colspec colwidth="4*"/>
-                        <tbody>
-                            <row>
-                                <entry>left</entry>
-                                <entry>
-<para>left operand (<link linkend="_class_point">Point</link>). </para>
-</entry>
-                            </row>
-                            <row>
-                                <entry>right</entry>
-                                <entry>
-<para>right operand (double).</para>
-</entry>
-                            </row>
-                        </tbody>
-                        </tgroup>
-                    </table>
-                    </para>
-                </formalpara>
-                </para>
-<para>
-Definition at line 104 of file point.cpp.</para>
-    </section><anchor xml:id="_class_point_1a7079c73de603914524a40929cb99e5db"/>    <section>
-    <title>operator/<computeroutput>[2/3]</computeroutput></title>
-<indexterm><primary>operator/</primary><secondary>Point</secondary></indexterm>
-<indexterm><primary>Point</primary><secondary>operator/</secondary></indexterm>
-<para><computeroutput><link linkend="_class_point">Point</link> operator/ (const <link linkend="_class_point">Point</link> &amp; left, const double right)<computeroutput>[friend]</computeroutput></computeroutput></para>
-<para>The operator сalculates left per double number 
-                <formalpara>
-                    <title>
-Parameters                    </title>
-                    <para>
-                    <table frame="all">
-                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
-                        <colspec colwidth="1*"/>
-                        <colspec colwidth="4*"/>
-                        <tbody>
-                            <row>
-                                <entry>left</entry>
-                                <entry>
-<para>left operand (<link linkend="_class_point">Point</link>). </para>
-</entry>
-                            </row>
-                            <row>
-                                <entry>right</entry>
-                                <entry>
-<para>right operand (double).</para>
-</entry>
-                            </row>
-                        </tbody>
-                        </tgroup>
-                    </table>
-                    </para>
-                </formalpara>
-                </para>
-<para>
-Definition at line 104 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a55df2e214e10f9f854e48a4570eceff6"/>    <section>
-    <title>operator/<computeroutput>[3/3]</computeroutput></title>
+    <title>operator/<computeroutput>[2/2]</computeroutput></title>
 <indexterm><primary>operator/</primary><secondary>Point</secondary></indexterm>
 <indexterm><primary>Point</primary><secondary>operator/</secondary></indexterm>
-<para><computeroutput><link linkend="_class_point">Point</link> operator/ (const <link linkend="_class_point">Point</link> &amp; left, const <link linkend="_class_point">Point</link> &amp; right)<computeroutput>[friend]</computeroutput></computeroutput></para>
-<para>The operator сalculates the division of the coordinates of points 
+<para><computeroutput><link linkend="_class_point">Point</link> operator/ (const <link linkend="_class_point">Point</link> &amp; left, const <link linkend="_class_point">Point</link> &amp; right)<computeroutput>[friend]</computeroutput></computeroutput></para><para>
+
+<para>The operator сalculates the division of the coordinates of points. </para>
+</para>
+
+<para>
                 <formalpara>
                     <title>
 Parameters                    </title>
@@ -401,7 +428,7 @@ Parameters                    </title>
                             <row>
                                 <entry>right</entry>
                                 <entry>
-<para>right operand (<link linkend="_class_point">Point</link>).</para>
+<para>right operand (<link linkend="_class_point">Point</link>). </para>
 </entry>
                             </row>
                         </tbody>
@@ -411,7 +438,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 93 of file point.cpp.</para>
+Definition at line 57 of file point.cpp.</para>
 </section>
 <para>
 The documentation for this class was generated from the following files:</para>

@@ -43,10 +43,6 @@ using std::ofstream;
 using std::ifstream; 
 using std::stringstream; 
 /**
- * @brief Distance measurement accuracy
- */
-#define ACCUR 1e-7 // Distance Accuracy
-/**
  * @brief Calculates the sum of the squares of the coordinates of a point
  * @param x, y, z -- Point coordinates
  * @returns the sum of the squares of the coordinates of a point
@@ -58,7 +54,10 @@ using std::stringstream;
  * @returns distance between two input point.
  */ 
 #define DIST_BETWEEN(x1, x2, y1, y2, z1, z2) sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2) + (z1 - z2) * (z1 - z2)) // The distance between two points 
-
+/**
+ * @brief Distance measurement accuracy
+ */
+constexpr double ACCUR = 1e-7;
 void read_line(vector<Point>& points, string namefile);
 void calculate_projections(vector<Point> &points, Point &input_point);
 void projection_print(vector<Point>& all_projections, vector <Point>& points, 
