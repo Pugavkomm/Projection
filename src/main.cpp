@@ -42,18 +42,7 @@ using std::string;
 using std::ofstream; 
 using std::ifstream; 
 using std::stringstream; 
-/**
- * @brief Calculates the sum of the squares of the coordinates of a point (Vector length) 
- * @param x, y, z -- Point coordinates
- * @returns the sum of the squares of the coordinates of a point
- */ 
-#define DIST(x, y, z) sqrt(x * x + y * y + z * z) 
-/**
- * @brief Computes the distance between two input points
- * @param (x1, x2, y1, y2, z1, z2) two input points.
- * @returns distance between two input point.
- */ 
-#define DIST_BETWEEN(x1, x2, y1, y2, z1, z2) sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2) + (z1 - z2) * (z1 - z2)) // The distance between two points 
+
 /**
  * @brief Distance measurement accuracy
  */
@@ -128,13 +117,12 @@ void projection_print(vector<Point>& all_projections, vector <Point>& points,
     cout << "Projection:\n"; 
     for (size_t i = 0; i < all_projections.size(); ++i){
         cout << "Segment " << segments[i];
-        cout << " parameter " << (1.0f - (DIST_BETWEEN(all_projections[i][0], points[segments[i]][0], 
-                                all_projections[i][1], points[segments[i]][1],
-                                all_projections[i][2], points[segments[i]][2]) / 
-                                DIST_BETWEEN(points[segments[i] - 1][0], 
-                                points[segments[i]][0], points[segments[i] - 1][1], 
-                                points[segments[i]][1], points[segments[i] - 1][2], 
-                                points[segments[i]][2])));
+        
+        
+        cout << " parameter " << (1.0f - (all_projections[i].dist_between(points[segments[i]]) / 
+                                points[segments[i] - 1].dist_between(points[segments[i]])));
+        
+        
         cout  << " point " << all_projections[i][0] << ' ' << all_projections[i][1] << ' ' 
             << all_projections[i][2] << endl;
     }
