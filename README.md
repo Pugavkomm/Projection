@@ -41,8 +41,10 @@ Example:
 ├── doxygen_config
 ├── include
 │   ├── point.h
+|   └── compute.h
 ├── src
 │   ├── main.cpp
+|   ├── compute.cpp
 │   └── point.cpp
 ├── lib
   ├── 
