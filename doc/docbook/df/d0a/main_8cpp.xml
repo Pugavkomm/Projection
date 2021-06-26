@@ -11,6 +11,8 @@
 #include &lt;stdexcept&gt;
 #include &lt;sstream&gt;
 #include &lt;float.h&gt;
+#include &quot;line.h&quot;
+#include &quot;read_data.h&quot;
 </programlisting><simplesect>
     <title>Functions    </title>
         <itemizedlist>
@@ -69,13 +71,13 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 131 of file main.cpp.</para>
+Definition at line 140 of file main.cpp.</para>
     </section><anchor xml:id="_main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97"/>    <section>
     <title>main()</title>
 <indexterm><primary>main</primary><secondary>main.cpp</secondary></indexterm>
 <indexterm><primary>main.cpp</primary><secondary>main</secondary></indexterm>
 <para><computeroutput>int main (int argc, char * argv[])</computeroutput></para><para>
-Definition at line 56 of file main.cpp.</para>
+Definition at line 58 of file main.cpp.</para>
     </section><anchor xml:id="_main_8cpp_1a8c52dd0be20e174330f04c4b38bc1aee"/>    <section>
     <title>projection_print()</title>
 <indexterm><primary>projection_print</primary><secondary>main.cpp</secondary></indexterm>
@@ -116,7 +118,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 108 of file main.cpp.</para>
+Definition at line 117 of file main.cpp.</para>
     </section><anchor xml:id="_main_8cpp_1a1084fbc622c7b2dd999d4401b0258a84"/>    <section>
     <title>read_line()</title>
 <indexterm><primary>read_line</primary><secondary>main.cpp</secondary></indexterm>
@@ -151,7 +153,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 81 of file main.cpp.</para>
+Definition at line 90 of file main.cpp.</para>
 </section>
 </section>
 <section>
@@ -165,7 +167,7 @@ Definition at line 81 of file main.cpp.</para>
 <para>Distance measurement accuracy. </para>
 </para>
 <para>
-Definition at line 48 of file main.cpp.</para>
+Definition at line 50 of file main.cpp.</para>
 </section>
 </section>
 </section>

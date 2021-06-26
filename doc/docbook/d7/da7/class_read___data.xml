@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_read___data" xml:lang="en-US">
+<title>Read_Data Class Reference</title>
+<indexterm><primary>Read_Data</primary></indexterm>
+<para>
+<computeroutput>#include &lt;read_data.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_read___data_1a07d0952813ea87db5e93d79ac40ef014">Read_Data</link> (const std::string &amp;namefile)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_read___data_1a0c188d5f57aa8e4c4b294ae552d95e0e">open</link> (const std::string &amp;namefile)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_read___data_1a085e89481b053dfc33ba270677fe8d01">close</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_read___data_1a66cacbc790161305f83ac5acad6776ce">read_to_line</link> (std::vector&lt; <link linkend="_class_point">Point</link> &gt; &amp;line)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line 7 of file read_data.h.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_read___data_1a07d0952813ea87db5e93d79ac40ef014"/>    <section>
+    <title>Read_Data()</title>
+<indexterm><primary>Read_Data</primary><secondary>Read_Data</secondary></indexterm>
+<indexterm><primary>Read_Data</primary><secondary>Read_Data</secondary></indexterm>
+<para><computeroutput>Read_Data::Read_Data (const std::string &amp; namefile)</computeroutput></para><para>
+Definition at line 2 of file read_data.cpp.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_read___data_1a085e89481b053dfc33ba270677fe8d01"/>    <section>
+    <title>close()</title>
+<indexterm><primary>close</primary><secondary>Read_Data</secondary></indexterm>
+<indexterm><primary>Read_Data</primary><secondary>close</secondary></indexterm>
+<para><computeroutput>void Read_Data::close ( )</computeroutput></para><para>
+Definition at line 18 of file read_data.cpp.</para>
+    </section><anchor xml:id="_class_read___data_1a0c188d5f57aa8e4c4b294ae552d95e0e"/>    <section>
+    <title>open()</title>
+<indexterm><primary>open</primary><secondary>Read_Data</secondary></indexterm>
+<indexterm><primary>Read_Data</primary><secondary>open</secondary></indexterm>
+<para><computeroutput>void Read_Data::open (const std::string &amp; namefile)</computeroutput></para><para>
+Definition at line 9 of file read_data.cpp.</para>
+    </section><anchor xml:id="_class_read___data_1a66cacbc790161305f83ac5acad6776ce"/>    <section>
+    <title>read_to_line()</title>
+<indexterm><primary>read_to_line</primary><secondary>Read_Data</secondary></indexterm>
+<indexterm><primary>Read_Data</primary><secondary>read_to_line</secondary></indexterm>
+<para><computeroutput>void Read_Data::read_to_line (std::vector&lt; <link linkend="_class_point">Point</link> &gt; &amp; line)</computeroutput></para><para>
+Definition at line 23 of file read_data.cpp.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+include/<link linkend="_read__data_8h">read_data.h</link>src/<link linkend="_read__data_8cpp">read_data.cpp</link></section>
+</section>

@@ -1,5 +1,176 @@
 AutoGen Definitions dummy;
 class = {
+  cp-id     = 'db/d40/class_compute';
+  cp-name   = 'Compute';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'db/d40/class_compute_1a83e5a30d2fb4204ed38a2c12d6b3b5f3';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Compute';
+      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-line = '13';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'db/d40/class_compute_1ad3a005e61184f96bee219c9d3d446ebe';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_points_and_input';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::vector< Point > &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'points';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Point &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'input_point';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-line = '14';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'db/d40/class_compute_1a1e6d24eb1518eafd0cb5dcd46b1fcb63';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Point
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'cos';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Point &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'direction_vector';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'vector_length';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'db/d40/class_compute_1a0676d7ac9ed464143f9d1da9dd16f580';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Point
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'compute_projections';
+      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'db/d40/class_compute_1a104d3caa716baed26960d06177dc2eae';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::vector< unsigned int >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'segments';
+      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-line = '20';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'db/d40/class_compute_1a2d5803fa8e2ad55f9dac076b636c09bb';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::vector< float >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'parameters';
+      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-line = '21';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'db/d40/class_compute_1aa1b61d1d35cc297bb77907bc5588912d';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::vector< Point >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'projections';
+      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-line = '22';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/mech/projects/projection/include/compute.h';
+  cp-fileline  = '11';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
   cp-id     = 'd0/d69/class_point';
   cp-name   = 'Point';
   cp-section = {
@@ -388,6 +559,146 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
 }; /* class */
+class = {
+  cp-id     = 'd7/da7/class_read___data';
+  cp-name   = 'Read_Data';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd7/da7/class_read___data_1a07d0952813ea87db5e93d79ac40ef014';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Read_Data';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'namefile';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/mech/projects/projection/include/read_data.h';
+      sec-mem-desc-line = '9';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd7/da7/class_read___data_1a0c188d5f57aa8e4c4b294ae552d95e0e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'open';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'namefile';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/mech/projects/projection/include/read_data.h';
+      sec-mem-desc-line = '10';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd7/da7/class_read___data_1a085e89481b053dfc33ba270677fe8d01';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'close';
+      sec-mem-desc-file = '/home/mech/projects/projection/include/read_data.h';
+      sec-mem-desc-line = '11';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd7/da7/class_read___data_1a66cacbc790161305f83ac5acad6776ce';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'read_to_line';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::vector< Point > &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'line';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/mech/projects/projection/include/read_data.h';
+      sec-mem-desc-line = '12';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd7/da7/class_read___data_1ab5d6f5551553dc9000ac8581b46947eb';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::ifstream
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'file';
+      sec-mem-desc-file = '/home/mech/projects/projection/include/read_data.h';
+      sec-mem-desc-line = '14';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/mech/projects/projection/include/read_data.h';
+  cp-fileline  = '7';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+file = {
+  file-id   = 'd9/d41/compute_8h';
+  file-name = 'compute.h';
+  file-full-name  = '/home/mech/projects/projection/include/compute.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Compute class interface.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
 file = {
   file-id   = 'd2/d91/point_8h';
   file-name = 'point.h';
@@ -426,6 +737,30 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
 }; /* file */
 file = {
+  file-id   = 'dc/d36/read__data_8h';
+  file-name = 'read_data.h';
+  file-full-name  = '/home/mech/projects/projection/include/read_data.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd5/dea/compute_8cpp';
+  file-name = 'compute.cpp';
+  file-full-name  = '/home/mech/projects/projection/src/compute.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
   file-id   = 'df/d0a/main_8cpp';
   file-name = 'main.cpp';
     func = {
@@ -451,7 +786,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'namefile';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      func-mem-desc-line = '81';
+      func-mem-desc-line = '90';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -481,7 +816,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'input_point';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      func-mem-desc-line = '131';
+      func-mem-desc-line = '140';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -517,7 +852,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'segments';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      func-mem-desc-line = '108';
+      func-mem-desc-line = '117';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -548,7 +883,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-array = '[]';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      func-mem-desc-line = '56';
+      func-mem-desc-line = '58';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -571,7 +906,7 @@ _EnD_oF_dEf_TeXt_;
 = 1e-7
 _EnD_oF_dEf_TeXt_;
       var-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
-      var-mem-desc-line = '48';
+      var-mem-desc-line = '50';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Distance measurement accuracy.
 _EnD_oF_dEf_TeXt_;
@@ -758,6 +1093,18 @@ _EnD_oF_dEf_TeXt_;
   file-documentation = <<_EnD_oF_dEf_TeXt_
 
 
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd0/d40/read__data_8cpp';
+  file-name = 'read_data.cpp';
+  file-full-name  = '/home/mech/projects/projection/src/read_data.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
 }; /* file */

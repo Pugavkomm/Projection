@@ -24,6 +24,8 @@
  * @date 2021-06-21
  */
 #include "point.h"
+#include "read_data.h"
+#include "compute.h"
 #include <iostream>
 #include <vector> 
 #include <fstream>
@@ -70,10 +72,17 @@ int main(int argc, char* argv[]){
     vector<Point> points; 
     string namefile = argv[1]; 
     cout << "Start Read\n";
-    read_line(points, namefile); 
-    cout << "End Read\n";
-    calculate_projections(points, input_point); 
+    //read_line(points, namefile); 
+    //cout << "End Read\n";
+    //calculate_projections(points, input_point); 
 
+    ////////TODO:DELETE THIS SECTION/////////////
+    Read_Data file(namefile); 
+    vector<Point> line; 
+    cout << "START READ\n";
+    file.read_to_line(line);
+    cout << "END READ\n";
+    
     return 0; 
 }
 

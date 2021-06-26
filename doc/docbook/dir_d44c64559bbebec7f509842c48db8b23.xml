@@ -5,9 +5,15 @@
 <simplesect>
     <title>Files    </title>
         <itemizedlist>
+            <listitem><para>file <link linkend="_compute_8h">compute.h</link></para>
+
+<para><link linkend="_class_compute">Compute</link> class interface. </para>
+</listitem>
             <listitem><para>file <link linkend="_point_8h">point.h</link></para>
 
 <para><link linkend="_class_point">Point</link> class interface. </para>
+</listitem>
+            <listitem><para>file <link linkend="_read__data_8h">read_data.h</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
