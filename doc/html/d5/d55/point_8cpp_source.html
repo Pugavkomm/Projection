@@ -118,7 +118,7 @@ $(function() {
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d0/d69/class_point.html#a3013241afa6ea8971e71dec792827953">   49</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="../../d0/d69/class_point.html#a3013241afa6ea8971e71dec792827953">Point::sum_coordinates</a>()<span class="keyword"> const</span>{</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">double</span> sum_c = 0; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../d2/d91/point_8h.html#a5c04aa1c27b748c112473234c95721c8">DIM</a>; ++i)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; DIM; ++i)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        sum_c += point[i];</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> sum_c;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
@@ -166,7 +166,6 @@ $(function() {
 <div class="ttc" id="apoint_8cpp_html_ac11bff72e39c1d5c37ad60ad71317e0c"><div class="ttname"><a href="../../d5/d55/point_8cpp.html#ac11bff72e39c1d5c37ad60ad71317e0c">operator*</a></div><div class="ttdeci">double operator*(const Point &amp;left, const Point &amp;right)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d55/point_8cpp_source.html#l00061">point.cpp:61</a></div></div>
 <div class="ttc" id="apoint_8cpp_html_af5305ddbdee0cee9a68cade605063dda"><div class="ttname"><a href="../../d5/d55/point_8cpp.html#af5305ddbdee0cee9a68cade605063dda">operator/</a></div><div class="ttdeci">Point operator/(const Point &amp;left, const Point &amp;right)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d55/point_8cpp_source.html#l00071">point.cpp:71</a></div></div>
 <div class="ttc" id="apoint_8h_html"><div class="ttname"><a href="../../d2/d91/point_8h.html">point.h</a></div><div class="ttdoc">Point class interface.</div></div>
-<div class="ttc" id="apoint_8h_html_a5c04aa1c27b748c112473234c95721c8"><div class="ttname"><a href="../../d2/d91/point_8h.html#a5c04aa1c27b748c112473234c95721c8">DIM</a></div><div class="ttdeci">constexpr int DIM</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d91/point_8h_source.html#l00007">point.h:7</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

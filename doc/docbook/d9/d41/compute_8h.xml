@@ -7,9 +7,8 @@
 <para><link linkend="_class_compute">Compute</link> class interface. </para>
  
 </para>
-<programlisting>#include &lt;vector&gt;
-#include &lt;cmath&gt;
-#include &quot;point.h&quot;
+<programlisting>#include &quot;point.h&quot;
+#include &lt;vector&gt;
 </programlisting><simplesect>
     <title>Data Structures    </title>
         <itemizedlist>

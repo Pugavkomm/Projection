@@ -73,31 +73,30 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="../../d9/d41/compute_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef COMPUTE</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define COMPUTE</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d91/point_8h.html">point.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef COMPUTE</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define COMPUTE</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d91/point_8h.html">point.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../db/d40/class_compute.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../db/d40/class_compute.html">Compute</a>{</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="../../db/d40/class_compute.html#a83e5a30d2fb4204ed38a2c12d6b3b5f3">Compute</a>();</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../db/d40/class_compute.html#ad3a005e61184f96bee219c9d3d446ebe">   14</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../db/d40/class_compute.html#ad3a005e61184f96bee219c9d3d446ebe">get_points_and_input</a>(std::vector&lt;Point&gt; &amp;points, <a class="code" href="../../d0/d69/class_point.html">Point</a> &amp;input_point);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="../../d0/d69/class_point.html">Point</a> cos(<a class="code" href="../../d0/d69/class_point.html">Point</a> &amp;direction_vector, <span class="keywordtype">double</span> vector_length); </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="comment">//double deviation()</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="../../d0/d69/class_point.html">Point</a> compute_projections(); </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        std::vector&lt;unsigned int&gt; segments; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        std::vector&lt;float&gt; parameters; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        std::vector&lt;Point&gt; projections;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../db/d40/class_compute.html#ad3a005e61184f96bee219c9d3d446ebe">get_points_and_input</a>(std::vector&lt;Point&gt; &amp;points, <a class="code" href="../../d0/d69/class_point.html">Point</a> &amp;input_point);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../db/d40/class_compute.html#a7a7d6e380ad5f1b9a43aa067b0b82358">display_projections</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="../../d0/d69/class_point.html">Point</a> cos(<a class="code" href="../../d0/d69/class_point.html">Point</a> &amp;direction_vector, <span class="keywordtype">double</span> vector_length); </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">void</span> compute_projections(std::vector&lt;Point&gt;&amp; points, <a class="code" href="../../d0/d69/class_point.html">Point</a> &amp;input_point); </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="../../d0/d69/class_point.html">Point</a> compute_one_projection(<a class="code" href="../../d0/d69/class_point.html">Point</a> &amp;direction_vector, <a class="code" href="../../d0/d69/class_point.html">Point</a> &amp;current_point, <a class="code" href="../../d0/d69/class_point.html">Point</a> &amp;input_point);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        std::vector&lt;unsigned int&gt; segments; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        std::vector&lt;float&gt; parameters; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        std::vector&lt;Point&gt; projections;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_compute_html"><div class="ttname"><a href="../../db/d40/class_compute.html">Compute</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d41/compute_8h_source.html#l00011">compute.h:11</a></div></div>
-<div class="ttc" id="aclass_compute_html_a83e5a30d2fb4204ed38a2c12d6b3b5f3"><div class="ttname"><a href="../../db/d40/class_compute.html#a83e5a30d2fb4204ed38a2c12d6b3b5f3">Compute::Compute</a></div><div class="ttdeci">Compute()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dea/compute_8cpp_source.html#l00002">compute.cpp:2</a></div></div>
-<div class="ttc" id="aclass_compute_html_ad3a005e61184f96bee219c9d3d446ebe"><div class="ttname"><a href="../../db/d40/class_compute.html#ad3a005e61184f96bee219c9d3d446ebe">Compute::get_points_and_input</a></div><div class="ttdeci">void get_points_and_input(std::vector&lt; Point &gt; &amp;points, Point &amp;input_point)</div></div>
+<div class="ttc" id="aclass_compute_html_a7a7d6e380ad5f1b9a43aa067b0b82358"><div class="ttname"><a href="../../db/d40/class_compute.html#a7a7d6e380ad5f1b9a43aa067b0b82358">Compute::display_projections</a></div><div class="ttdeci">void display_projections()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dea/compute_8cpp_source.html#l00013">compute.cpp:13</a></div></div>
+<div class="ttc" id="aclass_compute_html_a83e5a30d2fb4204ed38a2c12d6b3b5f3"><div class="ttname"><a href="../../db/d40/class_compute.html#a83e5a30d2fb4204ed38a2c12d6b3b5f3">Compute::Compute</a></div><div class="ttdeci">Compute()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dea/compute_8cpp_source.html#l00007">compute.cpp:7</a></div></div>
+<div class="ttc" id="aclass_compute_html_ad3a005e61184f96bee219c9d3d446ebe"><div class="ttname"><a href="../../db/d40/class_compute.html#ad3a005e61184f96bee219c9d3d446ebe">Compute::get_points_and_input</a></div><div class="ttdeci">void get_points_and_input(std::vector&lt; Point &gt; &amp;points, Point &amp;input_point)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dea/compute_8cpp_source.html#l00009">compute.cpp:9</a></div></div>
 <div class="ttc" id="aclass_point_html"><div class="ttname"><a href="../../d0/d69/class_point.html">Point</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d91/point_8h_source.html#l00008">point.h:8</a></div></div>
 <div class="ttc" id="apoint_8h_html"><div class="ttname"><a href="../../d2/d91/point_8h.html">point.h</a></div><div class="ttdoc">Point class interface.</div></div>
 </div><!-- fragment --></div><!-- contents -->

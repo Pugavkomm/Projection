@@ -1,52 +1,21 @@
 \hypertarget{main_8cpp}{}\doxysection{src/main.cpp File Reference}
 \label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
 {\ttfamily \#include \char`\"{}point.\+h\char`\"{}}\newline
-{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}read\+\_\+data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}compute.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$fstream$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
-{\ttfamily \#include $<$cmath$>$}\newline
-{\ttfamily \#include $<$stdexcept$>$}\newline
 {\ttfamily \#include $<$sstream$>$}\newline
-{\ttfamily \#include $<$float.\+h$>$}\newline
-{\ttfamily \#include \char`\"{}line.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}read\+\_\+data.\+h\char`\"{}}\newline
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{main_8cpp_a1084fbc622c7b2dd999d4401b0258a84}{read\+\_\+line}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&points, string namefile)
-\item 
-void \mbox{\hyperlink{main_8cpp_a431913d566799b0953f5371201e27fd4}{calculate\+\_\+projections}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&points, \mbox{\hyperlink{class_point}{Point}} \&input\+\_\+point)
-\item 
-void \mbox{\hyperlink{main_8cpp_a8c52dd0be20e174330f04c4b38bc1aee}{projection\+\_\+print}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&all\+\_\+projections, vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&points, vector$<$ unsigned int $>$ \&segments)
-\item 
 int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
 \end{DoxyCompactItemize}
-\doxysubsection*{Variables}
-\begin{DoxyCompactItemize}
-\item 
-constexpr double \mbox{\hyperlink{main_8cpp_aa0b6a9a58cfdc2e540143ac2ac56fea8}{ACCUR}} = 1e-\/7
-\begin{DoxyCompactList}\small\item\em Distance measurement accuracy. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{main_8cpp_a431913d566799b0953f5371201e27fd4}\label{main_8cpp_a431913d566799b0953f5371201e27fd4}} 
-\index{main.cpp@{main.cpp}!calculate\_projections@{calculate\_projections}}
-\index{calculate\_projections@{calculate\_projections}!main.cpp@{main.cpp}}
-\doxysubsubsection{\texorpdfstring{calculate\_projections()}{calculate\_projections()}}
-{\footnotesize\ttfamily void calculate\+\_\+projections (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&}]{points,  }\item[{\mbox{\hyperlink{class_point}{Point}} \&}]{input\+\_\+point }\end{DoxyParamCaption})}
-
-Computes all projections. 
-\begin{DoxyParams}{Parameters}
-{\em points} & a line. \\
-\hline
-{\em input\+\_\+point} & an input point.\\
-\hline
-\end{DoxyParams}
-
-
-Definition at line 140 of file main.\+cpp.
-
 \mbox{\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
 \index{main.cpp@{main.cpp}!main@{main}}
 \index{main@{main}!main.cpp@{main.cpp}}
@@ -55,58 +24,5 @@ Definition at line 140 of file main.\+cpp.
 
 
 
-Definition at line 58 of file main.\+cpp.
-
-\mbox{\Hypertarget{main_8cpp_a8c52dd0be20e174330f04c4b38bc1aee}\label{main_8cpp_a8c52dd0be20e174330f04c4b38bc1aee}} 
-\index{main.cpp@{main.cpp}!projection\_print@{projection\_print}}
-\index{projection\_print@{projection\_print}!main.cpp@{main.cpp}}
-\doxysubsubsection{\texorpdfstring{projection\_print()}{projection\_print()}}
-{\footnotesize\ttfamily void projection\+\_\+print (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&}]{all\+\_\+projections,  }\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&}]{points,  }\item[{vector$<$ unsigned int $>$ \&}]{segments }\end{DoxyParamCaption})}
-
-Prinnts all projections, parameters and segments. 
-\begin{DoxyParams}{Parameters}
-{\em all\+\_\+projections} & all found projections. \\
-\hline
-{\em points} & a line. \\
-\hline
-{\em segments} & all found projections.\\
-\hline
-\end{DoxyParams}
-
-
-Definition at line 117 of file main.\+cpp.
-
-\mbox{\Hypertarget{main_8cpp_a1084fbc622c7b2dd999d4401b0258a84}\label{main_8cpp_a1084fbc622c7b2dd999d4401b0258a84}} 
-\index{main.cpp@{main.cpp}!read\_line@{read\_line}}
-\index{read\_line@{read\_line}!main.cpp@{main.cpp}}
-\doxysubsubsection{\texorpdfstring{read\_line()}{read\_line()}}
-{\footnotesize\ttfamily void read\+\_\+line (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&}]{points,  }\item[{string}]{namefile }\end{DoxyParamCaption})}
-
-Read a line from a file 
-\begin{DoxyParams}{Parameters}
-{\em points} & the vector of points. The data from the file is written to this vector. \\
-\hline
-{\em namefile} & the name input file.\\
-\hline
-\end{DoxyParams}
-
-
-Definition at line 90 of file main.\+cpp.
-
-
-
-\doxysubsection{Variable Documentation}
-\mbox{\Hypertarget{main_8cpp_aa0b6a9a58cfdc2e540143ac2ac56fea8}\label{main_8cpp_aa0b6a9a58cfdc2e540143ac2ac56fea8}} 
-\index{main.cpp@{main.cpp}!ACCUR@{ACCUR}}
-\index{ACCUR@{ACCUR}!main.cpp@{main.cpp}}
-\doxysubsubsection{\texorpdfstring{ACCUR}{ACCUR}}
-{\footnotesize\ttfamily constexpr double ACCUR = 1e-\/7\hspace{0.3cm}{\ttfamily [constexpr]}}
-
-
-
-Distance measurement accuracy. 
-
-
-
-Definition at line 50 of file main.\+cpp.
+Definition at line 42 of file main.\+cpp.
 

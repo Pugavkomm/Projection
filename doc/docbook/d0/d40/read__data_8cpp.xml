@@ -3,4 +3,7 @@
 <title>src/read_data.cpp File Reference</title>
 <indexterm><primary>src/read_data.cpp</primary></indexterm>
 <programlisting>#include &lt;read_data.h&gt;
+#include &lt;stdexcept&gt;
+#include &quot;point.h&quot;
+#include &quot;consts.h&quot;
 </programlisting></section>

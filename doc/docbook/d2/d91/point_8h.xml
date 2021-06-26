@@ -7,17 +7,11 @@
 <para><link linkend="_class_point">Point</link> class interface. </para>
  
 </para>
-<simplesect>
+<programlisting>#include &quot;consts.h&quot;
+</programlisting><simplesect>
     <title>Data Structures    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_class_point">Point</link></para>
-</listitem>
-        </itemizedlist>
-</simplesect>
-<simplesect>
-    <title>Variables    </title>
-        <itemizedlist>
-            <listitem><para>constexpr int <link linkend="_point_8h_1a5c04aa1c27b748c112473234c95721c8">DIM</link> = 3</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -25,15 +19,5 @@
 <title>Detailed Description</title>
 
 <para><link linkend="_class_point">Point</link> class interface. </para>
-</section>
-<section>
-<title>Variable Documentation</title>
-<anchor xml:id="_point_8h_1a5c04aa1c27b748c112473234c95721c8"/>    <section>
-    <title>DIM</title>
-<indexterm><primary>DIM</primary><secondary>point.h</secondary></indexterm>
-<indexterm><primary>point.h</primary><secondary>DIM</secondary></indexterm>
-<para><computeroutput>constexpr int DIM = 3<computeroutput>[constexpr]</computeroutput></computeroutput></para><para>
-Definition at line 7 of file point.h.</para>
-</section>
 </section>
 </section>

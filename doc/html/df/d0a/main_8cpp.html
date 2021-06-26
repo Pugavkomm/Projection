@@ -69,81 +69,28 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">main.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d2/d91/point_8h_source.html">point.h</a>&quot;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/d36/read__data_8h_source.html">read_data.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/d41/compute_8h_source.html">compute.h</a>&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
-<code>#include &lt;cmath&gt;</code><br />
-<code>#include &lt;stdexcept&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
-<code>#include &lt;float.h&gt;</code><br />
-<code>#include &quot;line.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dc/d36/read__data_8h_source.html">read_data.h</a>&quot;</code><br />
 </div>
 <p><a href="../../df/d0a/main_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1084fbc622c7b2dd999d4401b0258a84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a1084fbc622c7b2dd999d4401b0258a84">read_line</a> (vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;points, string namefile)</td></tr>
-<tr class="separator:a1084fbc622c7b2dd999d4401b0258a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a431913d566799b0953f5371201e27fd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a431913d566799b0953f5371201e27fd4">calculate_projections</a> (vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;points, <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;input_point)</td></tr>
-<tr class="separator:a431913d566799b0953f5371201e27fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c52dd0be20e174330f04c4b38bc1aee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a8c52dd0be20e174330f04c4b38bc1aee">projection_print</a> (vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;all_projections, vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;points, vector&lt; unsigned int &gt; &amp;segments)</td></tr>
-<tr class="separator:a8c52dd0be20e174330f04c4b38bc1aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:aa0b6a9a58cfdc2e540143ac2ac56fea8"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#aa0b6a9a58cfdc2e540143ac2ac56fea8">ACCUR</a> = 1e-7</td></tr>
-<tr class="memdesc:aa0b6a9a58cfdc2e540143ac2ac56fea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distance measurement accuracy.  <a href="../../df/d0a/main_8cpp.html#aa0b6a9a58cfdc2e540143ac2ac56fea8">More...</a><br /></td></tr>
-<tr class="separator:aa0b6a9a58cfdc2e540143ac2ac56fea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a431913d566799b0953f5371201e27fd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a431913d566799b0953f5371201e27fd4">&#9670;&nbsp;</a></span>calculate_projections()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void calculate_projections </td>
-          <td>(</td>
-          <td class="paramtype">vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>points</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>input_point</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Computes all projections. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">points</td><td>a line. </td></tr>
-    <tr><td class="paramname">input_point</td><td>an input point.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00140">140</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
-
-</div>
-</div>
 <a id="a0ddf1224851353fc92bfbff6f499fa97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&nbsp;</a></span>main()</h2>
 
@@ -170,115 +117,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a8c52dd0be20e174330f04c4b38bc1aee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c52dd0be20e174330f04c4b38bc1aee">&#9670;&nbsp;</a></span>projection_print()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void projection_print </td>
-          <td>(</td>
-          <td class="paramtype">vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>all_projections</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>points</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vector&lt; unsigned int &gt; &amp;&#160;</td>
-          <td class="paramname"><em>segments</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Prinnts all projections, parameters and segments. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">all_projections</td><td>all found projections. </td></tr>
-    <tr><td class="paramname">points</td><td>a line. </td></tr>
-    <tr><td class="paramname">segments</td><td>all found projections.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a1084fbc622c7b2dd999d4401b0258a84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1084fbc622c7b2dd999d4401b0258a84">&#9670;&nbsp;</a></span>read_line()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void read_line </td>
-          <td>(</td>
-          <td class="paramtype">vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>points</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>namefile</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Read a line from a file </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">points</td><td>the vector of points. The data from the file is written to this vector. </td></tr>
-    <tr><td class="paramname">namefile</td><td>the name input file.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="aa0b6a9a58cfdc2e540143ac2ac56fea8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0b6a9a58cfdc2e540143ac2ac56fea8">&#9670;&nbsp;</a></span>ACCUR</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr double ACCUR = 1e-7</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Distance measurement accuracy. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>

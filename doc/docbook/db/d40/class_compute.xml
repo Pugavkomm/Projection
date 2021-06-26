@@ -12,6 +12,8 @@
 </listitem>
             <listitem><para>void <link linkend="_class_compute_1ad3a005e61184f96bee219c9d3d446ebe">get_points_and_input</link> (std::vector&lt; <link linkend="_class_point">Point</link> &gt; &amp;points, <link linkend="_class_point">Point</link> &amp;input_point)</para>
 </listitem>
+            <listitem><para>void <link linkend="_class_compute_1a7a7d6e380ad5f1b9a43aa067b0b82358">display_projections</link> ()</para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <section>
@@ -26,16 +28,24 @@ Definition at line 11 of file compute.h.</para>
 <indexterm><primary>Compute</primary><secondary>Compute</secondary></indexterm>
 <indexterm><primary>Compute</primary><secondary>Compute</secondary></indexterm>
 <para><computeroutput>Compute::Compute ( )</computeroutput></para><para>
-Definition at line 2 of file compute.cpp.</para>
+Definition at line 7 of file compute.cpp.</para>
 </section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_class_compute_1ad3a005e61184f96bee219c9d3d446ebe"/>    <section>
+<anchor xml:id="_class_compute_1a7a7d6e380ad5f1b9a43aa067b0b82358"/>    <section>
+    <title>display_projections()</title>
+<indexterm><primary>display_projections</primary><secondary>Compute</secondary></indexterm>
+<indexterm><primary>Compute</primary><secondary>display_projections</secondary></indexterm>
+<para><computeroutput>void Compute::display_projections ( )</computeroutput></para><para>
+Definition at line 13 of file compute.cpp.</para>
+    </section><anchor xml:id="_class_compute_1ad3a005e61184f96bee219c9d3d446ebe"/>    <section>
     <title>get_points_and_input()</title>
 <indexterm><primary>get_points_and_input</primary><secondary>Compute</secondary></indexterm>
 <indexterm><primary>Compute</primary><secondary>get_points_and_input</secondary></indexterm>
-<para><computeroutput>void Compute::get_points_and_input (std::vector&lt; <link linkend="_class_point">Point</link> &gt; &amp; points, <link linkend="_class_point">Point</link> &amp; input_point)</computeroutput></para></section>
+<para><computeroutput>void Compute::get_points_and_input (std::vector&lt; <link linkend="_class_point">Point</link> &gt; &amp; points, <link linkend="_class_point">Point</link> &amp; input_point)</computeroutput></para><para>
+Definition at line 9 of file compute.cpp.</para>
+</section>
 <para>
 The documentation for this class was generated from the following files:</para>
 include/<link linkend="_compute_8h">compute.h</link>src/<link linkend="_compute_8cpp">compute.cpp</link></section>

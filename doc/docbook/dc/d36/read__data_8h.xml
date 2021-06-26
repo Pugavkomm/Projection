@@ -4,8 +4,8 @@
 <indexterm><primary>include/read_data.h</primary></indexterm>
 <programlisting>#include &lt;string&gt;
 #include &lt;fstream&gt;
-#include &lt;stdexcept&gt;
-#include &quot;line.h&quot;
+#include &lt;vector&gt;
+#include &quot;point.h&quot;
 </programlisting><simplesect>
     <title>Data Structures    </title>
         <itemizedlist>

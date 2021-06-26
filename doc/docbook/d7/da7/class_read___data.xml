@@ -21,7 +21,7 @@
 <section>
 <title>Detailed Description</title>
 <para>
-Definition at line 7 of file read_data.h.</para>
+Definition at line 8 of file read_data.h.</para>
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
@@ -30,7 +30,7 @@ Definition at line 7 of file read_data.h.</para>
 <indexterm><primary>Read_Data</primary><secondary>Read_Data</secondary></indexterm>
 <indexterm><primary>Read_Data</primary><secondary>Read_Data</secondary></indexterm>
 <para><computeroutput>Read_Data::Read_Data (const std::string &amp; namefile)</computeroutput></para><para>
-Definition at line 2 of file read_data.cpp.</para>
+Definition at line 5 of file read_data.cpp.</para>
 </section>
 </section>
 <section>
@@ -40,19 +40,19 @@ Definition at line 2 of file read_data.cpp.</para>
 <indexterm><primary>close</primary><secondary>Read_Data</secondary></indexterm>
 <indexterm><primary>Read_Data</primary><secondary>close</secondary></indexterm>
 <para><computeroutput>void Read_Data::close ( )</computeroutput></para><para>
-Definition at line 18 of file read_data.cpp.</para>
+Definition at line 21 of file read_data.cpp.</para>
     </section><anchor xml:id="_class_read___data_1a0c188d5f57aa8e4c4b294ae552d95e0e"/>    <section>
     <title>open()</title>
 <indexterm><primary>open</primary><secondary>Read_Data</secondary></indexterm>
 <indexterm><primary>Read_Data</primary><secondary>open</secondary></indexterm>
 <para><computeroutput>void Read_Data::open (const std::string &amp; namefile)</computeroutput></para><para>
-Definition at line 9 of file read_data.cpp.</para>
+Definition at line 12 of file read_data.cpp.</para>
     </section><anchor xml:id="_class_read___data_1a66cacbc790161305f83ac5acad6776ce"/>    <section>
     <title>read_to_line()</title>
 <indexterm><primary>read_to_line</primary><secondary>Read_Data</secondary></indexterm>
 <indexterm><primary>Read_Data</primary><secondary>read_to_line</secondary></indexterm>
 <para><computeroutput>void Read_Data::read_to_line (std::vector&lt; <link linkend="_class_point">Point</link> &gt; &amp; line)</computeroutput></para><para>
-Definition at line 23 of file read_data.cpp.</para>
+Definition at line 26 of file read_data.cpp.</para>
 </section>
 <para>
 The documentation for this class was generated from the following files:</para>

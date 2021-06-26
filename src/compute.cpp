@@ -24,7 +24,7 @@ void Compute::display_projections(){
         }
     }
 }
-
+//TODO: BREAK THIS FUNCTION
 void Compute::compute_projections(std::vector<Point> &points, Point &input_point){
     size_t quant_points = points.size();
     Point direction_vector; 

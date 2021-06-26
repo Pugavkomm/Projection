@@ -26,26 +26,19 @@
 #include "point.h"
 #include "read_data.h"
 #include "compute.h"
-#include <consts.h>
+#include <vector>
 #include <iostream>
-#include <vector> 
 #include <fstream>
 #include <string> 
-#include <cmath>
-#include <stdexcept>
 #include <sstream> 
-#include <float.h>
 using std::invalid_argument; 
 using std::abs; 
-using std::sqrt; 
 using std::cout;
 using std::endl; 
-using std::vector; 
 using std::string; 
-using std::ofstream; 
 using std::ifstream; 
 using std::stringstream; 
-
+using std::vector;
 int main(int argc, char* argv[]){
     if (argc < 5){
         throw invalid_argument("Error"); 
