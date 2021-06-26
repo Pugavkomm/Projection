@@ -1,9 +1,7 @@
 #include <read_data.h>
-#include <string>
-#include <fstream>
 #include <stdexcept>
-#include <vector> 
 #include "point.h"
+#include "consts.h"
 Read_Data::Read_Data(const std::string& namefile){
     file.open(namefile);
     if(!file.is_open()){

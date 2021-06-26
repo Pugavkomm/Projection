@@ -4,7 +4,7 @@
  */
 #ifndef POINT
 #define POINT
-constexpr int  DIM = 3; // 3D space
+#include "consts.h"
 class Point{
     public:
         /**

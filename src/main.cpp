@@ -26,6 +26,7 @@
 #include "point.h"
 #include "read_data.h"
 #include "compute.h"
+#include <consts.h>
 #include <iostream>
 #include <vector> 
 #include <fstream>
@@ -44,16 +45,6 @@ using std::string;
 using std::ofstream; 
 using std::ifstream; 
 using std::stringstream; 
-/**
- * @brief Distance measurement accuracy
- */
-constexpr double ACCUR = 1e-7;
-//TODO: replace to class. 
-void read_line(vector<Point>& points, string namefile);
-void calculate_projections(vector<Point> &points, Point &input_point);
-void projection_print(vector<Point>& all_projections, vector <Point>& points, 
-                                                        vector<unsigned int>& segments);
-
 
 int main(int argc, char* argv[]){
     if (argc < 5){
@@ -69,128 +60,16 @@ int main(int argc, char* argv[]){
     }
     cout << "Point:\n"; 
     input_point.printPoint(); 
-    vector<Point> points; 
     string namefile = argv[1]; 
-    cout << "Start Read\n";
-    //read_line(points, namefile); 
-    //cout << "End Read\n";
-    //calculate_projections(points, input_point); 
 
-    ////////TODO:DELETE THIS SECTION/////////////
     Read_Data file(namefile); 
     vector<Point> line; 
-    cout << "START READ\n";
+    cout << "Start Read\n";
     file.read_to_line(line);
-    cout << "END READ\n";
-    
-    return 0; 
-}
-
-
-void read_line(vector<Point>& points, string namefile){
-    /**
-     * @brief Read a line from a file
-     * @param points the vector of points. The data from the file is written to this vector.
-     * @param namefile the name input file. 
-     */
-    Point temp; 
-    double read_point[DIM]; 
-    ifstream file(namefile); 
-    if(!file){
-        throw invalid_argument("File not found!"); 
-    } else{ 
-        int i = 0; 
-        while (file >> read_point[i]){
-            i++; 
-            if (i == DIM){
-                i = 0; 
-                temp.setPoint(read_point[0], read_point[1], read_point[2]);
-                points.push_back(temp); 
-                
-            }
-        }
-    }
     file.close();
-}
-
-
-void projection_print(vector<Point>& all_projections, vector <Point>& points, 
-                                                        vector<unsigned int>& segments){
-    /**
-     * @brief Prinnts all projections, parameters and segments.
-     * @param all_projections all found projections.
-     * @param points a line.
-     * @param segments all found projections.
-     */
-    cout << "Projection:\n"; 
-    for (size_t i = 0; i < all_projections.size(); ++i){
-        cout << "Segment " << segments[i];
-        
-        
-        cout << " parameter " << (1.0f - (all_projections[i].dist_between(points[segments[i]]) / 
-                                points[segments[i] - 1].dist_between(points[segments[i]])));
-        
-        
-        cout  << " point " << all_projections[i][0] << ' ' << all_projections[i][1] << ' ' 
-            << all_projections[i][2] << endl;
-    }
-}
-
-
-void calculate_projections(vector<Point> &points, Point &input_point){ // TODO add const
-    /**
-     * @brief Computes all projections.
-     * @param points a line.
-     * @param input_point an input point. 
-     */
-    size_t quant_points = points.size();
-    Point direction_vector; 
-    Point temp_projection; 
-    vector<Point> all_projections; 
-    vector<unsigned int> segments; 
-    vector<float> parameters; 
-    Point cos; 
-    double vector_length; 
-    double P; 
-    double from_proj_to_point; 
-    double old_from_proj_to_point = DBL_MAX;
-    vector<double> distances; 
-    for (size_t i = 0; i < quant_points - 1; ++i){
-        direction_vector = points[i + 1] - points[i]; 
-        vector_length = direction_vector.dist_between();
-        //P = 0; 
-        P = direction_vector * (points[i] - input_point);
-        P /= vector_length; 
-        cos = direction_vector / vector_length; 
-        temp_projection = points[i] - cos * P;
-        // Offset by segment, if necessary
-        for (int j = 0; j < DIM; ++j){
-            if (points[i][j] <  points[i + 1][j]){
-                if (temp_projection[j] < points[i][j])
-                    temp_projection[j] = points[i][j]; 
-                else if (temp_projection[j] > points[i + 1][j])
-                    temp_projection[j] = points[i + 1][j];
-            }
-            else if (points[i][j] > points[i + 1][j]){
-                if (temp_projection[j] > points[i][j])
-                    temp_projection[j] = points[i][j]; 
-                else if (temp_projection[j] < points[i + 1][j])
-                    temp_projection[j] = points[i + 1][j];
-            }
-        }
-        from_proj_to_point = input_point.dist_between(temp_projection);
-        if (from_proj_to_point < old_from_proj_to_point){
-            all_projections.clear(); 
-            segments.clear(); 
-            parameters.clear();
-            all_projections.push_back(temp_projection); 
-            segments.push_back(i + 1);
-            old_from_proj_to_point = from_proj_to_point;
-        }
-        else if (abs(from_proj_to_point - old_from_proj_to_point) <= ACCUR){
-            all_projections.push_back(temp_projection); 
-            segments.push_back(i + 1); 
-        } 
-    }
-    projection_print(all_projections, points, segments); 
+    cout << "End Read\n";
+    Compute comp;
+    comp.get_points_and_input(line, input_point);
+    comp.display_projections();
+    return 0; 
 }
