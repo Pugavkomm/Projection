@@ -93,7 +93,7 @@ Definition at line 10 of file read_data.cpp.</para>
 <para>close if stream. </para>
 </para>
 <para>
-Definition at line 26 of file read_data.cpp.</para>
+Definition at line 30 of file read_data.cpp.</para>
     </section><anchor xml:id="_class_read___data_1a0c188d5f57aa8e4c4b294ae552d95e0e"/>    <section>
     <title>open()</title>
 <indexterm><primary>open</primary><secondary>Read_Data</secondary></indexterm>
@@ -126,7 +126,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 17 of file read_data.cpp.</para>
+Definition at line 19 of file read_data.cpp.</para>
     </section><anchor xml:id="_class_read___data_1a66cacbc790161305f83ac5acad6776ce"/>    <section>
     <title>read_to_line()</title>
 <indexterm><primary>read_to_line</primary><secondary>Read_Data</secondary></indexterm>
@@ -159,7 +159,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 31 of file read_data.cpp.</para>
+Definition at line 36 of file read_data.cpp.</para>
 </section>
 </section>
 <section>
@@ -169,7 +169,7 @@ Definition at line 31 of file read_data.cpp.</para>
 <indexterm><primary>file</primary><secondary>Read_Data</secondary></indexterm>
 <indexterm><primary>Read_Data</primary><secondary>file</secondary></indexterm>
 <para><computeroutput>std::ifstream Read_Data::file<computeroutput>[private]</computeroutput></computeroutput></para><para>
-Definition at line 46 of file read_data.h.</para>
+Definition at line 48 of file read_data.h.</para>
 </section>
 <para>
 The documentation for this class was generated from the following files:</para>

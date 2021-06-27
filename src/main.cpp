@@ -51,34 +51,37 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
-#include <string> 
-#include <sstream> 
-using std::invalid_argument; 
-using std::abs; 
+#include <string>
+#include <sstream>
+using std::abs;
 using std::cout;
-using std::endl; 
-using std::string; 
-using std::ifstream; 
-using std::stringstream; 
+using std::endl;
+using std::ifstream;
+using std::invalid_argument;
+using std::string;
+using std::stringstream;
 using std::vector;
-int main(int argc, char* argv[]){
-    if (argc < 5){
-        throw invalid_argument("Error"); 
+int main(int argc, char *argv[])
+{
+    if (argc < 5)
+    {
+        throw invalid_argument("Error");
     }
-    Point input_point; 
-    double ax; 
+    Point input_point;
+    double ax;
 
-    for (int i = 0; i < DIM; ++i){    
-        stringstream convert(argv[i + 2]); 
-        convert >> ax; 
-        input_point[i] = ax; 
+    for (int i = 0; i < DIM; ++i)
+    {
+        stringstream convert(argv[i + 2]);
+        convert >> ax;
+        input_point[i] = ax;
     }
-    cout << "Point:\n"; 
-    input_point.printPoint(); 
-    string namefile = argv[1]; 
+    cout << "Point:\n";
+    input_point.printPoint();
+    string namefile = argv[1];
 
-    Read_Data file(namefile); 
-    vector<Point> line; 
+    Read_Data file(namefile);
+    vector<Point> line;
     cout << "Start Read\n";
     file.read_to_line(line);
     file.close();
@@ -86,5 +89,5 @@ int main(int argc, char* argv[]){
     Compute comp;
     comp.get_points_and_input(line, input_point);
     comp.display_projections();
-    return 0; 
+    return 0;
 }

@@ -2,49 +2,57 @@
  * @file compute.cpp
  * @brief  Implementing the Compute interface.
  */
-
 #include "compute.h"
 #include "consts.h"
 #include <cmath>
 #include <iostream>
-#include <float.h> 
+#include <float.h>
 
-Compute::Compute(){}
+Compute::Compute() {}
 
-Compute::Compute(std::vector<Point> &line, Point &input_point){
+Compute::Compute(std::vector<Point> &line, Point &input_point)
+{
     this->input_point = input_point;
-    compute_projections(line); 
+    compute_projections(line);
 }
 
-void Compute::get_points_and_input(std::vector<Point>& line, Point &input_point){
+void Compute::get_points_and_input(std::vector<Point> &line, Point &input_point)
+{
     this->input_point = input_point;
-    compute_projections(line); 
+    compute_projections(line);
 }
 
-void Compute::display_projections(){
-    if (projections.size() > 0){
+void Compute::display_projections()
+{
+    if (projections.size() > 0)
+    {
         std::cout << "Projection(s):\n";
-        for (size_t i = 0; i < projections.size(); ++i){
+        for (size_t i = 0; i < projections.size(); ++i)
+        {
             std::cout << "Segment " << segments[i];
-            std::cout << " parameter " << parameters[i]; 
-            std::cout << " point "; 
-            for (size_t j = 0; j < DIM; ++j){
-                std::cout << projections[i][j] << ' '; 
+            std::cout << " parameter " << parameters[i];
+            std::cout << " point ";
+            for (size_t j = 0; j < DIM; ++j)
+            {
+                std::cout << projections[i][j] << ' ';
             }
-            std::cout << std::endl; 
+            std::cout << std::endl;
         }
     }
 }
 
-void Compute::compute_projections(std::vector<Point> &line){
+void Compute::compute_projections(std::vector<Point> &line)
+{
     size_t quant_points = line.size();
-    Point direction_vector; 
-    double from_proj_to_point; 
-    double old_from_proj_to_point = DBL_MAX; 
-    for (size_t i = 0; i < quant_points - 1; ++i){
+    Point direction_vector;
+    double from_proj_to_point;
+    double old_from_proj_to_point = DBL_MAX;
+    for (size_t i = 0; i < quant_points - 1; ++i)
+    {
         compute_one_projection(line[i], line[i + 1]);
         from_proj_to_point = input_point.dist_between(temp_projection);
-        if (from_proj_to_point < old_from_proj_to_point){
+        if (from_proj_to_point < old_from_proj_to_point)
+        {
             projections.clear();
             segments.clear();
             parameters.clear();
@@ -52,23 +60,26 @@ void Compute::compute_projections(std::vector<Point> &line){
             segments.push_back(i + 1);
             parameters.push_back(current_parameter);
             old_from_proj_to_point = from_proj_to_point;
-        } else if (std::abs(from_proj_to_point - old_from_proj_to_point) <= ACCUR){
+        }
+        else if (std::abs(from_proj_to_point - old_from_proj_to_point) <= ACCUR)
+        {
             projections.push_back(temp_projection);
             segments.push_back(i + 1);
             parameters.push_back(current_parameter);
         }
     }
-}   
+}
 
-void Compute::compute_one_projection(Point &begin, Point &end){
+void Compute::compute_one_projection(Point &begin, Point &end)
+{
     double dist_beg_to_proj;
     Point vector_fr_beg_to_proj;
     Point direction_vector = end - begin;
     double vector_lenght = direction_vector.dist_between();
-    Point cos = direction_vector / vector_lenght; 
+    Point cos = direction_vector / vector_lenght;
     double deviation = direction_vector * (begin - input_point) / vector_lenght;
     temp_projection = begin - cos * deviation;
-    vector_fr_beg_to_proj = temp_projection - begin; 
+    vector_fr_beg_to_proj = temp_projection - begin;
     dist_beg_to_proj = vector_fr_beg_to_proj.dist_between();
     // check parametr and directon
     current_parameter = dist_beg_to_proj / vector_lenght * (cos * vector_fr_beg_to_proj / dist_beg_to_proj);
@@ -79,8 +90,7 @@ void Compute::compute_one_projection(Point &begin, Point &end){
     }
     else if (current_parameter > 1)
     {
-        temp_projection = end;    
+        temp_projection = end;
         current_parameter = 1;
     }
 }
-

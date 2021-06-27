@@ -12,5 +12,5 @@ static const float ACCUR = 1e-7;
  * @brief 3D space
  * 
  */
-static const int DIM = 3; 
+static const int DIM = 3;
 #endif

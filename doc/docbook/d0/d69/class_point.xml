@@ -131,7 +131,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 23 of file point.cpp.</para>
+Definition at line 24 of file point.cpp.</para>
 </section>
 </section>
 <section>
@@ -151,7 +151,7 @@ Definition at line 23 of file point.cpp.</para>
 </formalpara>
 </para>
 <para>
-Definition at line 39 of file point.cpp.</para>
+Definition at line 43 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a842cdbdf8d2d80322c0ee34995498169"/>    <section>
     <title>dist_between()<computeroutput>[2/2]</computeroutput></title>
 <indexterm><primary>dist_between</primary><secondary>Point</secondary></indexterm>
@@ -188,7 +188,7 @@ Parameters                    </title>
 </formalpara>
 </para>
 <para>
-Definition at line 43 of file point.cpp.</para>
+Definition at line 48 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a24cf65e8db0962db5fdab50b9e9ce1fa"/>    <section>
     <title>operator[]()</title>
 <indexterm><primary>operator[]</primary><secondary>Point</secondary></indexterm>
@@ -221,7 +221,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 76 of file point.cpp.</para>
+Definition at line 83 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a07ebcfc85e0e4d5b6479ab93f39708b0"/>    <section>
     <title>printPoint()</title>
 <indexterm><primary>printPoint</primary><secondary>Point</secondary></indexterm>
@@ -260,7 +260,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 35 of file point.cpp.</para>
+Definition at line 38 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a5c87e531b784754068eba91f8e8cfd53"/>    <section>
     <title>setPoint()</title>
 <indexterm><primary>setPoint</primary><secondary>Point</secondary></indexterm>
@@ -296,7 +296,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 29 of file point.cpp.</para>
+Definition at line 31 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a3013241afa6ea8971e71dec792827953"/>    <section>
     <title>sum_coordinates()</title>
 <indexterm><primary>sum_coordinates</primary><secondary>Point</secondary></indexterm>
@@ -312,7 +312,7 @@ Definition at line 29 of file point.cpp.</para>
 </formalpara>
 </para>
 <para>
-Definition at line 49 of file point.cpp.</para>
+Definition at line 55 of file point.cpp.</para>
 </section>
 </section>
 <section>
@@ -355,7 +355,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 67 of file point.cpp.</para>
+Definition at line 73 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a3ad987a0921dfb738bbbb245e6eb518d"/>    <section>
     <title>operator*<computeroutput>[2/2]</computeroutput></title>
 <indexterm><primary>operator*</primary><secondary>Point</secondary></indexterm>
@@ -398,7 +398,7 @@ Parameters                    </title>
 </formalpara>
 </para>
 <para>
-Definition at line 61 of file point.cpp.</para>
+Definition at line 68 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1adc0ae410968ebfcac79ebcf9d4eb3f5b"/>    <section>
     <title>operator-</title>
 <indexterm><primary>operator-</primary><secondary>Point</secondary></indexterm>
@@ -437,7 +437,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 56 of file point.cpp.</para>
+Definition at line 63 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a7079c73de603914524a40929cb99e5db"/>    <section>
     <title>operator/</title>
 <indexterm><primary>operator/</primary><secondary>Point</secondary></indexterm>
@@ -476,7 +476,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 71 of file point.cpp.</para>
+Definition at line 78 of file point.cpp.</para>
 </section>
 </section>
 <section>
@@ -490,7 +490,7 @@ Definition at line 71 of file point.cpp.</para>
 <para>point(x, y, z) </para>
 </para>
 <para>
-Definition at line 99 of file point.h.</para>
+Definition at line 100 of file point.h.</para>
 </section>
 <para>
 The documentation for this class was generated from the following files:</para>

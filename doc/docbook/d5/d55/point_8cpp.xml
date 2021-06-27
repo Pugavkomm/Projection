@@ -65,7 +65,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 67 of file point.cpp.</para>
+Definition at line 73 of file point.cpp.</para>
     </section><anchor xml:id="_point_8cpp_1ac11bff72e39c1d5c37ad60ad71317e0c"/>    <section>
     <title>operator*()<computeroutput>[2/2]</computeroutput></title>
 <indexterm><primary>operator*</primary><secondary>point.cpp</secondary></indexterm>
@@ -104,7 +104,7 @@ Parameters                    </title>
 </formalpara>
 </para>
 <para>
-Definition at line 61 of file point.cpp.</para>
+Definition at line 68 of file point.cpp.</para>
     </section><anchor xml:id="_point_8cpp_1a5a9ca25b6c80fa53e90c02e432f9725d"/>    <section>
     <title>operator-()</title>
 <indexterm><primary>operator-</primary><secondary>point.cpp</secondary></indexterm>
@@ -139,7 +139,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 56 of file point.cpp.</para>
+Definition at line 63 of file point.cpp.</para>
     </section><anchor xml:id="_point_8cpp_1aaec54e631988089518dad635a59d543d"/>    <section>
     <title>operator/()</title>
 <indexterm><primary>operator/</primary><secondary>point.cpp</secondary></indexterm>
@@ -174,7 +174,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 71 of file point.cpp.</para>
+Definition at line 78 of file point.cpp.</para>
 </section>
 </section>
 </section>

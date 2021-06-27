@@ -8,42 +8,44 @@
 #define READ
 #include <string>
 #include <fstream>
-#include <vector> 
+#include <vector>
 #include "point.h"
 /**
  * @brief Read line from file. 
  * 
  */
-class Read_Data{
-    public:
-        /**
+class Read_Data
+{
+public:
+    /**
          * @brief Construct a new Read_Data object
          * 
          * @param namefile file name with points
          */
-        Read_Data(const std::string& namefile);
+    Read_Data(const std::string &namefile);
 
-        /**
+    /**
          * @brief open ifstream.
          * 
          * @param namefile file name with points.
          */
-        void open(const std::string& namefile);
+    void open(const std::string &namefile);
 
-        /**
+    /**
          * @brief close if stream.
          * 
          */
-        void close();
+    void close();
 
-        /**
+    /**
          * @brief read point from file and save in @ref line
          * 
          * @param line input line (sequence of points).
          */
-        void read_to_line(std::vector<Point>& line); 
-    private:
-        std::ifstream file;  
+    void read_to_line(std::vector<Point> &line);
+
+private:
+    std::ifstream file;
 };
 
 #endif
