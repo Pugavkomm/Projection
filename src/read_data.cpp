@@ -1,3 +1,8 @@
+/**
+ * @file read_data.cpp
+ * @brief  Implementing the Compute interface.
+*/
+
 #include <read_data.h>
 #include <stdexcept>
 #include "point.h"

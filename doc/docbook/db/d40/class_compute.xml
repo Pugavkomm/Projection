@@ -95,7 +95,7 @@ Definition at line 14 of file compute.h.</para>
 <para>Construct a new <link linkend="_class_compute">Compute</link> object. </para>
 </para>
 <para>
-Definition at line 7 of file compute.cpp.</para>
+Definition at line 12 of file compute.cpp.</para>
     </section><anchor xml:id="_class_compute_1a7b1ca69b192969f356546d0838f72e4c"/>    <section>
     <title>Compute()<computeroutput>[2/2]</computeroutput></title>
 <indexterm><primary>Compute</primary><secondary>Compute</secondary></indexterm>
@@ -134,7 +134,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 9 of file compute.cpp.</para>
+Definition at line 14 of file compute.cpp.</para>
 </section>
 </section>
 <section>
@@ -177,7 +177,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 69 of file compute.cpp.</para>
+Definition at line 74 of file compute.cpp.</para>
     </section><anchor xml:id="_class_compute_1a72ca049d02f904867d733275a831ed1d"/>    <section>
     <title>compute_one_projection()</title>
 <indexterm><primary>compute_one_projection</primary><secondary>Compute</secondary></indexterm>
@@ -216,7 +216,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 60 of file compute.cpp.</para>
+Definition at line 65 of file compute.cpp.</para>
     </section><anchor xml:id="_class_compute_1a81ff09556bf21b66bf2dd7e063b2ff01"/>    <section>
     <title>compute_projections()</title>
 <indexterm><primary>compute_projections</primary><secondary>Compute</secondary></indexterm>
@@ -249,7 +249,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 34 of file compute.cpp.</para>
+Definition at line 39 of file compute.cpp.</para>
     </section><anchor xml:id="_class_compute_1a7a7d6e380ad5f1b9a43aa067b0b82358"/>    <section>
     <title>display_projections()</title>
 <indexterm><primary>display_projections</primary><secondary>Compute</secondary></indexterm>
@@ -259,7 +259,7 @@ Definition at line 34 of file compute.cpp.</para>
 <para>displays found values </para>
 </para>
 <para>
-Definition at line 19 of file compute.cpp.</para>
+Definition at line 24 of file compute.cpp.</para>
     </section><anchor xml:id="_class_compute_1a4ae9aa6706266e8011449c0b85ab2b60"/>    <section>
     <title>get_points_and_input()</title>
 <indexterm><primary>get_points_and_input</primary><secondary>Compute</secondary></indexterm>
@@ -298,7 +298,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 14 of file compute.cpp.</para>
+Definition at line 19 of file compute.cpp.</para>
 </section>
 </section>
 <section>

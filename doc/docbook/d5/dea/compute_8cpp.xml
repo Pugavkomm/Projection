@@ -2,9 +2,19 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_compute_8cpp" xml:lang="en-US">
 <title>src/compute.cpp File Reference</title>
 <indexterm><primary>src/compute.cpp</primary></indexterm>
+<para>
+
+<para>Implementing the <link linkend="_class_compute">Compute</link> interface. </para>
+ 
+</para>
 <programlisting>#include &quot;compute.h&quot;
 #include &quot;consts.h&quot;
 #include &lt;cmath&gt;
 #include &lt;iostream&gt;
 #include &lt;float.h&gt;
-</programlisting></section>
+</programlisting><section>
+<title>Detailed Description</title>
+
+<para>Implementing the <link linkend="_class_compute">Compute</link> interface. </para>
+</section>
+</section>

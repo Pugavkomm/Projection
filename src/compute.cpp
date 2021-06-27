@@ -1,3 +1,8 @@
+/**
+ * @file compute.cpp
+ * @brief  Implementing the Compute interface.
+ */
+
 #include "compute.h"
 #include "consts.h"
 #include <cmath>

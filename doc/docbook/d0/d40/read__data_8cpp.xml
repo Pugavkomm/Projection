@@ -2,8 +2,18 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_read__data_8cpp" xml:lang="en-US">
 <title>src/read_data.cpp File Reference</title>
 <indexterm><primary>src/read_data.cpp</primary></indexterm>
+<para>
+
+<para>Implementing the <link linkend="_class_compute">Compute</link> interface. </para>
+ 
+</para>
 <programlisting>#include &lt;read_data.h&gt;
 #include &lt;stdexcept&gt;
 #include &quot;point.h&quot;
 #include &quot;consts.h&quot;
-</programlisting></section>
+</programlisting><section>
+<title>Detailed Description</title>
+
+<para>Implementing the <link linkend="_class_compute">Compute</link> interface. </para>
+</section>
+</section>

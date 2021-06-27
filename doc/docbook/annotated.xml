@@ -5,4 +5,6 @@ Here are the data structures with brief descriptions:<link linkend="_class_compu
 <para>Basic computing class </para>
 <link linkend="_class_point">Point</link>
 <para><link linkend="_class_point">Point</link> is point in 3D space (because constant DIM = 3) </para>
-<link linkend="_class_read___data">Read_Data</link></section>
+<link linkend="_class_read___data">Read_Data</link>
+<para><link linkend="_class_read___data">Read_Data</link> class interface </para>
+</section>

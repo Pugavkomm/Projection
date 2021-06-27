@@ -10,6 +10,8 @@
     <title>Data Structures    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_class_read___data">Read_Data</link></para>
+
+<para><link linkend="_class_read___data">Read_Data</link> class interface. </para>
 </listitem>
         </itemizedlist>
 </simplesect>

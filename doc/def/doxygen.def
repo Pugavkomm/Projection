@@ -747,12 +747,12 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'namefile';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/mech/projects/projection/include/read_data.h';
-      sec-mem-desc-line = '10';
+      sec-mem-desc-line = '23';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Construct a new Read_Data object.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
+@param namefile file name with points
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -771,12 +771,12 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'namefile';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/mech/projects/projection/include/read_data.h';
-      sec-mem-desc-line = '11';
+      sec-mem-desc-line = '30';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+open ifstream.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
+@param namefile file name with points.
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -789,9 +789,9 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'close';
       sec-mem-desc-file = '/home/mech/projects/projection/include/read_data.h';
-      sec-mem-desc-line = '12';
+      sec-mem-desc-line = '36';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+close if stream.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
@@ -813,12 +813,12 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'line';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/mech/projects/projection/include/read_data.h';
-      sec-mem-desc-line = '13';
+      sec-mem-desc-line = '43';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+read point from file and save in @ref line
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
+@param line input line (sequence of points).
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
@@ -834,7 +834,7 @@ std::ifstream
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'file';
       sec-mem-desc-file = '/home/mech/projects/projection/include/read_data.h';
-      sec-mem-desc-line = '15';
+      sec-mem-desc-line = '45';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -844,12 +844,12 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/home/mech/projects/projection/include/read_data.h';
-  cp-fileline  = '8';
+  cp-fileline  = '16';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
-
+Read_Data class interface.
 _EnD_oF_dEf_TeXt_;
   cp-documentation = <<_EnD_oF_dEf_TeXt_
-
+Read line from file. 
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
@@ -977,9 +977,11 @@ file = {
   file-full-name  = '/home/mech/projects/projection/src/compute.cpp';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
-
+Implementing the Compute interface.
 _EnD_oF_dEf_TeXt_;
   file-documentation = <<_EnD_oF_dEf_TeXt_
+
+
 
 _EnD_oF_dEf_TeXt_;
 }; /* file */
@@ -1206,9 +1208,11 @@ file = {
   file-full-name  = '/home/mech/projects/projection/src/read_data.cpp';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
-
+Implementing the Compute interface.
 _EnD_oF_dEf_TeXt_;
   file-documentation = <<_EnD_oF_dEf_TeXt_
+
+
 
 _EnD_oF_dEf_TeXt_;
 }; /* file */
