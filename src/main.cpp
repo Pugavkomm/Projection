@@ -78,15 +78,9 @@ int main(int argc, char *argv[])
     }
     cout << "Point:\n";
     input_point.printPoint();
+
     string namefile = argv[1];
-    Read_Data file(namefile);
-    vector<Point> line;
-    cout << "Start Read\n";
-    file.read_to_line(line);
-    file.close();
-    cout << "End Read\n";
-    Compute comp;
-    comp.get_points_and_input(line, input_point);
+    Compute comp(namefile, input_point);
     comp.display_projections();
     return 0;
 }

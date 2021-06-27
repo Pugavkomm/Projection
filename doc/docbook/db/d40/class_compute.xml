@@ -19,9 +19,17 @@
 </listitem>
             <listitem><para><link linkend="_class_compute_1a7b1ca69b192969f356546d0838f72e4c">Compute</link> (std::vector&lt; <link linkend="_class_point">Point</link> &gt; &amp;line, <link linkend="_class_point">Point</link> &amp;<link linkend="_class_compute_1a7167a636bfbc58b78b284c61ed503a7f">input_point</link>)</para>
 
-<para>Construct a new <link linkend="_class_compute">Compute</link> object. This constructor calls the method <link linkend="_class_compute_1a81ff09556bf21b66bf2dd7e063b2ff01">compute_projections</link>. </para>
+<para>Construct a new <link linkend="_class_compute">Compute</link> object. </para>
 </listitem>
-            <listitem><para>void <link linkend="_class_compute_1a4ae9aa6706266e8011449c0b85ab2b60">get_points_and_input</link> (std::vector&lt; <link linkend="_class_point">Point</link> &gt; &amp;line, <link linkend="_class_point">Point</link> &amp;<link linkend="_class_compute_1a7167a636bfbc58b78b284c61ed503a7f">input_point</link>)</para>
+            <listitem><para><link linkend="_class_compute_1ab0fe1f8ac1ed76a10e3aabcc4b4c3c3b">Compute</link> (std::string &amp;namefile, <link linkend="_class_point">Point</link> &amp;<link linkend="_class_compute_1a7167a636bfbc58b78b284c61ed503a7f">input_point</link>)</para>
+
+<para>Construct a new <link linkend="_class_compute">Compute</link> object. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_compute_1a3e13630b849672e04ffca6612ce4d6a5">get_line_and_input</link> (std::vector&lt; <link linkend="_class_point">Point</link> &gt; &amp;line, <link linkend="_class_point">Point</link> &amp;<link linkend="_class_compute_1a7167a636bfbc58b78b284c61ed503a7f">input_point</link>)</para>
+
+<para>Get the points from file and input object. After it, This method calls <link linkend="_class_compute_1a81ff09556bf21b66bf2dd7e063b2ff01">compute_projections</link>. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_compute_1a4d7fe94f55b3c1b073d7793250f12c3d">get_file_and_input</link> (std::string &amp;namefile, <link linkend="_class_point">Point</link> &amp;<link linkend="_class_compute_1a7167a636bfbc58b78b284c61ed503a7f">input_point</link>)</para>
 
 <para>Get the points and input object. After it, This method calls <link linkend="_class_compute_1a81ff09556bf21b66bf2dd7e063b2ff01">compute_projections</link>. </para>
 </listitem>
@@ -78,12 +86,12 @@
 
 <para>Basic computing class. </para>
 <para>
-Definition at line 13 of file compute.h.</para>
+Definition at line 14 of file compute.h.</para>
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
 <anchor xml:id="_class_compute_1a83e5a30d2fb4204ed38a2c12d6b3b5f3"/>    <section>
-    <title>Compute()<computeroutput>[1/2]</computeroutput></title>
+    <title>Compute()<computeroutput>[1/3]</computeroutput></title>
 <indexterm><primary>Compute</primary><secondary>Compute</secondary></indexterm>
 <indexterm><primary>Compute</primary><secondary>Compute</secondary></indexterm>
 <para><computeroutput>Compute::Compute ( )</computeroutput></para><para>
@@ -91,14 +99,14 @@ Definition at line 13 of file compute.h.</para>
 <para>Construct a new <link linkend="_class_compute">Compute</link> object. </para>
 </para>
 <para>
-Definition at line 11 of file compute.cpp.</para>
+Definition at line 12 of file compute.cpp.</para>
     </section><anchor xml:id="_class_compute_1a7b1ca69b192969f356546d0838f72e4c"/>    <section>
-    <title>Compute()<computeroutput>[2/2]</computeroutput></title>
+    <title>Compute()<computeroutput>[2/3]</computeroutput></title>
 <indexterm><primary>Compute</primary><secondary>Compute</secondary></indexterm>
 <indexterm><primary>Compute</primary><secondary>Compute</secondary></indexterm>
 <para><computeroutput>Compute::Compute (std::vector&lt; <link linkend="_class_point">Point</link> &gt; &amp; line, <link linkend="_class_point">Point</link> &amp; input_point)</computeroutput></para><para>
 
-<para>Construct a new <link linkend="_class_compute">Compute</link> object. This constructor calls the method <link linkend="_class_compute_1a81ff09556bf21b66bf2dd7e063b2ff01">compute_projections</link>. </para>
+<para>Construct a new <link linkend="_class_compute">Compute</link> object. </para>
 </para>
 
 <para>
@@ -130,7 +138,46 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 13 of file compute.cpp.</para>
+Definition at line 14 of file compute.cpp.</para>
+    </section><anchor xml:id="_class_compute_1ab0fe1f8ac1ed76a10e3aabcc4b4c3c3b"/>    <section>
+    <title>Compute()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>Compute</primary><secondary>Compute</secondary></indexterm>
+<indexterm><primary>Compute</primary><secondary>Compute</secondary></indexterm>
+<para><computeroutput>Compute::Compute (std::string &amp; namefile, <link linkend="_class_point">Point</link> &amp; input_point)</computeroutput></para><para>
+
+<para>Construct a new <link linkend="_class_compute">Compute</link> object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>namefile</entry>
+                                <entry>
+<para>the file with data. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>input_point</entry>
+                                <entry>
+<para>the input point that is projected onto the line. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line 20 of file compute.cpp.</para>
 </section>
 </section>
 <section>
@@ -179,7 +226,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 73 of file compute.cpp.</para>
+Definition at line 94 of file compute.cpp.</para>
     </section><anchor xml:id="_class_compute_1a81ff09556bf21b66bf2dd7e063b2ff01"/>    <section>
     <title>compute_projections()</title>
 <indexterm><primary>compute_projections</primary><secondary>Compute</secondary></indexterm>
@@ -212,7 +259,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 44 of file compute.cpp.</para>
+Definition at line 65 of file compute.cpp.</para>
     </section><anchor xml:id="_class_compute_1a7a7d6e380ad5f1b9a43aa067b0b82358"/>    <section>
     <title>display_projections()</title>
 <indexterm><primary>display_projections</primary><secondary>Compute</secondary></indexterm>
@@ -222,12 +269,12 @@ Definition at line 44 of file compute.cpp.</para>
 <para>displays found values </para>
 </para>
 <para>
-Definition at line 25 of file compute.cpp.</para>
-    </section><anchor xml:id="_class_compute_1a4ae9aa6706266e8011449c0b85ab2b60"/>    <section>
-    <title>get_points_and_input()</title>
-<indexterm><primary>get_points_and_input</primary><secondary>Compute</secondary></indexterm>
-<indexterm><primary>Compute</primary><secondary>get_points_and_input</secondary></indexterm>
-<para><computeroutput>void Compute::get_points_and_input (std::vector&lt; <link linkend="_class_point">Point</link> &gt; &amp; line, <link linkend="_class_point">Point</link> &amp; input_point)</computeroutput></para><para>
+Definition at line 46 of file compute.cpp.</para>
+    </section><anchor xml:id="_class_compute_1a4d7fe94f55b3c1b073d7793250f12c3d"/>    <section>
+    <title>get_file_and_input()</title>
+<indexterm><primary>get_file_and_input</primary><secondary>Compute</secondary></indexterm>
+<indexterm><primary>Compute</primary><secondary>get_file_and_input</secondary></indexterm>
+<para><computeroutput>void Compute::get_file_and_input (std::string &amp; namefile, <link linkend="_class_point">Point</link> &amp; input_point)</computeroutput></para><para>
 
 <para>Get the points and input object. After it, This method calls <link linkend="_class_compute_1a81ff09556bf21b66bf2dd7e063b2ff01">compute_projections</link>. </para>
 </para>
@@ -251,7 +298,7 @@ Parameters                    </title>
                             <row>
                                 <entry>input_point</entry>
                                 <entry>
-<para>he input point that is projected onto the line. </para>
+<para>the input point that is projected onto the line. </para>
 </entry>
                             </row>
                         </tbody>
@@ -261,7 +308,46 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 19 of file compute.cpp.</para>
+Definition at line 36 of file compute.cpp.</para>
+    </section><anchor xml:id="_class_compute_1a3e13630b849672e04ffca6612ce4d6a5"/>    <section>
+    <title>get_line_and_input()</title>
+<indexterm><primary>get_line_and_input</primary><secondary>Compute</secondary></indexterm>
+<indexterm><primary>Compute</primary><secondary>get_line_and_input</secondary></indexterm>
+<para><computeroutput>void Compute::get_line_and_input (std::vector&lt; <link linkend="_class_point">Point</link> &gt; &amp; line, <link linkend="_class_point">Point</link> &amp; input_point)</computeroutput></para><para>
+
+<para>Get the points from file and input object. After it, This method calls <link linkend="_class_compute_1a81ff09556bf21b66bf2dd7e063b2ff01">compute_projections</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>line</entry>
+                                <entry>
+<para>input line (sequence of points). </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>input_point</entry>
+                                <entry>
+<para>the input point that is projected onto the line. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line 30 of file compute.cpp.</para>
 </section>
 </section>
 <section>
@@ -275,7 +361,7 @@ Definition at line 19 of file compute.cpp.</para>
 <para>current parameter(use in methods). </para>
 </para>
 <para>
-Definition at line 74 of file compute.h.</para>
+Definition at line 93 of file compute.h.</para>
     </section><anchor xml:id="_class_compute_1a7167a636bfbc58b78b284c61ed503a7f"/>    <section>
     <title>input_point</title>
 <indexterm><primary>input_point</primary><secondary>Compute</secondary></indexterm>
@@ -285,7 +371,7 @@ Definition at line 74 of file compute.h.</para>
 <para>the input point that is projected onto the line. </para>
 </para>
 <para>
-Definition at line 62 of file compute.h.</para>
+Definition at line 81 of file compute.h.</para>
     </section><anchor xml:id="_class_compute_1a2d5803fa8e2ad55f9dac076b636c09bb"/>    <section>
     <title>parameters</title>
 <indexterm><primary>parameters</primary><secondary>Compute</secondary></indexterm>
@@ -295,7 +381,7 @@ Definition at line 62 of file compute.h.</para>
 <para>found parameters. </para>
 </para>
 <para>
-Definition at line 86 of file compute.h.</para>
+Definition at line 105 of file compute.h.</para>
     </section><anchor xml:id="_class_compute_1aa1b61d1d35cc297bb77907bc5588912d"/>    <section>
     <title>projections</title>
 <indexterm><primary>projections</primary><secondary>Compute</secondary></indexterm>
@@ -305,7 +391,7 @@ Definition at line 86 of file compute.h.</para>
 <para>found projections. </para>
 </para>
 <para>
-Definition at line 92 of file compute.h.</para>
+Definition at line 111 of file compute.h.</para>
     </section><anchor xml:id="_class_compute_1a104d3caa716baed26960d06177dc2eae"/>    <section>
     <title>segments</title>
 <indexterm><primary>segments</primary><secondary>Compute</secondary></indexterm>
@@ -315,7 +401,7 @@ Definition at line 92 of file compute.h.</para>
 <para>found numbers of segmetns. </para>
 </para>
 <para>
-Definition at line 80 of file compute.h.</para>
+Definition at line 99 of file compute.h.</para>
     </section><anchor xml:id="_class_compute_1addde178fe4dd782fe439016e96916e37"/>    <section>
     <title>temp_projection</title>
 <indexterm><primary>temp_projection</primary><secondary>Compute</secondary></indexterm>
@@ -325,7 +411,7 @@ Definition at line 80 of file compute.h.</para>
 <para>temp projection (use in methods). </para>
 </para>
 <para>
-Definition at line 68 of file compute.h.</para>
+Definition at line 87 of file compute.h.</para>
 </section>
 <para>
 The documentation for this class was generated from the following files:</para>

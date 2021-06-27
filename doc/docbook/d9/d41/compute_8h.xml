@@ -9,6 +9,7 @@
 </para>
 <programlisting>#include &quot;point.h&quot;
 #include &lt;vector&gt;
+#include &lt;string&gt;
 </programlisting><simplesect>
     <title>Data Structures    </title>
         <itemizedlist>
