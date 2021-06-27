@@ -10,14 +10,17 @@
 
 class Compute{
     public:
-        Compute();
-        void get_points_and_input(std::vector<Point> &points, Point &input_point);
+        Compute(); 
+        Compute(std::vector<Point> &line, Point &input_point);
+        void get_points_and_input(std::vector<Point> &line, Point &input_point);
         void display_projections();
     private:
-        Point cos(Point &direction_vector, double vector_length); 
-        void compute_projections(std::vector<Point>& points, Point &input_point); 
-        Point compute_one_projection(Point &direction_vector, Point &current_point, Point &input_point);
-        
+        void compute_projections(std::vector<Point>& line); 
+        void compute_one_projection(Point &direction_vector, Point &current_point);
+        void check_position(Point &start_point, Point &end_point);
+        Point input_point;
+        Point temp_projection;
+        double current_parameter; 
         std::vector<unsigned int> segments; 
         std::vector<float> parameters; 
         std::vector<Point> projections;
