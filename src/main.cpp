@@ -13,7 +13,7 @@
 
     Example: 
     
-        ./main data.dat 1 1 1 
+        ./main data.dat 2 0.5 0.5 
     
     Output: 
 
