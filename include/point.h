@@ -5,7 +5,12 @@
 #ifndef POINT
 #define POINT
 #include "consts.h"
+   /**
+     * @brief Point is point in 3D space (because constant DIM = 3)
+     * 
+     */
 class Point{
+ 
     public:
         /**
          * @brief Default constructor that defines a point at the origin.

@@ -9,6 +9,10 @@
 
 <para><link linkend="_class_compute">Compute</link> class interface. </para>
 </listitem>
+            <listitem><para>file <link linkend="_consts_8h">consts.h</link></para>
+
+<para>Constants. </para>
+</listitem>
             <listitem><para>file <link linkend="_point_8h">point.h</link></para>
 
 <para><link linkend="_class_point">Point</link> class interface. </para>

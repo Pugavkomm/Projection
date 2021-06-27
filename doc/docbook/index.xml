@@ -16,6 +16,7 @@
 <chapter>
     <title>File Documentation</title>
     <xi:include href="d9/d41/compute_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d8/db5/consts_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="d2/d91/point_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="dc/d36/read__data_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="d5/dea/compute_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>

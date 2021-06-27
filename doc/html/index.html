@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -23,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Projections
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">This program calculates the projection of an arbitrary point on a given line, which is made up of line segments.</div>
   </td>
@@ -72,8 +79,25 @@ $(function() {
 <p>Example: </p><pre class="fragment">./main data.dat 1 1 1 
 </pre><p> Output: </p><pre class="fragment">Segment 2 parameter 0.75 point 1.75 0.75 0
 Segment 3 parameter 0.25 point 2.25 1 0.25
-</pre> <dl class="section version"><dt>Version</dt><dd>1.1 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2021-06-21 </dd></dl>
+</pre><p> Computing:</p>
+<p class="formulaDsp">
+\[ x_2 (y_2) (z_2) = x_1 (y_1) (z_1) - P \cos(\alpha) (\cos(\beta)) (\cos(\gamma)), \]
+</p>
+ <p class="formulaDsp">
+\[ P = \frac{MM_1(x_1 - x_0) + MM_2(y_1 - y_0) + MM_3(z_1 - z_0)}{\sqrt{MM_1^2 + MM_2^2 + MM_3^2}}, \]
+</p>
+ <p class="formulaDsp">
+\[ \cos(\alpha) = \frac{MM_1}{\sqrt{MM_1^2 + MM_2^2 + MM_3^2}}, \]
+</p>
+ <p class="formulaDsp">
+\[ \cos(\beta) = \frac{MM_2}{\sqrt{MM_1^2 + MM_2^2 + MM_3^2}}, \]
+</p>
+ <p class="formulaDsp">
+\[ \cos(\gamma) = \frac{MM_3}{\sqrt{MM_1^2 + MM_2^2 + MM_3^2}}, \]
+</p>
+<p>where \(O(x_1, y_1, z_1)\) &ndash; an input point, \(O(x_2, y_2, z_2)\) &ndash; a projected point and \( O(x_0, y_0, z_0)\) &ndash; start point of piece of line.</p>
+<dl class="section version"><dt>Version</dt><dd>1.2 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2021-06-27 </dd></dl>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->

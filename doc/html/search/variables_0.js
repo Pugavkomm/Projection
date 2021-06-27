@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['accur_58',['ACCUR',['../df/d0a/main_8cpp.html#aa0b6a9a58cfdc2e540143ac2ac56fea8',1,'main.cpp']]]
+  ['current_5fparameter_69',['current_parameter',['../db/d40/class_compute.html#ad35ceddcffa6e2c4bdd434010be734fc',1,'Compute']]]
 ];

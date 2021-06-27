@@ -12,6 +12,13 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -23,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Projections
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">This program calculates the projection of an arbitrary point on a given line, which is made up of line segments.</div>
   </td>
@@ -66,11 +73,15 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a>  </div>
   <div class="headertitle">
 <div class="title">Point Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="../../d0/d69/class_point.html" title="Point is point in 3D space (because constant DIM = 3)">Point</a> is point in 3D space (because constant DIM = 3)  
+ <a href="../../d0/d69/class_point.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d2/d91/point_8h_source.html">point.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -101,6 +112,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a24cf65e8db0962db5fdab50b9e9ce1fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indexing operator. It returns the x, y, z coordinate depending on the index from the range [0, 2].  <a href="../../d0/d69/class_point.html#a24cf65e8db0962db5fdab50b9e9ce1fa">More...</a><br /></td></tr>
 <tr class="separator:a24cf65e8db0962db5fdab50b9e9ce1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3e1511850eaa47ab3633126a1f98e787"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d69/class_point.html#a3e1511850eaa47ab3633126a1f98e787">point</a> [DIM]</td></tr>
+<tr class="memdesc:a3e1511850eaa47ab3633126a1f98e787"><td class="mdescLeft">&#160;</td><td class="mdescRight">point(x, y, z)  <a href="../../d0/d69/class_point.html#a3e1511850eaa47ab3633126a1f98e787">More...</a><br /></td></tr>
+<tr class="separator:a3e1511850eaa47ab3633126a1f98e787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:adc0ae410968ebfcac79ebcf9d4eb3f5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d69/class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d69/class_point.html#adc0ae410968ebfcac79ebcf9d4eb3f5b">operator-</a> (const <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;, const <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;)</td></tr>
@@ -120,8 +137,9 @@ Friends</h2></td></tr>
 <tr class="separator:a7079c73de603914524a40929cb99e5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d2/d91/point_8h_source.html#l00008">8</a> of file <a class="el" href="../../d2/d91/point_8h_source.html">point.h</a>.</p>
+<div class="textblock"><p><a class="el" href="../../d0/d69/class_point.html" title="Point is point in 3D space (because constant DIM = 3)">Point</a> is point in 3D space (because constant DIM = 3) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d91/point_8h_source.html#l00012">12</a> of file <a class="el" href="../../d2/d91/point_8h_source.html">point.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad92f2337b839a94ce97dcdb439b4325a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad92f2337b839a94ce97dcdb439b4325a">&#9670;&nbsp;</a></span>Point() <span class="overload">[1/2]</span></h2>
@@ -400,7 +418,7 @@ Friends</h2></td></tr>
 <p>The operator calculates the multiplication point by double. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">left</td><td>left operand (<a class="el" href="../../d0/d69/class_point.html">Point</a>). </td></tr>
+    <tr><td class="paramname">left</td><td>left operand (<a class="el" href="../../d0/d69/class_point.html" title="Point is point in 3D space (because constant DIM = 3)">Point</a>). </td></tr>
     <tr><td class="paramname">right</td><td>right operand (double). </td></tr>
   </table>
   </dd>
@@ -447,8 +465,8 @@ Friends</h2></td></tr>
 <p>The operator calculates the dot product. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">left</td><td>left operand (<a class="el" href="../../d0/d69/class_point.html">Point</a>). </td></tr>
-    <tr><td class="paramname">right</td><td>right operand (<a class="el" href="../../d0/d69/class_point.html">Point</a>). </td></tr>
+    <tr><td class="paramname">left</td><td>left operand (<a class="el" href="../../d0/d69/class_point.html" title="Point is point in 3D space (because constant DIM = 3)">Point</a>). </td></tr>
+    <tr><td class="paramname">right</td><td>right operand (<a class="el" href="../../d0/d69/class_point.html" title="Point is point in 3D space (because constant DIM = 3)">Point</a>). </td></tr>
   </table>
   </dd>
 </dl>
@@ -542,7 +560,7 @@ Friends</h2></td></tr>
 <p>The operator сalculates left per double number. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">left</td><td>left operand (<a class="el" href="../../d0/d69/class_point.html">Point</a>). </td></tr>
+    <tr><td class="paramname">left</td><td>left operand (<a class="el" href="../../d0/d69/class_point.html" title="Point is point in 3D space (because constant DIM = 3)">Point</a>). </td></tr>
     <tr><td class="paramname">right</td><td>right operand (double). </td></tr>
   </table>
   </dd>
@@ -589,13 +607,40 @@ Friends</h2></td></tr>
 <p>The operator сalculates the division of the coordinates of points. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">left</td><td>left operand (<a class="el" href="../../d0/d69/class_point.html">Point</a>). </td></tr>
-    <tr><td class="paramname">right</td><td>right operand (<a class="el" href="../../d0/d69/class_point.html">Point</a>). </td></tr>
+    <tr><td class="paramname">left</td><td>left operand (<a class="el" href="../../d0/d69/class_point.html" title="Point is point in 3D space (because constant DIM = 3)">Point</a>). </td></tr>
+    <tr><td class="paramname">right</td><td>right operand (<a class="el" href="../../d0/d69/class_point.html" title="Point is point in 3D space (because constant DIM = 3)">Point</a>). </td></tr>
   </table>
   </dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d55/point_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../d5/d55/point_8cpp_source.html">point.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a3e1511850eaa47ab3633126a1f98e787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e1511850eaa47ab3633126a1f98e787">&#9670;&nbsp;</a></span>point</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Point::point[DIM]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>point(x, y, z) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d91/point_8h_source.html#l00106">106</a> of file <a class="el" href="../../d2/d91/point_8h_source.html">point.h</a>.</p>
 
 </div>
 </div>

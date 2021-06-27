@@ -6,13 +6,59 @@
 <para>Example: <literallayout><computeroutput>./main data.dat 1 1 1 
 </computeroutput></literallayout> Output: <literallayout><computeroutput>Segment 2 parameter 0.75 point 1.75 0.75 0
 Segment 3 parameter 0.25 point 2.25 1 0.25
-</computeroutput></literallayout> <formalpara><title>Version</title>
+</computeroutput></literallayout> Computing:</para>
 
-<para>1.1 </para>
+<para>        <mediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_0.png"/>
+            </imageobject>
+        </mediaobject>
+         <mediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_1.png"/>
+            </imageobject>
+        </mediaobject>
+         <mediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_2.png"/>
+            </imageobject>
+        </mediaobject>
+         <mediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_3.png"/>
+            </imageobject>
+        </mediaobject>
+         <mediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_4.png"/>
+            </imageobject>
+        </mediaobject>
+</para>
+
+<para>where <inlinemediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_5.png"/>
+            </imageobject>
+</inlinemediaobject>
+ &#8211; an input point, <inlinemediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_6.png"/>
+            </imageobject>
+</inlinemediaobject>
+ &#8211; a projected point and <inlinemediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_7.png"/>
+            </imageobject>
+</inlinemediaobject>
+ &#8211; start point of piece of line.</para>
+
+<para><formalpara><title>Version</title>
+
+<para>1.2 </para>
 </formalpara>
 <formalpara><title>Date</title>
 
-<para>2021-06-21 </para>
+<para>2021-06-27 </para>
 </formalpara>
 </para>
 </chapter>

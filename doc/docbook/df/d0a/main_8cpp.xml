@@ -24,7 +24,7 @@
 <indexterm><primary>main</primary><secondary>main.cpp</secondary></indexterm>
 <indexterm><primary>main.cpp</primary><secondary>main</secondary></indexterm>
 <para><computeroutput>int main (int argc, char * argv[])</computeroutput></para><para>
-Definition at line 42 of file main.cpp.</para>
+Definition at line 64 of file main.cpp.</para>
 </section>
 </section>
 </section>

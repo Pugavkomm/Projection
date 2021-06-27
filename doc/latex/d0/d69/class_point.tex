@@ -2,6 +2,11 @@
 \label{class_point}\index{Point@{Point}}
 
 
+\mbox{\hyperlink{class_point}{Point}} is point in 3D space (because constant DIM = 3)  
+
+
+
+
 {\ttfamily \#include $<$point.\+h$>$}
 
 \doxysubsection*{Public Member Functions}
@@ -23,6 +28,11 @@ double \mbox{\hyperlink{class_point_a3013241afa6ea8971e71dec792827953}{sum\+\_\+
 \begin{DoxyCompactList}\small\item\em Computes sum of coordinates point. \end{DoxyCompactList}\item 
 double \& \mbox{\hyperlink{class_point_a24cf65e8db0962db5fdab50b9e9ce1fa}{operator\mbox{[}$\,$\mbox{]}}} (const int)
 \begin{DoxyCompactList}\small\item\em Indexing operator. It returns the x, y, z coordinate depending on the index from the range \mbox{[}0, 2\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_point_a3e1511850eaa47ab3633126a1f98e787}{point}} \mbox{[}DIM\mbox{]}
+\begin{DoxyCompactList}\small\item\em point(x, y, z) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
@@ -39,9 +49,9 @@ double \mbox{\hyperlink{class_point_a3ad987a0921dfb738bbbb245e6eb518d}{operator$
 
 
 \doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_point}{Point}} is point in 3D space (because constant DIM = 3) 
 
-
-Definition at line 8 of file point.\+h.
+Definition at line 12 of file point.\+h.
 
 
 
@@ -307,6 +317,23 @@ The operator сalculates the division of the coordinates of points.
 
 
 Definition at line 71 of file point.\+cpp.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_point_a3e1511850eaa47ab3633126a1f98e787}\label{class_point_a3e1511850eaa47ab3633126a1f98e787}} 
+\index{Point@{Point}!point@{point}}
+\index{point@{point}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{point}{point}}
+{\footnotesize\ttfamily double Point\+::point\mbox{[}DIM\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+point(x, y, z) 
+
+
+
+Definition at line 106 of file point.\+h.
 
 
 

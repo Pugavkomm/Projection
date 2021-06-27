@@ -12,6 +12,13 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -23,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Projections
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">This program calculates the projection of an arbitrary point on a given line, which is made up of line segments.</div>
   </td>
@@ -86,7 +93,7 @@ $(function() {
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../d7/da7/class_read___data.html#a085e89481b053dfc33ba270677fe8d01">close</a>();</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../d7/da7/class_read___data.html#a66cacbc790161305f83ac5acad6776ce">read_to_line</a>(std::vector&lt;Point&gt;&amp; line); </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        std::ifstream file;  </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d7/da7/class_read___data.html#ab5d6f5551553dc9000ac8581b46947eb">   15</a></span>&#160;        std::ifstream <a class="code" href="../../d7/da7/class_read___data.html#ab5d6f5551553dc9000ac8581b46947eb">file</a>;  </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -95,6 +102,7 @@ $(function() {
 <div class="ttc" id="aclass_read___data_html_a085e89481b053dfc33ba270677fe8d01"><div class="ttname"><a href="../../d7/da7/class_read___data.html#a085e89481b053dfc33ba270677fe8d01">Read_Data::close</a></div><div class="ttdeci">void close()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d40/read__data_8cpp_source.html#l00021">read_data.cpp:21</a></div></div>
 <div class="ttc" id="aclass_read___data_html_a0c188d5f57aa8e4c4b294ae552d95e0e"><div class="ttname"><a href="../../d7/da7/class_read___data.html#a0c188d5f57aa8e4c4b294ae552d95e0e">Read_Data::open</a></div><div class="ttdeci">void open(const std::string &amp;namefile)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d40/read__data_8cpp_source.html#l00012">read_data.cpp:12</a></div></div>
 <div class="ttc" id="aclass_read___data_html_a66cacbc790161305f83ac5acad6776ce"><div class="ttname"><a href="../../d7/da7/class_read___data.html#a66cacbc790161305f83ac5acad6776ce">Read_Data::read_to_line</a></div><div class="ttdeci">void read_to_line(std::vector&lt; Point &gt; &amp;line)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d40/read__data_8cpp_source.html#l00026">read_data.cpp:26</a></div></div>
+<div class="ttc" id="aclass_read___data_html_ab5d6f5551553dc9000ac8581b46947eb"><div class="ttname"><a href="../../d7/da7/class_read___data.html#ab5d6f5551553dc9000ac8581b46947eb">Read_Data::file</a></div><div class="ttdeci">std::ifstream file</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d36/read__data_8h_source.html#l00015">read_data.h:15</a></div></div>
 <div class="ttc" id="apoint_8h_html"><div class="ttname"><a href="../../d2/d91/point_8h.html">point.h</a></div><div class="ttdoc">Point class interface.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

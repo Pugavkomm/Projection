@@ -12,6 +12,8 @@
     <title>Data Structures    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_class_point">Point</link></para>
+
+<para><link linkend="_class_point">Point</link> is point in 3D space (because constant DIM = 3) </para>
 </listitem>
         </itemizedlist>
 </simplesect>

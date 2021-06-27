@@ -3,6 +3,11 @@
 <title>Point Class Reference</title>
 <indexterm><primary>Point</primary></indexterm>
 <para>
+
+<para><link linkend="_class_point">Point</link> is point in 3D space (because constant DIM = 3) </para>
+ 
+</para>
+<para>
 <computeroutput>#include &lt;point.h&gt;</computeroutput>
 </para>
 <simplesect>
@@ -43,6 +48,15 @@
         </itemizedlist>
 </simplesect>
 <simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>double <link linkend="_class_point_1a3e1511850eaa47ab3633126a1f98e787">point</link> [DIM]</para>
+
+<para>point(x, y, z) </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
     <title>Friends    </title>
         <itemizedlist>
             <listitem><para><link linkend="_class_point">Point</link> <link linkend="_class_point_1adc0ae410968ebfcac79ebcf9d4eb3f5b">operator-</link> (const <link linkend="_class_point">Point</link> &amp;, const <link linkend="_class_point">Point</link> &amp;)</para>
@@ -69,8 +83,10 @@
 </simplesect>
 <section>
 <title>Detailed Description</title>
+
+<para><link linkend="_class_point">Point</link> is point in 3D space (because constant DIM = 3) </para>
 <para>
-Definition at line 8 of file point.h.</para>
+Definition at line 12 of file point.h.</para>
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
@@ -504,6 +520,20 @@ Parameters                    </title>
                 </para>
 <para>
 Definition at line 71 of file point.cpp.</para>
+</section>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_class_point_1a3e1511850eaa47ab3633126a1f98e787"/>    <section>
+    <title>point</title>
+<indexterm><primary>point</primary><secondary>Point</secondary></indexterm>
+<indexterm><primary>Point</primary><secondary>point</secondary></indexterm>
+<para><computeroutput>double Point::point[DIM]<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>point(x, y, z) </para>
+</para>
+<para>
+Definition at line 106 of file point.h.</para>
 </section>
 <para>
 The documentation for this class was generated from the following files:</para>

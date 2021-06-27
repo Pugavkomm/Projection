@@ -12,6 +12,13 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -23,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Projections
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">This program calculates the projection of an arbitrary point on a given line, which is made up of line segments.</div>
   </td>
@@ -65,7 +72,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">Read_Data Class Reference</div>  </div>
 </div><!--header-->
@@ -83,6 +91,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a085e89481b053dfc33ba270677fe8d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66cacbc790161305f83ac5acad6776ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da7/class_read___data.html#a66cacbc790161305f83ac5acad6776ce">read_to_line</a> (std::vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;line)</td></tr>
 <tr class="separator:a66cacbc790161305f83ac5acad6776ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab5d6f5551553dc9000ac8581b46947eb"><td class="memItemLeft" align="right" valign="top">std::ifstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da7/class_read___data.html#ab5d6f5551553dc9000ac8581b46947eb">file</a></td></tr>
+<tr class="separator:ab5d6f5551553dc9000ac8581b46947eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -165,6 +178,31 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d40/read__data_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../d0/d40/read__data_8cpp_source.html">read_data.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ab5d6f5551553dc9000ac8581b46947eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5d6f5551553dc9000ac8581b46947eb">&#9670;&nbsp;</a></span>file</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ifstream Read_Data::file</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d36/read__data_8h_source.html#l00015">15</a> of file <a class="el" href="../../dc/d36/read__data_8h_source.html">read_data.h</a>.</p>
 
 </div>
 </div>

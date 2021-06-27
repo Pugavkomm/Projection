@@ -19,9 +19,31 @@
 
         Segment 2 parameter 0.75 point 1.75 0.75 0
         Segment 3 parameter 0.25 point 2.25 1 0.25
+
+    Computing:
+
+    \f[
+        x_2 (y_2) (z_2) = x_1 (y_1) (z_1) - P \cos(\alpha) (\cos(\beta)) (\cos(\gamma)),
+    \f]
+    \f[
+        P = \frac{MM_1(x_1 - x_0) + MM_2(y_1 - y_0) + MM_3(z_1 - z_0)}{\sqrt{MM_1^2 + MM_2^2 + MM_3^2}},
+    \f]
+    \f[
+       \cos(\alpha) = \frac{MM_1}{\sqrt{MM_1^2 + MM_2^2 + MM_3^2}},
+    \f]
+    \f[
+        \cos(\beta) = \frac{MM_2}{\sqrt{MM_1^2 + MM_2^2 + MM_3^2}},
+    \f]
+    \f[
+        \cos(\gamma) = \frac{MM_3}{\sqrt{MM_1^2 + MM_2^2 + MM_3^2}},
+    \f]
     
- * @version 1.1
- * @date 2021-06-21
+    where \f$O(x_1, y_1, z_1)\f$ -- an input point, \f$O(x_2, y_2, z_2)\f$ -- a projected point and \f$ O(x_0, y_0, z_0)\f$ -- start point of piece of line. 
+    
+
+
+ * @version 1.2
+ * @date 2021-06-27
  */
 #include "point.h"
 #include "read_data.h"

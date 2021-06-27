@@ -2,23 +2,54 @@
 \label{class_compute}\index{Compute@{Compute}}
 
 
+Basic computing class.  
+
+
+
+
 {\ttfamily \#include $<$compute.\+h$>$}
 
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_compute_a83e5a30d2fb4204ed38a2c12d6b3b5f3}{Compute}} ()
-\item 
-void \mbox{\hyperlink{class_compute_ad3a005e61184f96bee219c9d3d446ebe}{get\+\_\+points\+\_\+and\+\_\+input}} (std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&points, \mbox{\hyperlink{class_point}{Point}} \&input\+\_\+point)
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_compute}{Compute}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_compute_a7b1ca69b192969f356546d0838f72e4c}{Compute}} (std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&line, \mbox{\hyperlink{class_point}{Point}} \&\mbox{\hyperlink{class_compute_a7167a636bfbc58b78b284c61ed503a7f}{input\+\_\+point}})
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_compute}{Compute}} object. This constructor calls the method \mbox{\hyperlink{class_compute_a81ff09556bf21b66bf2dd7e063b2ff01}{compute\+\_\+projections}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_compute_a4ae9aa6706266e8011449c0b85ab2b60}{get\+\_\+points\+\_\+and\+\_\+input}} (std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&line, \mbox{\hyperlink{class_point}{Point}} \&\mbox{\hyperlink{class_compute_a7167a636bfbc58b78b284c61ed503a7f}{input\+\_\+point}})
+\begin{DoxyCompactList}\small\item\em Get the points and input object. After it, This method calls \mbox{\hyperlink{class_compute_a81ff09556bf21b66bf2dd7e063b2ff01}{compute\+\_\+projections}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_compute_a7a7d6e380ad5f1b9a43aa067b0b82358}{display\+\_\+projections}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em displays found values \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_compute_a81ff09556bf21b66bf2dd7e063b2ff01}{compute\+\_\+projections}} (std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&line)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_compute}{Compute}} all projections and save save in \mbox{\hyperlink{class_compute_aa1b61d1d35cc297bb77907bc5588912d}{projections}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_compute_a72ca049d02f904867d733275a831ed1d}{compute\+\_\+one\+\_\+projection}} (\mbox{\hyperlink{class_point}{Point}} \&direction\+\_\+vector, \mbox{\hyperlink{class_point}{Point}} \&current\+\_\+point)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_compute}{Compute}} all projections and save save in \mbox{\hyperlink{class_compute_addde178fe4dd782fe439016e96916e37}{temp\+\_\+projection}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_compute_a29932ed653cefb0caa75711758e47eae}{check\+\_\+position}} (\mbox{\hyperlink{class_point}{Point}} \&start\+\_\+point, \mbox{\hyperlink{class_point}{Point}} \&end\+\_\+point)
+\begin{DoxyCompactList}\small\item\em Check position projection and fix if. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_compute_a7167a636bfbc58b78b284c61ed503a7f}{input\+\_\+point}}
+\begin{DoxyCompactList}\small\item\em the input point that is projected onto the line. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_compute_addde178fe4dd782fe439016e96916e37}{temp\+\_\+projection}}
+\begin{DoxyCompactList}\small\item\em temp projection (use in methods). \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_compute_ad35ceddcffa6e2c4bdd434010be734fc}{current\+\_\+parameter}}
+\begin{DoxyCompactList}\small\item\em current parameter(use in methods). \end{DoxyCompactList}\item 
+std\+::vector$<$ unsigned int $>$ \mbox{\hyperlink{class_compute_a104d3caa716baed26960d06177dc2eae}{segments}}
+\begin{DoxyCompactList}\small\item\em found numbers of segmetns. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{class_compute_a2d5803fa8e2ad55f9dac076b636c09bb}{parameters}}
+\begin{DoxyCompactList}\small\item\em found parameters. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \mbox{\hyperlink{class_compute_aa1b61d1d35cc297bb77907bc5588912d}{projections}}
+\begin{DoxyCompactList}\small\item\em found projections. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+Basic computing class. 
 
-
-Definition at line 11 of file compute.\+h.
+Definition at line 14 of file compute.\+h.
 
 
 
@@ -26,16 +57,102 @@ Definition at line 11 of file compute.\+h.
 \mbox{\Hypertarget{class_compute_a83e5a30d2fb4204ed38a2c12d6b3b5f3}\label{class_compute_a83e5a30d2fb4204ed38a2c12d6b3b5f3}} 
 \index{Compute@{Compute}!Compute@{Compute}}
 \index{Compute@{Compute}!Compute@{Compute}}
-\doxysubsubsection{\texorpdfstring{Compute()}{Compute()}}
+\doxysubsubsection{\texorpdfstring{Compute()}{Compute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Compute\+::\+Compute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_compute}{Compute}} object. 
 
 
 
 Definition at line 7 of file compute.\+cpp.
 
+\mbox{\Hypertarget{class_compute_a7b1ca69b192969f356546d0838f72e4c}\label{class_compute_a7b1ca69b192969f356546d0838f72e4c}} 
+\index{Compute@{Compute}!Compute@{Compute}}
+\index{Compute@{Compute}!Compute@{Compute}}
+\doxysubsubsection{\texorpdfstring{Compute()}{Compute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Compute\+::\+Compute (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&}]{line,  }\item[{\mbox{\hyperlink{class_point}{Point}} \&}]{input\+\_\+point }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_compute}{Compute}} object. This constructor calls the method \mbox{\hyperlink{class_compute_a81ff09556bf21b66bf2dd7e063b2ff01}{compute\+\_\+projections}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & the input line (sequence of points). \\
+\hline
+{\em input\+\_\+point} & the input point that is projected onto the line. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 9 of file compute.\+cpp.
+
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_compute_a29932ed653cefb0caa75711758e47eae}\label{class_compute_a29932ed653cefb0caa75711758e47eae}} 
+\index{Compute@{Compute}!check\_position@{check\_position}}
+\index{check\_position@{check\_position}!Compute@{Compute}}
+\doxysubsubsection{\texorpdfstring{check\_position()}{check\_position()}}
+{\footnotesize\ttfamily void Compute\+::check\+\_\+position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}} \&}]{start\+\_\+point,  }\item[{\mbox{\hyperlink{class_point}{Point}} \&}]{end\+\_\+point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check position projection and fix if. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+\_\+point} & \\
+\hline
+{\em end\+\_\+point} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 69 of file compute.\+cpp.
+
+\mbox{\Hypertarget{class_compute_a72ca049d02f904867d733275a831ed1d}\label{class_compute_a72ca049d02f904867d733275a831ed1d}} 
+\index{Compute@{Compute}!compute\_one\_projection@{compute\_one\_projection}}
+\index{compute\_one\_projection@{compute\_one\_projection}!Compute@{Compute}}
+\doxysubsubsection{\texorpdfstring{compute\_one\_projection()}{compute\_one\_projection()}}
+{\footnotesize\ttfamily void Compute\+::compute\+\_\+one\+\_\+projection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}} \&}]{direction\+\_\+vector,  }\item[{\mbox{\hyperlink{class_point}{Point}} \&}]{current\+\_\+point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_compute}{Compute}} all projections and save save in \mbox{\hyperlink{class_compute_addde178fe4dd782fe439016e96916e37}{temp\+\_\+projection}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction\+\_\+vector} & \\
+\hline
+{\em current\+\_\+point} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 60 of file compute.\+cpp.
+
+\mbox{\Hypertarget{class_compute_a81ff09556bf21b66bf2dd7e063b2ff01}\label{class_compute_a81ff09556bf21b66bf2dd7e063b2ff01}} 
+\index{Compute@{Compute}!compute\_projections@{compute\_projections}}
+\index{compute\_projections@{compute\_projections}!Compute@{Compute}}
+\doxysubsubsection{\texorpdfstring{compute\_projections()}{compute\_projections()}}
+{\footnotesize\ttfamily void Compute\+::compute\+\_\+projections (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_compute}{Compute}} all projections and save save in \mbox{\hyperlink{class_compute_aa1b61d1d35cc297bb77907bc5588912d}{projections}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file compute.\+cpp.
+
 \mbox{\Hypertarget{class_compute_a7a7d6e380ad5f1b9a43aa067b0b82358}\label{class_compute_a7a7d6e380ad5f1b9a43aa067b0b82358}} 
 \index{Compute@{Compute}!display\_projections@{display\_projections}}
 \index{display\_projections@{display\_projections}!Compute@{Compute}}
@@ -44,17 +161,119 @@ Definition at line 7 of file compute.\+cpp.
 
 
 
-Definition at line 13 of file compute.\+cpp.
+displays found values 
 
-\mbox{\Hypertarget{class_compute_ad3a005e61184f96bee219c9d3d446ebe}\label{class_compute_ad3a005e61184f96bee219c9d3d446ebe}} 
+
+
+Definition at line 19 of file compute.\+cpp.
+
+\mbox{\Hypertarget{class_compute_a4ae9aa6706266e8011449c0b85ab2b60}\label{class_compute_a4ae9aa6706266e8011449c0b85ab2b60}} 
 \index{Compute@{Compute}!get\_points\_and\_input@{get\_points\_and\_input}}
 \index{get\_points\_and\_input@{get\_points\_and\_input}!Compute@{Compute}}
 \doxysubsubsection{\texorpdfstring{get\_points\_and\_input()}{get\_points\_and\_input()}}
-{\footnotesize\ttfamily void Compute\+::get\+\_\+points\+\_\+and\+\_\+input (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&}]{points,  }\item[{\mbox{\hyperlink{class_point}{Point}} \&}]{input\+\_\+point }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Compute\+::get\+\_\+points\+\_\+and\+\_\+input (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&}]{line,  }\item[{\mbox{\hyperlink{class_point}{Point}} \&}]{input\+\_\+point }\end{DoxyParamCaption})}
 
 
 
-Definition at line 9 of file compute.\+cpp.
+Get the points and input object. After it, This method calls \mbox{\hyperlink{class_compute_a81ff09556bf21b66bf2dd7e063b2ff01}{compute\+\_\+projections}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & input line (sequence of points). \\
+\hline
+{\em input\+\_\+point} & he input point that is projected onto the line. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file compute.\+cpp.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_compute_ad35ceddcffa6e2c4bdd434010be734fc}\label{class_compute_ad35ceddcffa6e2c4bdd434010be734fc}} 
+\index{Compute@{Compute}!current\_parameter@{current\_parameter}}
+\index{current\_parameter@{current\_parameter}!Compute@{Compute}}
+\doxysubsubsection{\texorpdfstring{current\_parameter}{current\_parameter}}
+{\footnotesize\ttfamily double Compute\+::current\+\_\+parameter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+current parameter(use in methods). 
+
+
+
+Definition at line 80 of file compute.\+h.
+
+\mbox{\Hypertarget{class_compute_a7167a636bfbc58b78b284c61ed503a7f}\label{class_compute_a7167a636bfbc58b78b284c61ed503a7f}} 
+\index{Compute@{Compute}!input\_point@{input\_point}}
+\index{input\_point@{input\_point}!Compute@{Compute}}
+\doxysubsubsection{\texorpdfstring{input\_point}{input\_point}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} Compute\+::input\+\_\+point\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+the input point that is projected onto the line. 
+
+
+
+Definition at line 68 of file compute.\+h.
+
+\mbox{\Hypertarget{class_compute_a2d5803fa8e2ad55f9dac076b636c09bb}\label{class_compute_a2d5803fa8e2ad55f9dac076b636c09bb}} 
+\index{Compute@{Compute}!parameters@{parameters}}
+\index{parameters@{parameters}!Compute@{Compute}}
+\doxysubsubsection{\texorpdfstring{parameters}{parameters}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ Compute\+::parameters\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+found parameters. 
+
+
+
+Definition at line 92 of file compute.\+h.
+
+\mbox{\Hypertarget{class_compute_aa1b61d1d35cc297bb77907bc5588912d}\label{class_compute_aa1b61d1d35cc297bb77907bc5588912d}} 
+\index{Compute@{Compute}!projections@{projections}}
+\index{projections@{projections}!Compute@{Compute}}
+\doxysubsubsection{\texorpdfstring{projections}{projections}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_point}{Point}}$>$ Compute\+::projections\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+found projections. 
+
+
+
+Definition at line 98 of file compute.\+h.
+
+\mbox{\Hypertarget{class_compute_a104d3caa716baed26960d06177dc2eae}\label{class_compute_a104d3caa716baed26960d06177dc2eae}} 
+\index{Compute@{Compute}!segments@{segments}}
+\index{segments@{segments}!Compute@{Compute}}
+\doxysubsubsection{\texorpdfstring{segments}{segments}}
+{\footnotesize\ttfamily std\+::vector$<$unsigned int$>$ Compute\+::segments\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+found numbers of segmetns. 
+
+
+
+Definition at line 86 of file compute.\+h.
+
+\mbox{\Hypertarget{class_compute_addde178fe4dd782fe439016e96916e37}\label{class_compute_addde178fe4dd782fe439016e96916e37}} 
+\index{Compute@{Compute}!temp\_projection@{temp\_projection}}
+\index{temp\_projection@{temp\_projection}!Compute@{Compute}}
+\doxysubsubsection{\texorpdfstring{temp\_projection}{temp\_projection}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} Compute\+::temp\+\_\+projection\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+temp projection (use in methods). 
+
+
+
+Definition at line 74 of file compute.\+h.
 
 
 

@@ -492,7 +492,7 @@ EXTRACT_ALL            = YES
 # be included in the documentation.
 # The default value is: NO.
 
-EXTRACT_PRIVATE        = NO
+EXTRACT_PRIVATE        = YES
 
 # If the EXTRACT_PRIV_VIRTUAL tag is set to YES, documented private virtual
 # methods of a class will be included in the documentation.
@@ -868,7 +868,12 @@ WARN_LOGFILE           =
 INPUT                  = /home/mech/project/projections \
                          src/main.cpp \
                          src/point.cpp \
-                         include/point.h
+                         include/point.h \
+                         include/compute.h \
+                         include/read_data.h \
+                         src/compute.cpp \
+                         src/read_data.cpp \
+                         include/consts.h
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses

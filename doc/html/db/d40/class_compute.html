@@ -12,6 +12,13 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -23,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Projections
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">This program calculates the projection of an arbitrary point on a given line, which is made up of line segments.</div>
   </td>
@@ -65,29 +72,74 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">Compute Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Basic computing class.  
+ <a href="../../db/d40/class_compute.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d9/d41/compute_8h_source.html">compute.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a83e5a30d2fb4204ed38a2c12d6b3b5f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d40/class_compute.html#a83e5a30d2fb4204ed38a2c12d6b3b5f3">Compute</a> ()</td></tr>
+<tr class="memdesc:a83e5a30d2fb4204ed38a2c12d6b3b5f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../db/d40/class_compute.html" title="Basic computing class.">Compute</a> object.  <a href="../../db/d40/class_compute.html#a83e5a30d2fb4204ed38a2c12d6b3b5f3">More...</a><br /></td></tr>
 <tr class="separator:a83e5a30d2fb4204ed38a2c12d6b3b5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3a005e61184f96bee219c9d3d446ebe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d40/class_compute.html#ad3a005e61184f96bee219c9d3d446ebe">get_points_and_input</a> (std::vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;points, <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;input_point)</td></tr>
-<tr class="separator:ad3a005e61184f96bee219c9d3d446ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1ca69b192969f356546d0838f72e4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d40/class_compute.html#a7b1ca69b192969f356546d0838f72e4c">Compute</a> (std::vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;line, <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;<a class="el" href="../../db/d40/class_compute.html#a7167a636bfbc58b78b284c61ed503a7f">input_point</a>)</td></tr>
+<tr class="memdesc:a7b1ca69b192969f356546d0838f72e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../db/d40/class_compute.html" title="Basic computing class.">Compute</a> object. This constructor calls the method <a class="el" href="../../db/d40/class_compute.html#a81ff09556bf21b66bf2dd7e063b2ff01">compute_projections</a>.  <a href="../../db/d40/class_compute.html#a7b1ca69b192969f356546d0838f72e4c">More...</a><br /></td></tr>
+<tr class="separator:a7b1ca69b192969f356546d0838f72e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae9aa6706266e8011449c0b85ab2b60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d40/class_compute.html#a4ae9aa6706266e8011449c0b85ab2b60">get_points_and_input</a> (std::vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;line, <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;<a class="el" href="../../db/d40/class_compute.html#a7167a636bfbc58b78b284c61ed503a7f">input_point</a>)</td></tr>
+<tr class="memdesc:a4ae9aa6706266e8011449c0b85ab2b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the points and input object. After it, This method calls <a class="el" href="../../db/d40/class_compute.html#a81ff09556bf21b66bf2dd7e063b2ff01">compute_projections</a>.  <a href="../../db/d40/class_compute.html#a4ae9aa6706266e8011449c0b85ab2b60">More...</a><br /></td></tr>
+<tr class="separator:a4ae9aa6706266e8011449c0b85ab2b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a7d6e380ad5f1b9a43aa067b0b82358"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d40/class_compute.html#a7a7d6e380ad5f1b9a43aa067b0b82358">display_projections</a> ()</td></tr>
+<tr class="memdesc:a7a7d6e380ad5f1b9a43aa067b0b82358"><td class="mdescLeft">&#160;</td><td class="mdescRight">displays found values  <a href="../../db/d40/class_compute.html#a7a7d6e380ad5f1b9a43aa067b0b82358">More...</a><br /></td></tr>
 <tr class="separator:a7a7d6e380ad5f1b9a43aa067b0b82358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a81ff09556bf21b66bf2dd7e063b2ff01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d40/class_compute.html#a81ff09556bf21b66bf2dd7e063b2ff01">compute_projections</a> (std::vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;line)</td></tr>
+<tr class="memdesc:a81ff09556bf21b66bf2dd7e063b2ff01"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../db/d40/class_compute.html" title="Basic computing class.">Compute</a> all projections and save save in <a class="el" href="../../db/d40/class_compute.html#aa1b61d1d35cc297bb77907bc5588912d">projections</a>.  <a href="../../db/d40/class_compute.html#a81ff09556bf21b66bf2dd7e063b2ff01">More...</a><br /></td></tr>
+<tr class="separator:a81ff09556bf21b66bf2dd7e063b2ff01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ca049d02f904867d733275a831ed1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d40/class_compute.html#a72ca049d02f904867d733275a831ed1d">compute_one_projection</a> (<a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;direction_vector, <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;current_point)</td></tr>
+<tr class="memdesc:a72ca049d02f904867d733275a831ed1d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../db/d40/class_compute.html" title="Basic computing class.">Compute</a> all projections and save save in <a class="el" href="../../db/d40/class_compute.html#addde178fe4dd782fe439016e96916e37">temp_projection</a>.  <a href="../../db/d40/class_compute.html#a72ca049d02f904867d733275a831ed1d">More...</a><br /></td></tr>
+<tr class="separator:a72ca049d02f904867d733275a831ed1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29932ed653cefb0caa75711758e47eae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d40/class_compute.html#a29932ed653cefb0caa75711758e47eae">check_position</a> (<a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;start_point, <a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;end_point)</td></tr>
+<tr class="memdesc:a29932ed653cefb0caa75711758e47eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check position projection and fix if.  <a href="../../db/d40/class_compute.html#a29932ed653cefb0caa75711758e47eae">More...</a><br /></td></tr>
+<tr class="separator:a29932ed653cefb0caa75711758e47eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a7167a636bfbc58b78b284c61ed503a7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d69/class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d40/class_compute.html#a7167a636bfbc58b78b284c61ed503a7f">input_point</a></td></tr>
+<tr class="memdesc:a7167a636bfbc58b78b284c61ed503a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">the input point that is projected onto the line.  <a href="../../db/d40/class_compute.html#a7167a636bfbc58b78b284c61ed503a7f">More...</a><br /></td></tr>
+<tr class="separator:a7167a636bfbc58b78b284c61ed503a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addde178fe4dd782fe439016e96916e37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d69/class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d40/class_compute.html#addde178fe4dd782fe439016e96916e37">temp_projection</a></td></tr>
+<tr class="memdesc:addde178fe4dd782fe439016e96916e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">temp projection (use in methods).  <a href="../../db/d40/class_compute.html#addde178fe4dd782fe439016e96916e37">More...</a><br /></td></tr>
+<tr class="separator:addde178fe4dd782fe439016e96916e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad35ceddcffa6e2c4bdd434010be734fc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d40/class_compute.html#ad35ceddcffa6e2c4bdd434010be734fc">current_parameter</a></td></tr>
+<tr class="memdesc:ad35ceddcffa6e2c4bdd434010be734fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">current parameter(use in methods).  <a href="../../db/d40/class_compute.html#ad35ceddcffa6e2c4bdd434010be734fc">More...</a><br /></td></tr>
+<tr class="separator:ad35ceddcffa6e2c4bdd434010be734fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a104d3caa716baed26960d06177dc2eae"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d40/class_compute.html#a104d3caa716baed26960d06177dc2eae">segments</a></td></tr>
+<tr class="memdesc:a104d3caa716baed26960d06177dc2eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">found numbers of segmetns.  <a href="../../db/d40/class_compute.html#a104d3caa716baed26960d06177dc2eae">More...</a><br /></td></tr>
+<tr class="separator:a104d3caa716baed26960d06177dc2eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d5803fa8e2ad55f9dac076b636c09bb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d40/class_compute.html#a2d5803fa8e2ad55f9dac076b636c09bb">parameters</a></td></tr>
+<tr class="memdesc:a2d5803fa8e2ad55f9dac076b636c09bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">found parameters.  <a href="../../db/d40/class_compute.html#a2d5803fa8e2ad55f9dac076b636c09bb">More...</a><br /></td></tr>
+<tr class="separator:a2d5803fa8e2ad55f9dac076b636c09bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b61d1d35cc297bb77907bc5588912d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d40/class_compute.html#aa1b61d1d35cc297bb77907bc5588912d">projections</a></td></tr>
+<tr class="memdesc:aa1b61d1d35cc297bb77907bc5588912d"><td class="mdescLeft">&#160;</td><td class="mdescRight">found projections.  <a href="../../db/d40/class_compute.html#aa1b61d1d35cc297bb77907bc5588912d">More...</a><br /></td></tr>
+<tr class="separator:aa1b61d1d35cc297bb77907bc5588912d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d9/d41/compute_8h_source.html#l00011">11</a> of file <a class="el" href="../../d9/d41/compute_8h_source.html">compute.h</a>.</p>
+<div class="textblock"><p>Basic computing class. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d41/compute_8h_source.html#l00014">14</a> of file <a class="el" href="../../d9/d41/compute_8h_source.html">compute.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a83e5a30d2fb4204ed38a2c12d6b3b5f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83e5a30d2fb4204ed38a2c12d6b3b5f3">&#9670;&nbsp;</a></span>Compute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a83e5a30d2fb4204ed38a2c12d6b3b5f3">&#9670;&nbsp;</a></span>Compute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -101,41 +153,23 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a new <a class="el" href="../../db/d40/class_compute.html" title="Basic computing class.">Compute</a> object. </p>
+
 <p class="definition">Definition at line <a class="el" href="../../d5/dea/compute_8cpp_source.html#l00007">7</a> of file <a class="el" href="../../d5/dea/compute_8cpp_source.html">compute.cpp</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7a7d6e380ad5f1b9a43aa067b0b82358"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a7d6e380ad5f1b9a43aa067b0b82358">&#9670;&nbsp;</a></span>display_projections()</h2>
+<a id="a7b1ca69b192969f356546d0838f72e4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b1ca69b192969f356546d0838f72e4c">&#9670;&nbsp;</a></span>Compute() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Compute::display_projections </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d5/dea/compute_8cpp_source.html#l00013">13</a> of file <a class="el" href="../../d5/dea/compute_8cpp_source.html">compute.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ad3a005e61184f96bee219c9d3d446ebe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3a005e61184f96bee219c9d3d446ebe">&#9670;&nbsp;</a></span>get_points_and_input()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Compute::get_points_and_input </td>
+          <td class="memname">Compute::Compute </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>points</em>, </td>
+          <td class="paramname"><em>line</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -151,7 +185,364 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a new <a class="el" href="../../db/d40/class_compute.html" title="Basic computing class.">Compute</a> object. This constructor calls the method <a class="el" href="../../db/d40/class_compute.html#a81ff09556bf21b66bf2dd7e063b2ff01">compute_projections</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>the input line (sequence of points). </td></tr>
+    <tr><td class="paramname">input_point</td><td>the input point that is projected onto the line. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="../../d5/dea/compute_8cpp_source.html#l00009">9</a> of file <a class="el" href="../../d5/dea/compute_8cpp_source.html">compute.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a29932ed653cefb0caa75711758e47eae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29932ed653cefb0caa75711758e47eae">&#9670;&nbsp;</a></span>check_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Compute::check_position </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>start_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>end_point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check position projection and fix if. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start_point</td><td></td></tr>
+    <tr><td class="paramname">end_point</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/dea/compute_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../d5/dea/compute_8cpp_source.html">compute.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a72ca049d02f904867d733275a831ed1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72ca049d02f904867d733275a831ed1d">&#9670;&nbsp;</a></span>compute_one_projection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Compute::compute_one_projection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>direction_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>current_point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../db/d40/class_compute.html" title="Basic computing class.">Compute</a> all projections and save save in <a class="el" href="../../db/d40/class_compute.html#addde178fe4dd782fe439016e96916e37">temp_projection</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">direction_vector</td><td></td></tr>
+    <tr><td class="paramname">current_point</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/dea/compute_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../d5/dea/compute_8cpp_source.html">compute.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a81ff09556bf21b66bf2dd7e063b2ff01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81ff09556bf21b66bf2dd7e063b2ff01">&#9670;&nbsp;</a></span>compute_projections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Compute::compute_projections </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>line</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../db/d40/class_compute.html" title="Basic computing class.">Compute</a> all projections and save save in <a class="el" href="../../db/d40/class_compute.html#aa1b61d1d35cc297bb77907bc5588912d">projections</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/dea/compute_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../d5/dea/compute_8cpp_source.html">compute.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7a7d6e380ad5f1b9a43aa067b0b82358"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a7d6e380ad5f1b9a43aa067b0b82358">&#9670;&nbsp;</a></span>display_projections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Compute::display_projections </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>displays found values </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/dea/compute_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../d5/dea/compute_8cpp_source.html">compute.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4ae9aa6706266e8011449c0b85ab2b60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ae9aa6706266e8011449c0b85ab2b60">&#9670;&nbsp;</a></span>get_points_and_input()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Compute::get_points_and_input </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../d0/d69/class_point.html">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d69/class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>input_point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the points and input object. After it, This method calls <a class="el" href="../../db/d40/class_compute.html#a81ff09556bf21b66bf2dd7e063b2ff01">compute_projections</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>input line (sequence of points). </td></tr>
+    <tr><td class="paramname">input_point</td><td>he input point that is projected onto the line. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/dea/compute_8cpp_source.html#l00014">14</a> of file <a class="el" href="../../d5/dea/compute_8cpp_source.html">compute.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ad35ceddcffa6e2c4bdd434010be734fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad35ceddcffa6e2c4bdd434010be734fc">&#9670;&nbsp;</a></span>current_parameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Compute::current_parameter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>current parameter(use in methods). </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d41/compute_8h_source.html#l00080">80</a> of file <a class="el" href="../../d9/d41/compute_8h_source.html">compute.h</a>.</p>
+
+</div>
+</div>
+<a id="a7167a636bfbc58b78b284c61ed503a7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7167a636bfbc58b78b284c61ed503a7f">&#9670;&nbsp;</a></span>input_point</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d69/class_point.html">Point</a> Compute::input_point</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>the input point that is projected onto the line. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d41/compute_8h_source.html#l00068">68</a> of file <a class="el" href="../../d9/d41/compute_8h_source.html">compute.h</a>.</p>
+
+</div>
+</div>
+<a id="a2d5803fa8e2ad55f9dac076b636c09bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d5803fa8e2ad55f9dac076b636c09bb">&#9670;&nbsp;</a></span>parameters</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;float&gt; Compute::parameters</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>found parameters. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d41/compute_8h_source.html#l00092">92</a> of file <a class="el" href="../../d9/d41/compute_8h_source.html">compute.h</a>.</p>
+
+</div>
+</div>
+<a id="aa1b61d1d35cc297bb77907bc5588912d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1b61d1d35cc297bb77907bc5588912d">&#9670;&nbsp;</a></span>projections</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d0/d69/class_point.html">Point</a>&gt; Compute::projections</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>found projections. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d41/compute_8h_source.html#l00098">98</a> of file <a class="el" href="../../d9/d41/compute_8h_source.html">compute.h</a>.</p>
+
+</div>
+</div>
+<a id="a104d3caa716baed26960d06177dc2eae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a104d3caa716baed26960d06177dc2eae">&#9670;&nbsp;</a></span>segments</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;unsigned int&gt; Compute::segments</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>found numbers of segmetns. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d41/compute_8h_source.html#l00086">86</a> of file <a class="el" href="../../d9/d41/compute_8h_source.html">compute.h</a>.</p>
+
+</div>
+</div>
+<a id="addde178fe4dd782fe439016e96916e37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addde178fe4dd782fe439016e96916e37">&#9670;&nbsp;</a></span>temp_projection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d69/class_point.html">Point</a> Compute::temp_projection</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>temp projection (use in methods). </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d41/compute_8h_source.html#l00074">74</a> of file <a class="el" href="../../d9/d41/compute_8h_source.html">compute.h</a>.</p>
 
 </div>
 </div>

@@ -13,6 +13,8 @@
     <title>Data Structures    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_class_compute">Compute</link></para>
+
+<para>Basic computing class. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
