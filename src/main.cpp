@@ -79,7 +79,6 @@ int main(int argc, char *argv[])
     cout << "Point:\n";
     input_point.printPoint();
     string namefile = argv[1];
-
     Read_Data file(namefile);
     vector<Point> line;
     cout << "Start Read\n";
