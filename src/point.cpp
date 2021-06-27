@@ -84,7 +84,7 @@ double &Point::operator[](const int index)
 {
     if (!(index >= 0 && index < DIM))
     {
-        throw out_of_range("Index: from 0 to 2");
+        throw out_of_range("Index: from 0 to DIM");
     }
     return point[index];
 }
