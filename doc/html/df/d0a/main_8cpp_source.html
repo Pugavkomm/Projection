@@ -12,13 +12,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Projections
-   &#160;<span id="projectnumber">1.2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">This program calculates the projection of an arbitrary point on a given line, which is made up of line segments.</div>
   </td>
@@ -123,18 +116,18 @@ $(function() {
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    comp.<a class="code" href="../../db/d40/class_compute.html#a7a7d6e380ad5f1b9a43aa067b0b82358">display_projections</a>();</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> 0; </div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
-<div class="ttc" id="aclass_compute_html"><div class="ttname"><a href="../../db/d40/class_compute.html">Compute</a></div><div class="ttdoc">Basic computing class.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d41/compute_8h_source.html#l00014">compute.h:14</a></div></div>
+<div class="ttc" id="aclass_compute_html"><div class="ttname"><a href="../../db/d40/class_compute.html">Compute</a></div><div class="ttdoc">Basic computing class.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d41/compute_8h_source.html#l00013">compute.h:13</a></div></div>
 <div class="ttc" id="aclass_compute_html_a4ae9aa6706266e8011449c0b85ab2b60"><div class="ttname"><a href="../../db/d40/class_compute.html#a4ae9aa6706266e8011449c0b85ab2b60">Compute::get_points_and_input</a></div><div class="ttdeci">void get_points_and_input(std::vector&lt; Point &gt; &amp;line, Point &amp;input_point)</div><div class="ttdoc">Get the points and input object. After it, This method calls compute_projections.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dea/compute_8cpp_source.html#l00019">compute.cpp:19</a></div></div>
 <div class="ttc" id="aclass_compute_html_a7a7d6e380ad5f1b9a43aa067b0b82358"><div class="ttname"><a href="../../db/d40/class_compute.html#a7a7d6e380ad5f1b9a43aa067b0b82358">Compute::display_projections</a></div><div class="ttdeci">void display_projections()</div><div class="ttdoc">displays found values</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dea/compute_8cpp_source.html#l00024">compute.cpp:24</a></div></div>
 <div class="ttc" id="aclass_point_html"><div class="ttname"><a href="../../d0/d69/class_point.html">Point</a></div><div class="ttdoc">Point is point in 3D space (because constant DIM = 3)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d91/point_8h_source.html#l00012">point.h:12</a></div></div>
 <div class="ttc" id="aclass_point_html_a07ebcfc85e0e4d5b6479ab93f39708b0"><div class="ttname"><a href="../../d0/d69/class_point.html#a07ebcfc85e0e4d5b6479ab93f39708b0">Point::printPoint</a></div><div class="ttdeci">void printPoint() const</div><div class="ttdoc">The method prints point.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d55/point_8cpp_source.html#l00035">point.cpp:35</a></div></div>
-<div class="ttc" id="aclass_read___data_html"><div class="ttname"><a href="../../d7/da7/class_read___data.html">Read_Data</a></div><div class="ttdoc">Read_Data class interface.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d36/read__data_8h_source.html#l00016">read_data.h:16</a></div></div>
+<div class="ttc" id="aclass_read___data_html"><div class="ttname"><a href="../../d7/da7/class_read___data.html">Read_Data</a></div><div class="ttdoc">Read line from file.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d36/read__data_8h_source.html#l00017">read_data.h:17</a></div></div>
 <div class="ttc" id="aclass_read___data_html_a085e89481b053dfc33ba270677fe8d01"><div class="ttname"><a href="../../d7/da7/class_read___data.html#a085e89481b053dfc33ba270677fe8d01">Read_Data::close</a></div><div class="ttdeci">void close()</div><div class="ttdoc">close if stream.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d40/read__data_8cpp_source.html#l00026">read_data.cpp:26</a></div></div>
 <div class="ttc" id="aclass_read___data_html_a66cacbc790161305f83ac5acad6776ce"><div class="ttname"><a href="../../d7/da7/class_read___data.html#a66cacbc790161305f83ac5acad6776ce">Read_Data::read_to_line</a></div><div class="ttdeci">void read_to_line(std::vector&lt; Point &gt; &amp;line)</div><div class="ttdoc">read point from file and save in line</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d40/read__data_8cpp_source.html#l00031">read_data.cpp:31</a></div></div>
 <div class="ttc" id="acompute_8h_html"><div class="ttname"><a href="../../d9/d41/compute_8h.html">compute.h</a></div><div class="ttdoc">Compute class interface.</div></div>
 <div class="ttc" id="amain_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="../../df/d0a/main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0a/main_8cpp_source.html#l00064">main.cpp:64</a></div></div>
 <div class="ttc" id="apoint_8h_html"><div class="ttname"><a href="../../d2/d91/point_8h.html">point.h</a></div><div class="ttdoc">Point class interface.</div></div>
-<div class="ttc" id="aread__data_8h_html"><div class="ttname"><a href="../../dc/d36/read__data_8h.html">read_data.h</a></div></div>
+<div class="ttc" id="aread__data_8h_html"><div class="ttname"><a href="../../dc/d36/read__data_8h.html">read_data.h</a></div><div class="ttdoc">Read_Data class interface.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

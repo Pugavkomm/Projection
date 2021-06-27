@@ -38,13 +38,9 @@
 
 <para><link linkend="_class_compute">Compute</link> all projections and save save in <link linkend="_class_compute_1aa1b61d1d35cc297bb77907bc5588912d">projections</link>. </para>
 </listitem>
-            <listitem><para>void <link linkend="_class_compute_1a72ca049d02f904867d733275a831ed1d">compute_one_projection</link> (<link linkend="_class_point">Point</link> &amp;direction_vector, <link linkend="_class_point">Point</link> &amp;current_point)</para>
+            <listitem><para>void <link linkend="_class_compute_1aba36d8c3585952779d53a90caf272949">compute_one_projection</link> (<link linkend="_class_point">Point</link> &amp;begin, <link linkend="_class_point">Point</link> &amp;end)</para>
 
 <para><link linkend="_class_compute">Compute</link> all projections and save save in <link linkend="_class_compute_1addde178fe4dd782fe439016e96916e37">temp_projection</link>. </para>
-</listitem>
-            <listitem><para>void <link linkend="_class_compute_1a29932ed653cefb0caa75711758e47eae">check_position</link> (<link linkend="_class_point">Point</link> &amp;start_point, <link linkend="_class_point">Point</link> &amp;end_point)</para>
-
-<para>Check position projection and fix if. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -82,7 +78,7 @@
 
 <para>Basic computing class. </para>
 <para>
-Definition at line 14 of file compute.h.</para>
+Definition at line 13 of file compute.h.</para>
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
@@ -139,50 +135,11 @@ Definition at line 14 of file compute.cpp.</para>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_class_compute_1a29932ed653cefb0caa75711758e47eae"/>    <section>
-    <title>check_position()</title>
-<indexterm><primary>check_position</primary><secondary>Compute</secondary></indexterm>
-<indexterm><primary>Compute</primary><secondary>check_position</secondary></indexterm>
-<para><computeroutput>void Compute::check_position (<link linkend="_class_point">Point</link> &amp; start_point, <link linkend="_class_point">Point</link> &amp; end_point)<computeroutput>[private]</computeroutput></computeroutput></para><para>
-
-<para>Check position projection and fix if. </para>
-</para>
-
-<para>
-                <formalpara>
-                    <title>
-Parameters                    </title>
-                    <para>
-                    <table frame="all">
-                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
-                        <colspec colwidth="1*"/>
-                        <colspec colwidth="4*"/>
-                        <tbody>
-                            <row>
-                                <entry>start_point</entry>
-                                <entry>
-<para></para>
-</entry>
-                            </row>
-                            <row>
-                                <entry>end_point</entry>
-                                <entry>
-<para></para>
-</entry>
-                            </row>
-                        </tbody>
-                        </tgroup>
-                    </table>
-                    </para>
-                </formalpara>
-                </para>
-<para>
-Definition at line 74 of file compute.cpp.</para>
-    </section><anchor xml:id="_class_compute_1a72ca049d02f904867d733275a831ed1d"/>    <section>
+<anchor xml:id="_class_compute_1aba36d8c3585952779d53a90caf272949"/>    <section>
     <title>compute_one_projection()</title>
 <indexterm><primary>compute_one_projection</primary><secondary>Compute</secondary></indexterm>
 <indexterm><primary>Compute</primary><secondary>compute_one_projection</secondary></indexterm>
-<para><computeroutput>void Compute::compute_one_projection (<link linkend="_class_point">Point</link> &amp; direction_vector, <link linkend="_class_point">Point</link> &amp; current_point)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+<para><computeroutput>void Compute::compute_one_projection (<link linkend="_class_point">Point</link> &amp; begin, <link linkend="_class_point">Point</link> &amp; end)<computeroutput>[private]</computeroutput></computeroutput></para><para>
 
 <para><link linkend="_class_compute">Compute</link> all projections and save save in <link linkend="_class_compute_1addde178fe4dd782fe439016e96916e37">temp_projection</link>. </para>
 </para>
@@ -204,9 +161,15 @@ Parameters                    </title>
 </entry>
                             </row>
                             <row>
-                                <entry>current_point</entry>
+                                <entry>begin</entry>
                                 <entry>
-<para></para>
+<para>start line. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>end</entry>
+                                <entry>
+<para>end line. </para>
 </entry>
                             </row>
                         </tbody>
@@ -216,7 +179,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 65 of file compute.cpp.</para>
+Definition at line 63 of file compute.cpp.</para>
     </section><anchor xml:id="_class_compute_1a81ff09556bf21b66bf2dd7e063b2ff01"/>    <section>
     <title>compute_projections()</title>
 <indexterm><primary>compute_projections</primary><secondary>Compute</secondary></indexterm>
@@ -239,7 +202,7 @@ Parameters                    </title>
                             <row>
                                 <entry>line</entry>
                                 <entry>
-<para></para>
+<para>the input line (sequence of points). </para>
 </entry>
                             </row>
                         </tbody>
@@ -312,7 +275,7 @@ Definition at line 19 of file compute.cpp.</para>
 <para>current parameter(use in methods). </para>
 </para>
 <para>
-Definition at line 80 of file compute.h.</para>
+Definition at line 73 of file compute.h.</para>
     </section><anchor xml:id="_class_compute_1a7167a636bfbc58b78b284c61ed503a7f"/>    <section>
     <title>input_point</title>
 <indexterm><primary>input_point</primary><secondary>Compute</secondary></indexterm>
@@ -322,7 +285,7 @@ Definition at line 80 of file compute.h.</para>
 <para>the input point that is projected onto the line. </para>
 </para>
 <para>
-Definition at line 68 of file compute.h.</para>
+Definition at line 61 of file compute.h.</para>
     </section><anchor xml:id="_class_compute_1a2d5803fa8e2ad55f9dac076b636c09bb"/>    <section>
     <title>parameters</title>
 <indexterm><primary>parameters</primary><secondary>Compute</secondary></indexterm>
@@ -332,7 +295,7 @@ Definition at line 68 of file compute.h.</para>
 <para>found parameters. </para>
 </para>
 <para>
-Definition at line 92 of file compute.h.</para>
+Definition at line 85 of file compute.h.</para>
     </section><anchor xml:id="_class_compute_1aa1b61d1d35cc297bb77907bc5588912d"/>    <section>
     <title>projections</title>
 <indexterm><primary>projections</primary><secondary>Compute</secondary></indexterm>
@@ -342,7 +305,7 @@ Definition at line 92 of file compute.h.</para>
 <para>found projections. </para>
 </para>
 <para>
-Definition at line 98 of file compute.h.</para>
+Definition at line 91 of file compute.h.</para>
     </section><anchor xml:id="_class_compute_1a104d3caa716baed26960d06177dc2eae"/>    <section>
     <title>segments</title>
 <indexterm><primary>segments</primary><secondary>Compute</secondary></indexterm>
@@ -352,7 +315,7 @@ Definition at line 98 of file compute.h.</para>
 <para>found numbers of segmetns. </para>
 </para>
 <para>
-Definition at line 86 of file compute.h.</para>
+Definition at line 79 of file compute.h.</para>
     </section><anchor xml:id="_class_compute_1addde178fe4dd782fe439016e96916e37"/>    <section>
     <title>temp_projection</title>
 <indexterm><primary>temp_projection</primary><secondary>Compute</secondary></indexterm>
@@ -362,7 +325,7 @@ Definition at line 86 of file compute.h.</para>
 <para>temp projection (use in methods). </para>
 </para>
 <para>
-Definition at line 74 of file compute.h.</para>
+Definition at line 67 of file compute.h.</para>
 </section>
 <para>
 The documentation for this class was generated from the following files:</para>

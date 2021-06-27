@@ -1,0 +1,8 @@
+\_form#0=279x14:\[ x_2 (y_2) (z_2) = x_1 (y_1) (z_1) - P \cos(\alpha) (\cos(\beta)) (\cos(\gamma)), \]
+\_form#1=303x34:\[ P = \frac{MM_1(x_1 - x_0) + MM_2(y_1 - y_0) + MM_3(z_1 - z_0)}{\sqrt{MM_1^2 + MM_2^2 + MM_3^2}}, \]
+\_form#2=198x33:\[ \cos(\alpha) = \frac{MM_1}{\sqrt{MM_1^2 + MM_2^2 + MM_3^2}}, \]
+\_form#3=198x33:\[ \cos(\beta) = \frac{MM_2}{\sqrt{MM_1^2 + MM_2^2 + MM_3^2}}, \]
+\_form#4=196x33:\[ \cos(\gamma) = \frac{MM_3}{\sqrt{MM_1^2 + MM_2^2 + MM_3^2}}, \]
+\_form#5=65x14:$O(x_1, y_1, z_1)$
+\_form#6=65x14:$O(x_2, y_2, z_2)$
+\_form#7=65x14:$ O(x_0, y_0, z_0)$

@@ -71,10 +71,6 @@
 
 <para>The operator calculates the multiplication point by double. </para>
 </listitem>
-            <listitem><para><link linkend="_class_point">Point</link> <link linkend="_class_point_1a55df2e214e10f9f854e48a4570eceff6">operator/</link> (const <link linkend="_class_point">Point</link> &amp;, const <link linkend="_class_point">Point</link> &amp;)</para>
-
-<para>The operator сalculates the division of the coordinates of points. </para>
-</listitem>
             <listitem><para><link linkend="_class_point">Point</link> <link linkend="_class_point_1a7079c73de603914524a40929cb99e5db">operator/</link> (const <link linkend="_class_point">Point</link> &amp;, const double)</para>
 
 <para>The operator сalculates left per double number. </para>
@@ -225,7 +221,7 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 82 of file point.cpp.</para>
+Definition at line 76 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a07ebcfc85e0e4d5b6479ab93f39708b0"/>    <section>
     <title>printPoint()</title>
 <indexterm><primary>printPoint</primary><secondary>Point</secondary></indexterm>
@@ -443,7 +439,7 @@ Parameters                    </title>
 <para>
 Definition at line 56 of file point.cpp.</para>
     </section><anchor xml:id="_class_point_1a7079c73de603914524a40929cb99e5db"/>    <section>
-    <title>operator/<computeroutput>[1/2]</computeroutput></title>
+    <title>operator/</title>
 <indexterm><primary>operator/</primary><secondary>Point</secondary></indexterm>
 <indexterm><primary>Point</primary><secondary>operator/</secondary></indexterm>
 <para><computeroutput><link linkend="_class_point">Point</link> operator/ (const <link linkend="_class_point">Point</link> &amp; left, const double right)<computeroutput>[friend]</computeroutput></computeroutput></para><para>
@@ -480,45 +476,6 @@ Parameters                    </title>
                 </formalpara>
                 </para>
 <para>
-Definition at line 77 of file point.cpp.</para>
-    </section><anchor xml:id="_class_point_1a55df2e214e10f9f854e48a4570eceff6"/>    <section>
-    <title>operator/<computeroutput>[2/2]</computeroutput></title>
-<indexterm><primary>operator/</primary><secondary>Point</secondary></indexterm>
-<indexterm><primary>Point</primary><secondary>operator/</secondary></indexterm>
-<para><computeroutput><link linkend="_class_point">Point</link> operator/ (const <link linkend="_class_point">Point</link> &amp; left, const <link linkend="_class_point">Point</link> &amp; right)<computeroutput>[friend]</computeroutput></computeroutput></para><para>
-
-<para>The operator сalculates the division of the coordinates of points. </para>
-</para>
-
-<para>
-                <formalpara>
-                    <title>
-Parameters                    </title>
-                    <para>
-                    <table frame="all">
-                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
-                        <colspec colwidth="1*"/>
-                        <colspec colwidth="4*"/>
-                        <tbody>
-                            <row>
-                                <entry>left</entry>
-                                <entry>
-<para>left operand (<link linkend="_class_point">Point</link>). </para>
-</entry>
-                            </row>
-                            <row>
-                                <entry>right</entry>
-                                <entry>
-<para>right operand (<link linkend="_class_point">Point</link>). </para>
-</entry>
-                            </row>
-                        </tbody>
-                        </tgroup>
-                    </table>
-                    </para>
-                </formalpara>
-                </para>
-<para>
 Definition at line 71 of file point.cpp.</para>
 </section>
 </section>
@@ -533,7 +490,7 @@ Definition at line 71 of file point.cpp.</para>
 <para>point(x, y, z) </para>
 </para>
 <para>
-Definition at line 106 of file point.h.</para>
+Definition at line 99 of file point.h.</para>
 </section>
 <para>
 The documentation for this class was generated from the following files:</para>

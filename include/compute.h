@@ -2,7 +2,6 @@
  * @file compute.h
  * @brief Compute class interface.
  */
-
 #ifndef COMPUTE
 #define COMPUTE
 #include "point.h"
@@ -42,7 +41,7 @@ class Compute{
         /**
          * @brief Compute all projections and save save in @ref projections
          * 
-         * @param line 
+         * @param line the input line (sequence of points).
          */
         void compute_projections(std::vector<Point>& line); 
         
@@ -50,17 +49,11 @@ class Compute{
          * @brief Compute all projections and save save in @ref temp_projection
          * 
          * @param direction_vector 
-         * @param current_point 
+         * @param begin start line.
+         * @param end end line.
          */
-        void compute_one_projection(Point &direction_vector, Point &current_point);
+        void compute_one_projection(Point &begin, Point &end);
 
-        /**
-         * @brief Check position projection and fix if. 
-         * 
-         * @param start_point 
-         * @param end_point 
-         */
-        void check_position(Point &start_point, Point &end_point);
         /**
          * @brief the input point that is projected onto the line.
          * 

@@ -18,6 +18,8 @@
 <para><link linkend="_class_point">Point</link> class interface. </para>
 </listitem>
             <listitem><para>file <link linkend="_read__data_8h">read_data.h</link></para>
+
+<para><link linkend="_class_read___data">Read_Data</link> class interface. </para>
 </listitem>
         </itemizedlist>
 </simplesect>

@@ -79,13 +79,6 @@ class Point{
         friend Point operator* (const Point&, const double);
         
         /**
-         * @brief The operator сalculates the division of the coordinates of points
-         * @param left left operand (Point).
-         * @param right right operand (Point).
-         */
-        friend Point operator/ (const Point&, const Point&);
-        
-        /**
          * @brief The operator сalculates left per double number
          * @param left left operand (Point).
          * @param right right operand (double).

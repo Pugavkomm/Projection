@@ -42,9 +42,7 @@ void Compute::compute_projections(std::vector<Point> &line){
     double from_proj_to_point; 
     double old_from_proj_to_point = DBL_MAX; 
     for (size_t i = 0; i < quant_points - 1; ++i){
-        direction_vector = line[i + 1] - line[i];
-        compute_one_projection(direction_vector, line[i]);
-        check_position(line[i], line[i + 1]);
+        compute_one_projection(line[i], line[i + 1]);
         from_proj_to_point = input_point.dist_between(temp_projection);
         if (from_proj_to_point < old_from_proj_to_point){
             projections.clear();
@@ -62,18 +60,18 @@ void Compute::compute_projections(std::vector<Point> &line){
     }
 }   
 
-void Compute::compute_one_projection(Point &direction_vector, Point &current_point){
-    double deviation;
+void Compute::compute_one_projection(Point &begin, Point &end){
+    double dist_beg_to_proj;
+    Point vector_fr_beg_to_proj;
+    Point direction_vector = end - begin;
     double vector_lenght = direction_vector.dist_between();
     Point cos = direction_vector / vector_lenght; 
-    deviation = direction_vector * (current_point - input_point) / vector_lenght;
-    temp_projection = current_point - cos * deviation;
-
-}
-
-void Compute::check_position(Point &begin, Point &end){
-    current_parameter = 1.0 - temp_projection.dist_between(end) / 
-                        begin.dist_between(end);
+    double deviation = direction_vector * (begin - input_point) / vector_lenght;
+    temp_projection = begin - cos * deviation;
+    vector_fr_beg_to_proj = temp_projection - begin; 
+    dist_beg_to_proj = vector_fr_beg_to_proj.dist_between();
+    // check parametr and directon
+    current_parameter = dist_beg_to_proj / vector_lenght * (cos * vector_fr_beg_to_proj / dist_beg_to_proj);
     if (current_parameter < 0)
     {
         temp_projection = begin;
@@ -85,3 +83,4 @@ void Compute::check_position(Point &begin, Point &end){
         current_parameter = 1;
     }
 }
+

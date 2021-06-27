@@ -4,7 +4,7 @@
 <indexterm><primary>Read_Data</primary></indexterm>
 <para>
 
-<para><link linkend="_class_read___data">Read_Data</link> class interface. </para>
+<para>Read line from file. </para>
  
 </para>
 <para>
@@ -41,13 +41,9 @@
 <section>
 <title>Detailed Description</title>
 
-<para><link linkend="_class_read___data">Read_Data</link> class interface. </para>
-
-
-
 <para>Read line from file. </para>
 <para>
-Definition at line 16 of file read_data.h.</para>
+Definition at line 17 of file read_data.h.</para>
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
@@ -173,7 +169,7 @@ Definition at line 31 of file read_data.cpp.</para>
 <indexterm><primary>file</primary><secondary>Read_Data</secondary></indexterm>
 <indexterm><primary>Read_Data</primary><secondary>file</secondary></indexterm>
 <para><computeroutput>std::ifstream Read_Data::file<computeroutput>[private]</computeroutput></computeroutput></para><para>
-Definition at line 45 of file read_data.h.</para>
+Definition at line 46 of file read_data.h.</para>
 </section>
 <para>
 The documentation for this class was generated from the following files:</para>

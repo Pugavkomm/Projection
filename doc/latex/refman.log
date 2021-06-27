@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.27)  27 JUN 2021 18:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.27)  27 JUN 2021 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -971,15 +971,15 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 
 [7]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.19995pt on input line 60.
+(Font)              scaled to size 7.19995pt on input line 58.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 75.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 73.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 75.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 73.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.1 on input line 87.
+(longtable)                in table 4.1 on input line 85.
 
 [8]
 
@@ -988,18 +988,13 @@ Package longtable Warning: Column widths have changed
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.3 on input line 132.
-
-[9]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.4 on input line 151.
+(longtable)                in table 4.3 on input line 130.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.5 on input line 186.
+(longtable)                in table 4.4 on input line 165.
 
-[10]) (./d0/d69/class_point.tex [11]
+[9] [10]) (./d0/d69/class_point.tex [11]
 
 ! Package inputenc Error: Unicode character с (U+0441)
 (inputenc)                not set up for use with LaTeX.
@@ -1009,238 +1004,4 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.46 ...CompactList}\small\item\em The operator с
-                                                  alculates the division of ...
-
-? H
-You may provide a definition with
-\DeclareUnicodeCharacter 
-? 
-
-! Package inputenc Error: Unicode character с (U+0441)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.48 ...CompactList}\small\item\em The operator с
-                                                  alculates left per double ...
-
-? 
-[12]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.6 on input line 87.
-
-
-Underfull \hbox (badness 10000) detected at line 105
-[][][]
- []
-
-[13]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.7 on input line 126.
-
-
-Underfull \hbox (badness 10000) detected at line 127
-[][][]
- []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.8 on input line 148.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.9 on input line 169.
-
-[14]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.10 on input line 188.
-
-
-Underfull \hbox (badness 10000) detected at line 203
-[][][]
- []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.11 on input line 229.
-
-[15]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.12 on input line 250.
-
-
-Underfull \hbox (badness 10000) detected at line 251
-[][][]
- []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.13 on input line 274.
-
-
-! Package inputenc Error: Unicode character с (U+0441)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.287 The operator с
-                     alculates left per double number.
-? 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.14 on input line 295.
-
-[16]
-
-! Package inputenc Error: Unicode character с (U+0441)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.308 The operator с
-                     alculates the division of the coordinates of points.
-? 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.15 on input line 316.
-
-) (./d7/da7/class_read___data.tex [17]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.16 on input line 54.
-
-[18]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.17 on input line 90.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.18 on input line 109.
-
-) [19] [20
-
-]
-Chapter 5.
-(./d9/d41/compute_8h.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
- []
-
-) (./d8/db5/consts_8h.tex) (./d2/d91/point_8h.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
-
- []
-
-) (./dc/d36/read__data_8h.tex [21]
-Underfull \hbox (badness 10000) in paragraph at lines 3--7
-
- []
-
-) (./d5/dea/compute_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--13
-
- []
-
-) (./df/d0a/main_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--11
-
- []
-
-[22]) (./d5/d55/point_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--12
-
- []
-
-[23]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.1 on input line 45.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.2 on input line 62.
-
-
-Underfull \hbox (badness 10000) detected at line 63
-[][][]
- []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.3 on input line 82.
-
-[24]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.4 on input line 99.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.5 on input line 116.
-
-) (./d0/d40/read__data_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--12
-
- []
-
-) [25] [26
-
-]
-No file refman.ind.
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
-(./refman.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `refman.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `refman.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  CBCE63AB83B49726E3A8E22C8D807C4E;15506.
- ) 
-Here is how much of TeX's memory you used:
- 16500 strings out of 478994
- 244358 string characters out of 5864751
- 576023 words of memory out of 5000000
- 33444 multiletter control sequences out of 15000+600000
- 462997 words of font info for 98 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 112i,16n,117p,600b,640s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucr
-b8a.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/t
-exmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share/texmf-dist/fonts/type
-1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8
-ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/t
-exmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (28 pages, 161949 bytes).
-PDF statistics:
- 601 PDF objects out of 1000 (max. 8388607)
- 527 compressed objects within 6 object streams
- 191 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+       
