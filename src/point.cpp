@@ -82,7 +82,7 @@ Point operator/(const Point &left, const double right)
 
 double &Point::operator[](const int index)
 {
-    if (!(index >= 0 && index < 3))
+    if (!(index >= 0 && index < DIM))
     {
         throw out_of_range("Index: from 0 to 2");
     }
