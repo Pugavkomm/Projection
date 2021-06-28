@@ -96,14 +96,14 @@ void Compute::compute_one_projection(Point &begin, Point &end)
     double dist_beg_to_proj;
     Point vector_fr_beg_to_proj;
     Point direction_vector = end - begin;
-    double vector_lenght = direction_vector.dist_between();
-    Point cos = direction_vector / vector_lenght;
-    double deviation = direction_vector * (begin - input_point) / vector_lenght;
+    double vector_length = direction_vector.dist_between();
+    Point cos = direction_vector / vector_length;
+    double deviation = direction_vector * (begin - input_point) / vector_length;
     temp_projection = begin - cos * deviation;
     vector_fr_beg_to_proj = temp_projection - begin;
     dist_beg_to_proj = vector_fr_beg_to_proj.dist_between();
-    // check parametr and directon
-    current_parameter = dist_beg_to_proj / vector_lenght * (cos * vector_fr_beg_to_proj / dist_beg_to_proj);
+    // check parameter and direction
+    current_parameter = dist_beg_to_proj / vector_length * (cos * vector_fr_beg_to_proj / dist_beg_to_proj);
     if (current_parameter < 0)
     {
         temp_projection = begin;

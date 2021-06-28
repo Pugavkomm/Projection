@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/mech/Projection'
+g++ -std=c++17 -Wall -Wextra -O2   -Iinclude -Llib src/compute.cpp src/main.cpp src/point.cpp src/read_data.cpp -o bin/main 
+make: Leaving directory '/home/mech/Projection'
+ 

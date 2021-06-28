@@ -13,7 +13,7 @@ class = {
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'Compute';
-      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/compute.h';
       sec-mem-desc-line = '21';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Construct a new Compute object.
@@ -43,7 +43,7 @@ Point &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'input_point';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/compute.h';
       sec-mem-desc-line = '29';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Construct a new Compute object.
@@ -74,7 +74,7 @@ Point &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'input_point';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/compute.h';
       sec-mem-desc-line = '37';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Construct a new Compute object.
@@ -105,7 +105,7 @@ Point &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'input_point';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/compute.h';
       sec-mem-desc-line = '45';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Get the points from file and input object. After it, This method calls @ref compute_projections.
@@ -136,7 +136,7 @@ Point &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'input_point';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/compute.h';
       sec-mem-desc-line = '52';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Get the points and input object. After it, This method calls @ref compute_projections.
@@ -155,7 +155,7 @@ _EnD_oF_dEf_TeXt_;
 void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'display_projections';
-      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/compute.h';
       sec-mem-desc-line = '58';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 displays found values
@@ -182,7 +182,7 @@ std::vector< Point > &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'line';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/compute.h';
       sec-mem-desc-line = '66';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Compute all projections and save save in @ref projections.
@@ -212,7 +212,7 @@ Point &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'end';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/compute.h';
       sec-mem-desc-line = '75';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Compute all projections and save save in @ref temp_projection.
@@ -235,7 +235,7 @@ _EnD_oF_dEf_TeXt_;
 Point
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'input_point';
-      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/compute.h';
       sec-mem-desc-line = '81';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 the input point that is projected onto the line.
@@ -253,7 +253,7 @@ _EnD_oF_dEf_TeXt_;
 Point
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'temp_projection';
-      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/compute.h';
       sec-mem-desc-line = '87';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 temp projection (use in methods).
@@ -271,7 +271,7 @@ _EnD_oF_dEf_TeXt_;
 double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'current_parameter';
-      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/compute.h';
       sec-mem-desc-line = '93';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 current parameter(use in methods).
@@ -289,7 +289,7 @@ _EnD_oF_dEf_TeXt_;
 std::vector< unsigned int >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'segments';
-      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/compute.h';
       sec-mem-desc-line = '99';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 found numbers of segmetns.
@@ -307,7 +307,7 @@ _EnD_oF_dEf_TeXt_;
 std::vector< float >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'parameters';
-      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/compute.h';
       sec-mem-desc-line = '105';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 found parameters.
@@ -325,7 +325,7 @@ _EnD_oF_dEf_TeXt_;
 std::vector< Point >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'projections';
-      sec-mem-desc-file = '/home/mech/projects/projection/include/compute.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/compute.h';
       sec-mem-desc-line = '111';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 found projections.
@@ -335,7 +335,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/mech/projects/projection/include/compute.h';
+  cp-filename  = '/home/mech/Projection/include/compute.h';
   cp-fileline  = '14';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Basic computing class.
@@ -383,7 +383,7 @@ class = {
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'Point';
-      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/point.h';
       sec-mem-desc-line = '19';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Default constructor that defines a point at the origin.
@@ -419,7 +419,7 @@ double
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'z';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/point.h';
       sec-mem-desc-line = '25';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The constructor defines point.
@@ -455,7 +455,7 @@ double
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'z';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/point.h';
       sec-mem-desc-line = '31';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The method sets the coordinates of the point.
@@ -473,7 +473,7 @@ _EnD_oF_dEf_TeXt_;
 void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'printPoint';
-      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/point.h';
       sec-mem-desc-line = '38';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The method prints point.
@@ -492,7 +492,7 @@ _EnD_oF_dEf_TeXt_;
 double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'dist_between';
-      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/point.h';
       sec-mem-desc-line = '44';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Calculates the sum of the squares of the coordinates of a point.
@@ -516,7 +516,7 @@ Point &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'right';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/point.h';
       sec-mem-desc-line = '51';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Computes the distance between two input points.
@@ -535,7 +535,7 @@ _EnD_oF_dEf_TeXt_;
 double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'sum_coordinates';
-      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/point.h';
       sec-mem-desc-line = '58';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Computes sum of coordinates point.
@@ -559,7 +559,7 @@ const int
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'index';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/point.h';
       sec-mem-desc-line = '93';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Indexing operator. It returns the x, y, z coordinate depending on the index from the range [0, 2].
@@ -580,7 +580,7 @@ _EnD_oF_dEf_TeXt_;
 double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'point';
-      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/point.h';
       sec-mem-desc-line = '100';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 point(x, y, z)
@@ -613,7 +613,7 @@ const Point &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'right';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/point.h';
       sec-mem-desc-line = '65';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The operator calculates a point that is the difference between all coordinates of the other two points.
@@ -644,7 +644,7 @@ const Point &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'right';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/point.h';
       sec-mem-desc-line = '73';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The operator calculates the dot product.
@@ -676,7 +676,7 @@ const double
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'right';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/point.h';
       sec-mem-desc-line = '80';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The operator calculates the multiplication point by double.
@@ -707,7 +707,7 @@ const double
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'right';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/mech/projects/projection/include/point.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/point.h';
       sec-mem-desc-line = '87';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The operator сalculates left per double number.
@@ -718,7 +718,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/mech/projects/projection/include/point.h';
+  cp-filename  = '/home/mech/Projection/include/point.h';
   cp-fileline  = '12';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Point is point in 3D space (because constant DIM = 3)
@@ -747,7 +747,7 @@ const std::string &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'namefile';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/mech/projects/projection/include/read_data.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/read_data.h';
       sec-mem-desc-line = '25';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Construct a new Read_Data object.
@@ -771,7 +771,7 @@ const std::string &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'namefile';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/mech/projects/projection/include/read_data.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/read_data.h';
       sec-mem-desc-line = '32';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 open ifstream.
@@ -789,7 +789,7 @@ _EnD_oF_dEf_TeXt_;
 void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'close';
-      sec-mem-desc-file = '/home/mech/projects/projection/include/read_data.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/read_data.h';
       sec-mem-desc-line = '38';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 close if stream.
@@ -813,7 +813,7 @@ std::vector< Point > &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'line';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/mech/projects/projection/include/read_data.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/read_data.h';
       sec-mem-desc-line = '45';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 read point from file and save in @ref line
@@ -834,7 +834,7 @@ _EnD_oF_dEf_TeXt_;
 std::ifstream
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'file';
-      sec-mem-desc-file = '/home/mech/projects/projection/include/read_data.h';
+      sec-mem-desc-file = '/home/mech/Projection/include/read_data.h';
       sec-mem-desc-line = '48';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -844,7 +844,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/mech/projects/projection/include/read_data.h';
+  cp-filename  = '/home/mech/Projection/include/read_data.h';
   cp-fileline  = '17';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Read line from file.
@@ -877,7 +877,7 @@ _EnD_oF_dEf_TeXt_;
 file = {
   file-id   = 'd9/d41/compute_8h';
   file-name = 'compute.h';
-  file-full-name  = '/home/mech/projects/projection/include/compute.h';
+  file-full-name  = '/home/mech/Projection/include/compute.h';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 Compute class interface.
@@ -904,7 +904,7 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 1e-7
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = '/home/mech/projects/projection/include/consts.h';
+      var-mem-desc-file = '/home/mech/Projection/include/consts.h';
       var-mem-desc-line = '10';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Distance measurement accuracy.
@@ -925,7 +925,7 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 3
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = '/home/mech/projects/projection/include/consts.h';
+      var-mem-desc-file = '/home/mech/Projection/include/consts.h';
       var-mem-desc-line = '15';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 3D space
@@ -935,7 +935,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* var-member */
     };
-  file-full-name  = '/home/mech/projects/projection/include/consts.h';
+  file-full-name  = '/home/mech/Projection/include/consts.h';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 Constants.
@@ -949,7 +949,7 @@ _EnD_oF_dEf_TeXt_;
 file = {
   file-id   = 'd2/d91/point_8h';
   file-name = 'point.h';
-  file-full-name  = '/home/mech/projects/projection/include/point.h';
+  file-full-name  = '/home/mech/Projection/include/point.h';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 Point class interface.
@@ -963,7 +963,7 @@ _EnD_oF_dEf_TeXt_;
 file = {
   file-id   = 'dc/d36/read__data_8h';
   file-name = 'read_data.h';
-  file-full-name  = '/home/mech/projects/projection/include/read_data.h';
+  file-full-name  = '/home/mech/Projection/include/read_data.h';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 Read_Data class interface.
@@ -977,7 +977,7 @@ _EnD_oF_dEf_TeXt_;
 file = {
   file-id   = 'd5/dea/compute_8cpp';
   file-name = 'compute.cpp';
-  file-full-name  = '/home/mech/projects/projection/src/compute.cpp';
+  file-full-name  = '/home/mech/Projection/src/compute.cpp';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 Implementing the Compute interface.
@@ -1014,7 +1014,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'argv';
         func-mem-param-array = '[]';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/home/mech/projects/projection/src/main.cpp';
+      func-mem-desc-file = '/home/mech/Projection/src/main.cpp';
       func-mem-desc-line = '64';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -1024,7 +1024,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     };
-  file-full-name  = '/home/mech/projects/projection/src/main.cpp';
+  file-full-name  = '/home/mech/Projection/src/main.cpp';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 
@@ -1058,7 +1058,7 @@ const Point &
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'right';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/home/mech/projects/projection/src/point.cpp';
+      func-mem-desc-file = '/home/mech/Projection/src/point.cpp';
       func-mem-desc-line = '63';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -1089,7 +1089,7 @@ const Point &
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'right';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/home/mech/projects/projection/src/point.cpp';
+      func-mem-desc-file = '/home/mech/Projection/src/point.cpp';
       func-mem-desc-line = '68';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -1121,7 +1121,7 @@ const double
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'right';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/home/mech/projects/projection/src/point.cpp';
+      func-mem-desc-file = '/home/mech/Projection/src/point.cpp';
       func-mem-desc-line = '73';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -1152,7 +1152,7 @@ const double
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'right';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/home/mech/projects/projection/src/point.cpp';
+      func-mem-desc-file = '/home/mech/Projection/src/point.cpp';
       func-mem-desc-line = '78';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -1163,7 +1163,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     };
-  file-full-name  = '/home/mech/projects/projection/src/point.cpp';
+  file-full-name  = '/home/mech/Projection/src/point.cpp';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 Implementing the Point interface.
@@ -1177,7 +1177,7 @@ _EnD_oF_dEf_TeXt_;
 file = {
   file-id   = 'd0/d40/read__data_8cpp';
   file-name = 'read_data.cpp';
-  file-full-name  = '/home/mech/projects/projection/src/read_data.cpp';
+  file-full-name  = '/home/mech/Projection/src/read_data.cpp';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 Implementing the Compute interface.
