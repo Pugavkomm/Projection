@@ -27,13 +27,13 @@ Compute::Compute(std::string &namefile, Point &input_point)
     compute_projections(line);
 }
 
-void Compute::get_line_and_input(std::vector<Point> &line, Point &input_point)
+void Compute::set_line_and_input(std::vector<Point> &line, Point &input_point)
 {
     this->input_point = input_point;
     compute_projections(line);
 }
 
-void Compute::get_file_and_input(std::string &namefile, Point &input_point)
+void Compute::set_file_and_input(std::string &namefile, Point &input_point)
 {
     this->input_point = input_point;
     std::vector<Point> line;

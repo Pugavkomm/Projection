@@ -14,100 +14,100 @@
 class Compute
 {
 public:
-     /**
+    /**
          * @brief Construct a new Compute object.
          * 
          */
-     Compute();
-     /**
+    Compute();
+    /**
          * @brief Construct a new Compute object.
          * 
          * @param line the input line (sequence of points).
          * @param input_point the input point that is projected onto the line.
          */
 
-     Compute(std::vector<Point> &line, Point &input_point);
+    Compute(std::vector<Point> &line, Point &input_point);
 
-     /**
+    /**
      * @brief Construct a new Compute object
      * 
      * @param namefile the file with data.
      * @param input_point the input point that is projected onto the line.
      */
-     Compute(std::string &namefile, Point &input_point);
+    Compute(std::string &namefile, Point &input_point);
 
-     /**
+    /**
          * @brief Get the points from file and input object. After it, This method calls @ref compute_projections.
          * 
          * @param line input line (sequence of points).
          * @param input_point the input point that is projected onto the line.
          */
-     void get_line_and_input(std::vector<Point> &line, Point &input_point);
+    void set_line_and_input(std::vector<Point> &line, Point &input_point);
 
-     /**
+    /**
          * @brief Get the points and input object. After it, This method calls @ref compute_projections
          * @param line input line (sequence of points).
          * @param input_point the input point that is projected onto the line.
          */
-     void get_file_and_input(std::string &namefile, Point &input_point);
+    void set_file_and_input(std::string &namefile, Point &input_point);
 
-     /**
+    /**
          * @brief displays found values
          * 
          */
-     void display_projections();
+    void display_projections();
 
 private:
-     /**
+    /**
          * @brief Compute all projections and save save in @ref projections
          * 
          * @param line the input line (sequence of points).
          */
-     void compute_projections(std::vector<Point> &line);
+    void compute_projections(std::vector<Point> &line);
 
-     /**
+    /**
          * @brief Compute all projections and save save in @ref temp_projection
          * 
          * @param direction_vector 
          * @param begin start line.
          * @param end end line.
          */
-     void compute_one_projection(Point &begin, Point &end);
+    void compute_one_projection(Point &begin, Point &end);
 
-     /**
+    /**
          * @brief the input point that is projected onto the line.
          * 
          */
-     Point input_point;
+    Point input_point;
 
-     /**
+    /**
          * @brief temp projection (use in methods).
          * 
          */
-     Point temp_projection;
+    Point temp_projection;
 
-     /**
+    /**
          * @brief current parameter(use in methods).
          * 
          */
-     double current_parameter;
+    double current_parameter;
 
-     /**
+    /**
          * @brief found numbers of segmetns.
          * 
          */
-     std::vector<unsigned int> segments;
+    std::vector<unsigned int> segments;
 
-     /**
+    /**
          * @brief found parameters.
          * 
          */
-     std::vector<float> parameters;
+    std::vector<float> parameters;
 
-     /**
+    /**
          * @brief found projections.
          * 
          */
-     std::vector<Point> projections;
+    std::vector<Point> projections;
 };
 #endif
