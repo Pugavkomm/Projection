@@ -5,7 +5,7 @@ of line s is a parameter that shows the part of the segment that the projection 
 0 to 1
 ## Documentation
 
-[Documentation](http://http://95.182.120.139:8000)
+[Documentation](http://95.182.120.139:8000)
 
 ## Calculations are made according to the following formulas
 <img src="https://render.githubusercontent.com/render/math?math=x_2 (y_2) (z_2) = x_1 (y_1) (z_1) - P \cos(\alpha) (\cos(\beta)) (\cos(\gamma))">, 
